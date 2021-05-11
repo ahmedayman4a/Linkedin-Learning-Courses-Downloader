@@ -235,6 +235,7 @@
     <Content Include="img\linked-learning-favicon.ico" />
     <Content Include="img\Loading.gif" />
     <Content Include="linked-learning-favicon.ico" />
+    <Content Include="Update.exe" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LLCD.CourseContent\LLCD.CourseContent.csproj">
