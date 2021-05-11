@@ -80,7 +80,7 @@ I accept any contribution to the codebase whether it is a small bugfix or an exc
 
 ## Buy me a coffee?
 
-You can buy me a coffee using [PayPal](https://ko-fi.com/ahmedayman4a) or [Cryptocurrency](https://commerce.coinbase.com/checkout/be939297-c143-496f-a801-a7856ed9ac8b).
+You can buy me a coffee using [PayPal(Kofi)](https://ko-fi.com/ahmedayman4a) or [Cryptocurrency](https://commerce.coinbase.com/checkout/be939297-c143-496f-a801-a7856ed9ac8b).
 
 ## Any Questions? Issues? Recommendations?
 
