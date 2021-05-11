@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <PublisherName>ahmedayman4a</PublisherName>
+    <PackageId>Linkedin Learning Courses Downloader</PackageId>
+    <Product>Linkedin Learning Courses Downloader</Product>
+    <Authors>ahmedayman4a</Authors>
+    <Copyright>2021</Copyright>
+    <Version>1.0</Version>
+    <AssemblyName>Linkedin Learning Courses Downloader</AssemblyName>
+    <ApplicationIcon>linked-learning-favicon.ico</ApplicationIcon>
+    <Description>Download linkedin learning courses to watch them offline</Description>
+    <PackageIcon>linked-learning-favicon.ico</PackageIcon>
+
+  <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+    <GenerateResourceMSBuildArchitecture>CurrentArchitecture</GenerateResourceMSBuildArchitecture>
+    <GenerateResourceMSBuildRuntime>CurrentRuntime</GenerateResourceMSBuildRuntime>
+    <Platforms>AnyCPU</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LLCD.CourseExtractor\LLCD.CourseExtractor.csproj" />
+    <ProjectReference Include="..\LLCD.DownloaderConfig\LLCD.DownloaderConfig.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ShellProgressBar">
+      <HintPath>Assemblies\ShellProgressBar.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="linked-learning-favicon.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.8.10" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.113.7" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
