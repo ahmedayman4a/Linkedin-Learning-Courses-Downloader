@@ -105,7 +105,7 @@ namespace LLCD.DownloaderGUI
                             lblCourse.Text = _currentVideoIndex++ + "/" + _videosCount;
 
                             string videoName = $"[{j}] { ToSafeFileName(video.Title)}.mp4";
-                            if (String.IsNullOrWhiteSpace(video.Transcript))
+                            if (!String.IsNullOrWhiteSpace(video.Transcript))
                             {
                                 string captionName = $"[{j}] { ToSafeFileName(video.Title)}.srt";
                                 await SaveSubtitles(Path.Combine(chapterDirectory.FullName, ToSafeFileName(captionName)), video.Transcript);
