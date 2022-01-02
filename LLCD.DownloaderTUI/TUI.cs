@@ -70,7 +70,7 @@ namespace LLCD.DownloaderTUI
             string loginToken = "";
             while (string.IsNullOrEmpty(loginToken))
             {
-                Console.WriteLine(CONTINUEGLYPH + "What is the linkedin learning security token?(It should appear as li_at if you are loged into linkedin learning)");
+                Console.WriteLine(CONTINUEGLYPH + "What is the linkedin learning security token?(It should appear as li_at if you are logged into linkedin learning)");
                 Console.Write(ANSWERGLYPH);
                 loginToken = Console.ReadLine().Clean(false);
             }
