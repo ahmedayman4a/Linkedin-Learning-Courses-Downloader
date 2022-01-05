@@ -29,7 +29,7 @@ namespace LLCD.DownloaderGUI
 
         public CourseStatus DownloaderStatus { get; set; } = CourseStatus.Running;
 
-        public DownloaderForm(List<Course> courses, DirectoryInfo courseRootDirectory,bool toDownloadExerciseFiles, Font font)
+        public DownloaderForm(List<Course> courses, DirectoryInfo courseRootDirectory,bool toDownloadExerciseFiles)
         {
             _courses = courses;
             _courseRootDirectory = courseRootDirectory;
@@ -37,15 +37,7 @@ namespace LLCD.DownloaderGUI
             _cancellationToken = _cancellationTokenSource.Token;
             InitializeComponent();
             Text = "Downloading Courses";
-            foreach (var control in flowLayoutPanel.Controls)
-            {
-                switch (control)
-                {
-                    case Label lbl:
-                        lbl.Font = font;
-                        break;
-                }
-            }
+            FormHelpers.SetFonts(flowLayoutPanel);
         }
 
         private async void DownloaderForm_Load(object sender, EventArgs e)

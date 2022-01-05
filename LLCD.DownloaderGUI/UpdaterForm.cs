@@ -16,24 +16,13 @@ namespace LLCD.DownloaderGUI
     public partial class UpdaterForm : Form
     {
         private UpdateManager _updateManager;
-        public bool isUpdated { get; set; }
-        public UpdaterForm(string message ,UpdateManager updateManager, Font font)
+        public bool IsUpdated { get; set; }
+        public UpdaterForm(string message ,UpdateManager updateManager)
         {
             _updateManager = updateManager;
             InitializeComponent();
             lblMessage.Text = message;
-            foreach (var control in flowLayoutPanel.Controls)
-            {
-                switch (control)
-                {
-                    case Label lbl:
-                        lbl.Font = font;
-                        break;
-                    case Button btn:
-                        btn.Font = font;
-                        break;
-                }
-            }
+            FormHelpers.SetFonts(flowLayoutPanel);
         }
 
         private async void btnYes_Click(object sender, EventArgs e)
@@ -47,14 +36,14 @@ namespace LLCD.DownloaderGUI
             var updateResult = await _updateManager.UpdateApp();
             Log.Information($"Download complete. App will restart into version {updateResult.Version} after backing up config file.");
             Config.Backup();
-            isUpdated = true;
+            IsUpdated = true;
             Close();
         }
 
         private void btnNo_Click(object sender, EventArgs e)
         {
             Log.Information("Update declined by user.");
-            isUpdated = false;
+            IsUpdated = false;
             Close();
         }
     }
