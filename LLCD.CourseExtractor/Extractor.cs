@@ -19,18 +19,21 @@ namespace LLCD.CourseExtractor
     {
         public delegate void LinksExtractionEventHandler();
         private readonly Quality _quality;
+        private readonly int _delay;
         private string _courseUrl;
         private string _courseSlug;
         private HttpClient _client;
         private CookieContainer _cookieContainer;
         private string _linkedinHomeRaw;
         private bool _isTokenChecked = false;
+
         public string EnterpriseProfileHash { get; set; }
 
-        public Extractor(string courseUrl, Quality quality, string token)
+        public Extractor(string courseUrl, Quality quality, string token, int delay = 0)
         {
             _courseUrl = courseUrl;
             _quality = quality;
+            _delay = delay;
             _cookieContainer = new CookieContainer();
             _cookieContainer.Add(new Cookie("li_at", token, "/", ".www.linkedin.com"));
             var clienthandler = new HttpClientHandler { UseCookies = true, CookieContainer = _cookieContainer };
@@ -101,6 +104,7 @@ namespace LLCD.CourseExtractor
                     }
                     chapter.Videos[i] = video;
                     progress?.Report(j / totalCount);
+                    await Task.Delay(_delay * 1000);
                 }
             }
             return course;
