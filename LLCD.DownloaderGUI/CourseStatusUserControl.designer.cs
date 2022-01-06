@@ -33,15 +33,15 @@
             // 
             // lblCourseStatus
             // 
-            this.lblCourseStatus.BackColor = System.Drawing.Color.Maroon;
+            this.lblCourseStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(222)))), ((int)(((byte)(220)))));
             this.lblCourseStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCourseStatus.Font = new System.Drawing.Font("Barlow Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCourseStatus.ForeColor = System.Drawing.Color.White;
+            this.lblCourseStatus.Font = new System.Drawing.Font("Quicksand", 14.25F);
+            this.lblCourseStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(14)))), ((int)(((byte)(11)))));
             this.lblCourseStatus.Location = new System.Drawing.Point(0, 0);
             this.lblCourseStatus.Name = "lblCourseStatus";
-            this.lblCourseStatus.Size = new System.Drawing.Size(99, 27);
+            this.lblCourseStatus.Size = new System.Drawing.Size(131, 27);
             this.lblCourseStatus.TabIndex = 1;
-            this.lblCourseStatus.Text = "Not Running";
+            this.lblCourseStatus.Text = "Not running";
             this.lblCourseStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CourseStatusUserControl
@@ -51,7 +51,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.lblCourseStatus);
             this.Name = "CourseStatusUserControl";
-            this.Size = new System.Drawing.Size(99, 27);
+            this.Size = new System.Drawing.Size(131, 27);
             this.ResumeLayout(false);
 
         }
