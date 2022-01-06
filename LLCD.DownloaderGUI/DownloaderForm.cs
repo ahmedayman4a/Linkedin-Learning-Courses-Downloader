@@ -85,7 +85,7 @@ namespace LLCD.DownloaderGUI
                 int i = 1;
                 foreach (var chapter in course.Chapters)
                 {
-                    var chapterDirectory = courseDirectory.CreateSubdirectory($"[{i}] {ToSafeFileName(chapter.Title)}");
+                    var chapterDirectory = courseDirectory.CreateSubdirectory($"{i:D2} - {ToSafeFileName(chapter.Title)}");
                     int j = 1;
                     foreach (var video in chapter.Videos)
                     {
@@ -96,10 +96,10 @@ namespace LLCD.DownloaderGUI
                             lblVideo.Text = video.Title + " - [Chapter " + i + "]";
                             lblCourse.Text = _currentVideoIndex++ + "/" + _videosCount;
 
-                            string videoName = $"[{j}] { ToSafeFileName(video.Title)}.mp4";
+                            string videoName = $"{j:D2} - { ToSafeFileName(video.Title)}.mp4";
                             if (!String.IsNullOrWhiteSpace(video.Transcript))
                             {
-                                string captionName = $"[{j}] { ToSafeFileName(video.Title)}.srt";
+                                string captionName = $"{j:D2} - { ToSafeFileName(video.Title)}.srt";
                                 await SaveSubtitles(Path.Combine(chapterDirectory.FullName, ToSafeFileName(captionName)), video.Transcript);
                             }
                             using (var fileStream = File.Create(Path.Combine(chapterDirectory.FullName, videoName)))

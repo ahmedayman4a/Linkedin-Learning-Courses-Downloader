@@ -55,16 +55,16 @@ namespace LLCD.DownloaderTUI
         {
             try
             {
-                int exerciseFilesCount = course.ExerciseFiles is null ? 0 : course.ExerciseFiles.Count();
+                int exerciseFilesCount = course.ExerciseFiles is null ? 0 : course.ExerciseFiles.Count;
                 using var pbarCourse = new ProgressBar(course.Chapters.ToList().Count + +exerciseFilesCount, "Downloading Course : " + course.Title, optionsCourse);
                 var courseDirectory = courseRootDirectory.CreateSubdirectory(ToSafeFileName(course.Title));
 
-                for (int i = 0; i < course.Chapters.Count(); i++)
+                for (int i = 0; i < course.Chapters.Count; i++)
                 {
                     var chapter = course.Chapters[i];
-                    var chapterDirectory = courseDirectory.CreateSubdirectory($"[{i + 1}] {ToSafeFileName(chapter.Title)}");
+                    var chapterDirectory = courseDirectory.CreateSubdirectory($"{(i + 1):D2} - {ToSafeFileName(chapter.Title)}");
                     using var pbarChapter = pbarCourse.Spawn(chapter.Videos.ToList().Count, $"Downloading Chapter {i + 1} : {chapter.Title}", optionsChapter);
-                    for (int j = 0; j < chapter.Videos.Count(); j++)
+                    for (int j = 0; j < chapter.Videos.Count; j++)
                     {
                         var video = chapter.Videos[j];
                         currentVideo = video.Title;
@@ -75,7 +75,7 @@ namespace LLCD.DownloaderTUI
                     pbarChapter.Message = $"Chapter {i + 1} : {chapter.Title} chapter has been downloaded successfully";
                     pbarCourse.Tick();
                 }
-                if (course.ExerciseFiles != null && course.ExerciseFiles.Count() > 0)
+                if (course.ExerciseFiles != null && course.ExerciseFiles.Count > 0)
                 {
                     foreach (var exerciseFile in course.ExerciseFiles)
                     {
@@ -111,10 +111,10 @@ namespace LLCD.DownloaderTUI
                     using var downloadClient = new WebClient();
                     downloadClient.DownloadProgressChanged += VideoDownloadClient_DownloadProgressChanged;
                     downloadClient.DownloadFileCompleted += VideoDownloadClient_DownloadFileCompleted;
-                    string videoName = $"[{ currentIndex}] { ToSafeFileName(video.Title)}.mp4";
+                    string videoName = $"{currentIndex:D2} - { ToSafeFileName(video.Title)}.mp4";
                     if (!String.IsNullOrWhiteSpace(video.Transcript))
                     {
-                        string captionName = $"[{ currentIndex}] { ToSafeFileName(video.Title)}.srt";
+                        string captionName = $"{currentIndex:D2} - { ToSafeFileName(video.Title)}.srt";
                         File.WriteAllText($"{Path.Combine(chapterDirectory.FullName, ToSafeFileName(captionName))}", video.Transcript);
                     }
                     downloadClient.DownloadFileTaskAsync(new Uri(video.DownloadUrl), Path.Combine(chapterDirectory.FullName, videoName)).Wait();
