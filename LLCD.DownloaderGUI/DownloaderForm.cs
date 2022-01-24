@@ -21,6 +21,7 @@ namespace LLCD.DownloaderGUI
         private List<Course> _courses;
         private DirectoryInfo _courseRootDirectory;
         private readonly bool _toDownloadExerciseFiles;
+        private readonly bool _toDownloadSubtitles;
         private int _videosCount;
         private int _currentVideoIndex = 1;
         private CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
@@ -29,11 +30,12 @@ namespace LLCD.DownloaderGUI
 
         public CourseStatus DownloaderStatus { get; set; } = CourseStatus.Running;
 
-        public DownloaderForm(List<Course> courses, DirectoryInfo courseRootDirectory,bool toDownloadExerciseFiles)
+        public DownloaderForm(List<Course> courses, DirectoryInfo courseRootDirectory,bool toDownloadExerciseFiles,bool toDownloadSubtitles)
         {
             _courses = courses;
             _courseRootDirectory = courseRootDirectory;
             _toDownloadExerciseFiles = toDownloadExerciseFiles;
+            _toDownloadSubtitles = toDownloadSubtitles;
             _cancellationToken = _cancellationTokenSource.Token;
             InitializeComponent();
             Text = "Downloading Courses";
@@ -49,7 +51,7 @@ namespace LLCD.DownloaderGUI
                 lblTotal.Text = $"Downloading Course : {course.Title} [{i + 1}/{_courses.Count}]";
                 if (_cancellationToken.IsCancellationRequested) return;
                 await DownloadCourse(course);
-                progressBarTotal.Value = (i + 1) * 100 / _courses.Count;
+                progressBarTotal.Value = (i + 1) * 100 / _courses.Count; 
             }
             DownloaderStatus = CourseStatus.Finished;
             Close();
@@ -97,7 +99,7 @@ namespace LLCD.DownloaderGUI
                             lblCourse.Text = _currentVideoIndex++ + "/" + _videosCount;
 
                             string videoName = $"{j:D2} - { ToSafeFileName(video.Title)}.mp4";
-                            if (!String.IsNullOrWhiteSpace(video.Transcript))
+                            if (!String.IsNullOrWhiteSpace(video.Transcript) && _toDownloadSubtitles)
                             {
                                 string captionName = $"{j:D2} - { ToSafeFileName(video.Title)}.srt";
                                 await SaveSubtitles(Path.Combine(chapterDirectory.FullName, ToSafeFileName(captionName)), video.Transcript);
