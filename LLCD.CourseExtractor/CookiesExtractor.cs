@@ -10,6 +10,7 @@ using Org.BouncyCastle.Crypto.Engines;
 using Org.BouncyCastle.Crypto.Modes;
 using Org.BouncyCastle.Crypto.Parameters;
 using System.IO;
+using Serilog;
 
 namespace LLCD.CourseExtractor
 {
@@ -58,15 +59,32 @@ namespace LLCD.CourseExtractor
         }
         private List<DBCookie> ReadChromiumCookies(string profilePath)
         {
-            var cookies = new List<DBCookie>();
-
-
-            // Big thanks to https://stackoverflow.com/a/60611673/6481581 for answering how Chrome 80 and up changed the way cookies are encrypted.
-            string dbPath = Path.Combine(profilePath, @"Default\Cookies");
             string encKey = File.ReadAllText(Path.Combine(profilePath, "Local State"));
             encKey = JObject.Parse(encKey)["os_crypt"]["encrypted_key"].ToString();
             var decodedKey = ProtectedData.Unprotect(Convert.FromBase64String(encKey).Skip(5).ToArray(), null, DataProtectionScope.LocalMachine);
 
+            // Big thanks to https://stackoverflow.com/a/60611673/6481581 for answering how Chrome 80 and up changed the way cookies are encrypted.
+
+            List<DBCookie> cookies;
+            try
+            {
+                string dbPath = Path.Combine(profilePath, @"Default\Network\Cookies");
+                cookies = GetChromeCookiesFromDB(dbPath, decodedKey);
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Error(ex, @"Cookies not found at ""Default\Network\Cookies"". Trying ""Default\Cookies""");
+                string dbPath = Path.Combine(profilePath, @"Default\Cookies");
+                cookies = GetChromeCookiesFromDB(dbPath, decodedKey);
+            }
+
+
+            return cookies;
+        }
+
+        private List<DBCookie> GetChromeCookiesFromDB(string dbPath, byte[] decodedKey)
+        {
+            var cookies = new List<DBCookie>();
             var connectionString = "Data Source=" + dbPath + ";pooling=false";
 
             using (var conn = new SQLiteConnection(connectionString))
@@ -93,7 +111,6 @@ namespace LLCD.CourseExtractor
             }
             return cookies;
         }
-
 
         private string DecryptWithKey(byte[] message, byte[] key, int nonSecretPayloadLength)
         {
