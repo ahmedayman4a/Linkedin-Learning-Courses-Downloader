@@ -80,7 +80,7 @@
             this.progressBarVideo.Location = new System.Drawing.Point(13, 41);
             this.progressBarVideo.MarqueeAnimationSpeed = 30;
             this.progressBarVideo.Name = "progressBarVideo";
-            this.progressBarVideo.Size = new System.Drawing.Size(582, 32);
+            this.progressBarVideo.Size = new System.Drawing.Size(578, 32);
             this.progressBarVideo.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBarVideo.TabIndex = 6;
             // 
@@ -123,7 +123,7 @@
             this.lblPercentage.AutoSize = true;
             this.lblPercentage.Font = new System.Drawing.Font("Quicksand", 14.25F);
             this.lblPercentage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(210)))), ((int)(((byte)(214)))));
-            this.lblPercentage.Location = new System.Drawing.Point(598, 45);
+            this.lblPercentage.Location = new System.Drawing.Point(594, 45);
             this.lblPercentage.Margin = new System.Windows.Forms.Padding(0, 7, 0, 0);
             this.lblPercentage.Name = "lblPercentage";
             this.lblPercentage.Size = new System.Drawing.Size(38, 28);
