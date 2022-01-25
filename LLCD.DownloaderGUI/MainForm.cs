@@ -52,7 +52,7 @@ namespace LLCD.DownloaderGUI
             Quality quality = (Quality)cmboxQuality.SelectedIndex;
             foreach (var courseUrl in txtCourseUrls.Text.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries))
             {
-                extractors.Add(new Extractor(courseUrl.Trim(), quality, txtToken.Text.Trim()));
+                extractors.Add(new Extractor(courseUrl.Trim(), quality, txtToken.Text.Trim(),(int)numericUpDownDelay.Value));
             }
             UC_CourseExtractorStatus.Status = CourseStatus.Starting;
             Log.Information("Validating Input");
