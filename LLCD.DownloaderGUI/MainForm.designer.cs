@@ -369,6 +369,7 @@
             this.numericUpDownDelay.Size = new System.Drawing.Size(65, 31);
             this.numericUpDownDelay.TabIndex = 16;
             this.numericUpDownDelay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDownDelay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numericUpDownDelay_KeyPress);
             // 
             // checkBoxExerciseFiles
             // 
