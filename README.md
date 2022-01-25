@@ -32,7 +32,7 @@ Just run the Setup file. A shortcut will be added to your desktop and start menu
 Open a terminal in the directory of the LinkedIn Learning Courses Downloader program then type :
 
 ```bash
-  chmod 777 ./LyndaCoursesDownloader
+  chmod 777 ./Linkedin Learning Courses Downloader
 ```
 
   
@@ -40,7 +40,7 @@ Open a terminal in the directory of the LinkedIn Learning Courses Downloader pro
 and to run the program type:
 
 ```bash
-  ./LyndaCoursesDownloader
+  ./Linkedin Learning Courses Downloader
 ```
 
 ## Getting the LinkedIn Learning login token cookie
