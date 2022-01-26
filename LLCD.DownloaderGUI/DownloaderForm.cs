@@ -21,6 +21,7 @@ namespace LLCD.DownloaderGUI
         private List<Course> _courses;
         private DirectoryInfo _courseRootDirectory;
         private readonly bool _toDownloadExerciseFiles;
+        private readonly bool _toDownloadSubtitles;
         private int _videosCount;
         private int _currentVideoIndex = 1;
         private CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
@@ -29,23 +30,16 @@ namespace LLCD.DownloaderGUI
 
         public CourseStatus DownloaderStatus { get; set; } = CourseStatus.Running;
 
-        public DownloaderForm(List<Course> courses, DirectoryInfo courseRootDirectory,bool toDownloadExerciseFiles, Font font)
+        public DownloaderForm(List<Course> courses, DirectoryInfo courseRootDirectory,bool toDownloadExerciseFiles,bool toDownloadSubtitles)
         {
             _courses = courses;
             _courseRootDirectory = courseRootDirectory;
             _toDownloadExerciseFiles = toDownloadExerciseFiles;
+            _toDownloadSubtitles = toDownloadSubtitles;
             _cancellationToken = _cancellationTokenSource.Token;
             InitializeComponent();
             Text = "Downloading Courses";
-            foreach (var control in flowLayoutPanel.Controls)
-            {
-                switch (control)
-                {
-                    case Label lbl:
-                        lbl.Font = font;
-                        break;
-                }
-            }
+            FormHelpers.SetFonts(flowLayoutPanel);
         }
 
         private async void DownloaderForm_Load(object sender, EventArgs e)
@@ -57,7 +51,7 @@ namespace LLCD.DownloaderGUI
                 lblTotal.Text = $"Downloading Course : {course.Title} [{i + 1}/{_courses.Count}]";
                 if (_cancellationToken.IsCancellationRequested) return;
                 await DownloadCourse(course);
-                progressBarTotal.Value = (i + 1) * 100 / _courses.Count;
+                progressBarTotal.Value = (i + 1) * 100 / _courses.Count; 
             }
             DownloaderStatus = CourseStatus.Finished;
             Close();
@@ -93,7 +87,7 @@ namespace LLCD.DownloaderGUI
                 int i = 1;
                 foreach (var chapter in course.Chapters)
                 {
-                    var chapterDirectory = courseDirectory.CreateSubdirectory($"[{i}] {ToSafeFileName(chapter.Title)}");
+                    var chapterDirectory = courseDirectory.CreateSubdirectory($"{i:D2} - {ToSafeFileName(chapter.Title)}");
                     int j = 1;
                     foreach (var video in chapter.Videos)
                     {
@@ -104,10 +98,10 @@ namespace LLCD.DownloaderGUI
                             lblVideo.Text = video.Title + " - [Chapter " + i + "]";
                             lblCourse.Text = _currentVideoIndex++ + "/" + _videosCount;
 
-                            string videoName = $"[{j}] { ToSafeFileName(video.Title)}.mp4";
-                            if (!String.IsNullOrWhiteSpace(video.Transcript))
+                            string videoName = $"{j:D2} - { ToSafeFileName(video.Title)}.mp4";
+                            if (!String.IsNullOrWhiteSpace(video.Transcript) && _toDownloadSubtitles)
                             {
-                                string captionName = $"[{j}] { ToSafeFileName(video.Title)}.srt";
+                                string captionName = $"{j:D2} - { ToSafeFileName(video.Title)}.srt";
                                 await SaveSubtitles(Path.Combine(chapterDirectory.FullName, ToSafeFileName(captionName)), video.Transcript);
                             }
                             using (var fileStream = File.Create(Path.Combine(chapterDirectory.FullName, videoName)))

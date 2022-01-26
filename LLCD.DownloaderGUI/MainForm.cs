@@ -19,17 +19,17 @@ namespace LLCD.DownloaderGUI
 {
     public partial class MainForm : Form
     {
-        private Font _font;
-        private readonly PrivateFontCollection _fontCollection = new PrivateFontCollection();
+        private Control[] _exceptionControls;
         public MainForm()
         {
             InitializeComponent();
             lblCurrentExtractionOperation.Text = "Waiting for input from user";
             UC_CourseExtractorStatus.Status = CourseStatus.NotRunning;
-            UC_CourseDownloaderStatus.Status = CourseStatus.NotRunning;
+            UCCourseDownloaderStatus.Status = CourseStatus.NotRunning;
             cmboxQuality.SelectedIndex = 0;
             cmboxBrowser.SelectedIndex = 0;
             Focus();
+            _exceptionControls = new Control[] { panelStatus };
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
@@ -40,7 +40,8 @@ namespace LLCD.DownloaderGUI
 
         private async void btnDownload_Click(object sender, EventArgs e)
         {
-            UC_CourseDownloaderStatus.Status = CourseStatus.NotRunning;
+            FormHelpers.SetLoadingStatus(true, panelBody, this, _exceptionControls, false);
+            UCCourseDownloaderStatus.Status = CourseStatus.NotRunning;
             UC_CourseExtractorStatus.Status = CourseStatus.NotRunning;
             progressBarExtractor.Value = 0;
             progressBarCourses.Value = 0;
@@ -51,7 +52,7 @@ namespace LLCD.DownloaderGUI
             Quality quality = (Quality)cmboxQuality.SelectedIndex;
             foreach (var courseUrl in txtCourseUrls.Text.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries))
             {
-                extractors.Add(new Extractor(courseUrl.Trim(), quality, txtToken.Text.Trim()));
+                extractors.Add(new Extractor(courseUrl.Trim(), quality, txtToken.Text.Trim(),(int)numericUpDownDelay.Value));
             }
             UC_CourseExtractorStatus.Status = CourseStatus.Starting;
             Log.Information("Validating Input");
@@ -62,11 +63,11 @@ namespace LLCD.DownloaderGUI
                 UC_CourseExtractorStatus.Status = CourseStatus.NotRunning;
                 lblCurrentExtractionOperation.Text = "Please recheck your input";
                 Log.Information("Input Invalid");
+                FormHelpers.SetLoadingStatus(false, panelBody, this, _exceptionControls, false);
                 return;
             }
             Log.Information("Input Valid");
-            UC_CourseDownloaderStatus.Status = CourseStatus.NotRunning;
-            EnableControls(false);
+            UCCourseDownloaderStatus.Status = CourseStatus.NotRunning;
             try
             {
                 await ExtractAndDownloadAsync(extractors);
@@ -78,18 +79,19 @@ namespace LLCD.DownloaderGUI
                 Log.Error(ex, "Unknown error occured. Courses : " + courses);
                 UC_CourseExtractorStatus.Status = CourseStatus.Failed;
                 lblCurrentExtractionOperation.Text = "Course Extraction Failed";
-                lblCurrentCourse.Text = "...";
                 progressBarCourses.Value = 0;
             }
-
-            EnableControls(true);
+            finally
+            {
+                FormHelpers.SetLoadingStatus(false, panelBody, this, _exceptionControls, false);
+            }
         }
         private void IncrementlblCurrentCourse()
         {
             Regex patternlblCurrentCourse = new Regex(@"Extracting Courses \((?<currentCourse>\d+)\/(?<totalCourses>\d+)\)");
-            int currentCourse = int.Parse(patternlblCurrentCourse.Match(lblCurrentCourse.Text).Groups["currentCourse"].Value);
-            int totalCourses = int.Parse(patternlblCurrentCourse.Match(lblCurrentCourse.Text).Groups["totalCourses"].Value);
-            lblCurrentCourse.Text = $"Extracting Courses ({currentCourse + 1}/{totalCourses})";
+            int currentCourse = int.Parse(patternlblCurrentCourse.Match(lblCurrentExtractionOperation.Text).Groups["currentCourse"].Value);
+            int totalCourses = int.Parse(patternlblCurrentCourse.Match(lblCurrentExtractionOperation.Text).Groups["totalCourses"].Value);
+            lblCurrentExtractionOperation.Text = $"Extracting Courses ({currentCourse + 1}/{totalCourses})";
             progressBarCourses.PerformStep();
         }
         private async Task<bool> IsInputValid(List<Extractor> extractors)
@@ -146,9 +148,9 @@ namespace LLCD.DownloaderGUI
         }
         private async Task ExtractAndDownloadAsync(List<Extractor> extractors)
         {
-            lblCurrentCourse.Text = $"Extracting Courses (1/{extractors.Count})";
             progressBarCourses.Step = 100 / extractors.Count;
             await SaveConfig();
+            lblCurrentExtractionOperation.Text = $"Extracting Courses (1/{extractors.Count})";
             var courses = new List<Course>();
             foreach (var extractor in extractors)
             {
@@ -161,12 +163,11 @@ namespace LLCD.DownloaderGUI
 
             progressBarCourses.Value = progressBarCourses.Maximum;
             progressBarExtractor.Value = progressBarExtractor.Maximum;
-            lblCurrentCourse.Text = "Courses Extracted Successfully";
-            lblCurrentExtractionOperation.Text = $"Extracted Courses({extractors.Count}/{extractors.Count})";
+            lblCurrentExtractionOperation.Text = "Courses Extracted Successfully";
             UC_CourseExtractorStatus.Status = CourseStatus.Finished;
 
-            var downloaderForm = new DownloaderForm(courses, new DirectoryInfo(txtCourseDirectory.Text), checkBoxExerciseFiles.Checked, _font);
-            UC_CourseDownloaderStatus.Status = CourseStatus.Running;
+            var downloaderForm = new DownloaderForm(courses, new DirectoryInfo(txtCourseDirectory.Text), checkBoxExerciseFiles.Checked,checkBoxSubtitles.Checked);
+            UCCourseDownloaderStatus.Status = CourseStatus.Running;
             try
             {
                 downloaderForm.ShowDialog();
@@ -175,33 +176,36 @@ namespace LLCD.DownloaderGUI
             {
                 MessageBox.Show($"A fatal error occured while downloading the course.\nCheck the logs for more info", "Unknown Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Log.Error(ex, "An fatal error occured while downloading the course");
-                UC_CourseDownloaderStatus.Status = CourseStatus.Failed;
+                UCCourseDownloaderStatus.Status = CourseStatus.Failed;
                 lblCurrentExtractionOperation.Text = "Course Download Failed";
                 return;
             }
 
             if (downloaderForm.DownloaderStatus == CourseStatus.Finished)
             {
-                UC_CourseDownloaderStatus.Status = CourseStatus.Finished;
+                UCCourseDownloaderStatus.Status = CourseStatus.Finished;
                 MessageBox.Show("Course Downloaded Successfully :)", "Hooray", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 lblCurrentExtractionOperation.Text = "Course Downloaded Successfully";
             }
             else
             {
-                UC_CourseDownloaderStatus.Status = CourseStatus.Failed;
+                UCCourseDownloaderStatus.Status = CourseStatus.Failed;
                 lblCurrentExtractionOperation.Text = "Course Download Failed";
             }
         }
 
         private async Task<Course> ExtractCourse(Extractor extractor)
         {
-            lblCurrentExtractionOperation.Text = $"Extracting Course Download Links...";
             UC_CourseExtractorStatus.Status = CourseStatus.Running;
 
             Course course;
             try
             {
-                var progress = new Progress<float>(progressPercent => UpdateUI(() => progressBarExtractor.Value = (int)(progressPercent * 100)));
+                var progress = new Progress<float>(progressPercent =>
+                    {
+                        int progressValue = (int)(progressPercent * 100);
+                        UpdateUI(() => progressBarExtractor.Value = progressValue == 100 ? 0 : progressValue);
+                    });
                 course = await extractor.GetCourse(progress);
             }
             catch (Exception ex)
@@ -209,10 +213,9 @@ namespace LLCD.DownloaderGUI
                 MessageBox.Show(ex.Message, "Course Extraction Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 string courses = String.Join(" -- ", txtCourseUrls.Text.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries));
                 Log.Error(ex, "Course Extraction Failed" + courses);
-                EnableControls(true);
+                FormHelpers.SetLoadingStatus(false, panelBody, this, _exceptionControls, false);
                 UC_CourseExtractorStatus.Status = CourseStatus.Failed;
-                lblCurrentExtractionOperation.Text = "Course Extraction Failed";
-                lblCurrentCourse.Text = "...";
+                lblCurrentExtractionOperation.Text = "Courses Extraction Failed";
                 progressBarCourses.Value = 0;
                 progressBarExtractor.Value = 0;
                 return null;
@@ -224,28 +227,46 @@ namespace LLCD.DownloaderGUI
 
         private void UpdateUI(Action updateAction)
         {
-            Invoke(updateAction);
+            if (IsHandleCreated)
+            {
+                if (InvokeRequired)
+                {
+                    Invoke(updateAction);
+                }
+                else
+                {
+                    updateAction();
+                }
+            }
+            else
+            {
+                Log.Error("Window handle not created. Can't UpdateUI");
+            }
         }
         private T GetFromUI<T>(Func<object> getterAction)
         {
-            return (T)Invoke(getterAction);
+            if (IsHandleCreated)
+            {
+                if (InvokeRequired)
+                {
+                    return (T)Invoke(getterAction);
+                }
+                else
+                {
+                    return (T)getterAction();
+                }
+            }
+            else
+            {
+                Log.Error("Window handle not created. Can't GetFromUI");
+                return default;
+            }
         }
-        private void EnableControls(bool isEnabled)
-        {
-            txtCourseDirectory.Enabled = isEnabled;
-            txtCourseUrls.Enabled = isEnabled;
-            txtToken.Enabled = isEnabled;
-            cmboxQuality.Enabled = isEnabled;
-            btnDownload.Enabled = isEnabled;
-            btnBrowse.Enabled = isEnabled;
-            btnExtractToken.Enabled = isEnabled;
-            checkBoxExerciseFiles.Enabled = isEnabled;
-            cmboxBrowser.Enabled = isEnabled;
-        }
+
 
         private async Task SaveConfig()
         {
-            UpdateUI(() => lblCurrentExtractionOperation.Text = "Saving config file");
+            lblCurrentExtractionOperation.Text = "Saving config file";
             Config config = new Config
             {
                 AuthenticationToken = txtToken.Text,
@@ -258,7 +279,7 @@ namespace LLCD.DownloaderGUI
             catch (Exception)
             {
                 MessageBox.Show("There was a problem with the course directory you entered.\nPlease enter another one", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                EnableControls(true);
+                FormHelpers.SetLoadingStatus(false, panelBody, this, _exceptionControls, false);
             }
             try
             {
@@ -267,7 +288,7 @@ namespace LLCD.DownloaderGUI
             catch (Exception ex)
             {
                 MessageBox.Show("An error occured while trying to save config", "Failed to solve", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                EnableControls(true);
+                FormHelpers.SetLoadingStatus(false, panelBody, this, _exceptionControls, false);
                 Log.Error(ex, "An error occured while trying to save config");
             }
 
@@ -294,9 +315,9 @@ namespace LLCD.DownloaderGUI
                             .AppendLine("If you choose to update, the app will automatically restart after the update.")
                             .AppendLine($"Would you like to update?")
                             .ToString();
-                        UpdaterForm updaterForm = new UpdaterForm(message, updateManager, _font);
+                        UpdaterForm updaterForm = new UpdaterForm(message, updateManager);
                         UpdateUI(() => updaterForm.ShowDialog());
-                        restartApp = updaterForm.isUpdated;
+                        restartApp = updaterForm.IsUpdated;
                     }
                     else
                     {
@@ -317,43 +338,14 @@ namespace LLCD.DownloaderGUI
 
         private async void MainForm_Load(object sender, EventArgs e)
         {
-            _fontCollection.AddFontFile("./fonts/Barlow.ttf");
-            _fontCollection.AddFontFile("./fonts/SegoeUI.ttf");
-            var fontBarlow16 = new Font(_fontCollection.Families[0], 16);
-            _font = fontBarlow16;
-            var fontBarlow20 = new Font(_fontCollection.Families[0], 20);
-            var fontBarlow12 = new Font(_fontCollection.Families[0], 12);
-            var fontBarlow14 = new Font(_fontCollection.Families[0], 14);
-            var fontSegoeUI12 = new Font(_fontCollection.Families[1], 12);
-            foreach (var control in panel.Controls)
+            foreach (Control control in this.Controls)
             {
-                switch (control)
-                {
-                    case Label lbl:
-                        lbl.Font = fontBarlow16;
-                        break;
-                    case Button btn:
-                        btn.Font = fontBarlow16;
-                        break;
-                    case TextBox txt:
-                        txt.Font = fontSegoeUI12;
-                        break;
-                    case ComboBox cmbox:
-                        cmbox.Font = fontBarlow12;
-                        break;
-                    case UserControl uc:
-                        (uc.Controls[0] as Label).Font = fontBarlow16;
-                        break;
-                    case CheckBox chbox:
-                        chbox.Font = fontBarlow16;
-                        break;
-                }
+                FormHelpers.SetFonts(control);
             }
-            btnBrowse.Font = fontBarlow12;
-            cmboxBrowser.Font = fontBarlow14;
-            btnExtractToken.Font = fontBarlow14;
-            lblCurrentExtractionOperation.Font = fontBarlow20;
-            lblCurrentCourse.Font = fontBarlow20;
+
+            btnBrowse.Font = new Font(FormHelpers.QuicksandFontFamilySemiBold, 12, FontStyle.Bold);
+            txtCourseUrls.Font = new Font(FormHelpers.QuicksandFontFamilyRegular, 12);
+
             if (File.Exists("./Config.json"))
             {
                 try
@@ -403,6 +395,33 @@ namespace LLCD.DownloaderGUI
                 txtToken.Text = token;
             }
 
+        }
+
+        private void checkBoxDelay_CheckedChanged(object sender, EventArgs e)
+        {
+            CoupleDelay();
+        }
+
+        private void CoupleDelay()
+        {
+            if (checkBoxDelay.Checked)
+            {
+                numericUpDownDelay.Enabled = true;
+                numericUpDownDelay.Value = 2;
+            }
+            else
+            {
+                numericUpDownDelay.Enabled = false;
+                numericUpDownDelay.Value = 0;
+            }
+        }
+
+        private void numericUpDownDelay_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar < 48 || e.KeyChar > 57)
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdaterForm));
             this.lblMessage = new System.Windows.Forms.Label();
-            this.btnYes = new System.Windows.Forms.Button();
             this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnYes = new System.Windows.Forms.Button();
             this.btnNo = new System.Windows.Forms.Button();
             this.gifLoading = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel.SuspendLayout();
@@ -42,30 +41,14 @@
             // 
             this.lblMessage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblMessage.AutoSize = true;
-            this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.Font = new System.Drawing.Font("Quicksand", 14.25F);
             this.lblMessage.Location = new System.Drawing.Point(3, 0);
+            this.lblMessage.Margin = new System.Windows.Forms.Padding(3, 0, 3, 5);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(211, 200);
+            this.lblMessage.Size = new System.Drawing.Size(200, 224);
             this.lblMessage.TabIndex = 1;
             this.lblMessage.Text = "App is 2 versions behind.\r\nIf you choose to update, the app will automatically re" +
     "start after the update.\r\nWould you like to update?";
-            // 
-            // btnYes
-            // 
-            this.btnYes.BackColor = System.Drawing.Color.DarkGreen;
-            this.btnYes.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnYes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnYes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
-            this.btnYes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnYes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnYes.ForeColor = System.Drawing.Color.White;
-            this.btnYes.Location = new System.Drawing.Point(3, 203);
-            this.btnYes.Name = "btnYes";
-            this.btnYes.Size = new System.Drawing.Size(107, 40);
-            this.btnYes.TabIndex = 4;
-            this.btnYes.Text = "Yes";
-            this.btnYes.UseVisualStyleBackColor = false;
-            this.btnYes.Click += new System.EventHandler(this.btnYes_Click);
             // 
             // flowLayoutPanel
             // 
@@ -79,31 +62,44 @@
             this.flowLayoutPanel.MaximumSize = new System.Drawing.Size(230, 1000);
             this.flowLayoutPanel.MinimumSize = new System.Drawing.Size(230, 50);
             this.flowLayoutPanel.Name = "flowLayoutPanel";
-            this.flowLayoutPanel.Size = new System.Drawing.Size(230, 326);
+            this.flowLayoutPanel.Size = new System.Drawing.Size(230, 355);
             this.flowLayoutPanel.TabIndex = 5;
+            // 
+            // btnYes
+            // 
+            this.btnYes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
+            this.btnYes.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnYes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnYes.Font = new System.Drawing.Font("Quicksand Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYes.ForeColor = System.Drawing.Color.Black;
+            this.btnYes.Location = new System.Drawing.Point(3, 232);
+            this.btnYes.Name = "btnYes";
+            this.btnYes.Size = new System.Drawing.Size(107, 40);
+            this.btnYes.TabIndex = 19;
+            this.btnYes.Text = "Yes";
+            this.btnYes.UseVisualStyleBackColor = false;
+            this.btnYes.Click += new System.EventHandler(this.btnYes_Click);
             // 
             // btnNo
             // 
-            this.btnNo.BackColor = System.Drawing.Color.Maroon;
-            this.btnNo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnNo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnNo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.btnNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(102)))), ((int)(((byte)(121)))));
+            this.btnNo.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNo.ForeColor = System.Drawing.Color.White;
-            this.btnNo.Location = new System.Drawing.Point(116, 203);
+            this.btnNo.Font = new System.Drawing.Font("Quicksand Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNo.ForeColor = System.Drawing.Color.Black;
+            this.btnNo.Location = new System.Drawing.Point(116, 232);
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(107, 40);
-            this.btnNo.TabIndex = 4;
+            this.btnNo.TabIndex = 20;
             this.btnNo.Text = "No";
             this.btnNo.UseVisualStyleBackColor = false;
             this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 
             // gifLoading
             // 
-            this.gifLoading.ErrorImage = global::LLCD.DownloaderGUI.Properties.Resources.Loading;
             this.gifLoading.Image = global::LLCD.DownloaderGUI.Properties.Resources.Loading;
-            this.gifLoading.Location = new System.Drawing.Point(3, 249);
+            this.gifLoading.InitialImage = global::LLCD.DownloaderGUI.Properties.Resources.Loading;
+            this.gifLoading.Location = new System.Drawing.Point(3, 278);
             this.gifLoading.Name = "gifLoading";
             this.gifLoading.Size = new System.Drawing.Size(224, 74);
             this.gifLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -117,12 +113,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(248, 277);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.ClientSize = new System.Drawing.Size(248, 296);
             this.Controls.Add(this.flowLayoutPanel);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(264, 1000);
             this.MinimumSize = new System.Drawing.Size(264, 50);
             this.Name = "UpdaterForm";
@@ -139,9 +134,9 @@
         #endregion
 
         private System.Windows.Forms.Label lblMessage;
-        private System.Windows.Forms.Button btnYes;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel;
-        private System.Windows.Forms.Button btnNo;
         private System.Windows.Forms.PictureBox gifLoading;
+        private System.Windows.Forms.Button btnYes;
+        private System.Windows.Forms.Button btnNo;
     }
 }

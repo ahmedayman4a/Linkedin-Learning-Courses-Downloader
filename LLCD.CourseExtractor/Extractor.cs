@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using LLCD.CourseContent;
 using Microsoft.CSharp;
 using Newtonsoft.Json;
+using Serilog;
 
 namespace LLCD.CourseExtractor
 {
@@ -19,18 +20,21 @@ namespace LLCD.CourseExtractor
     {
         public delegate void LinksExtractionEventHandler();
         private readonly Quality _quality;
+        private readonly int _delay;
         private string _courseUrl;
         private string _courseSlug;
         private HttpClient _client;
         private CookieContainer _cookieContainer;
         private string _linkedinHomeRaw;
         private bool _isTokenChecked = false;
+
         public string EnterpriseProfileHash { get; set; }
 
-        public Extractor(string courseUrl, Quality quality, string token)
+        public Extractor(string courseUrl, Quality quality, string token, int delay = 0)
         {
             _courseUrl = courseUrl;
             _quality = quality;
+            _delay = delay;
             _cookieContainer = new CookieContainer();
             _cookieContainer.Add(new Cookie("li_at", token, "/", ".www.linkedin.com"));
             var clienthandler = new HttpClientHandler { UseCookies = true, CookieContainer = _cookieContainer };
@@ -80,7 +84,25 @@ namespace LLCD.CourseExtractor
             }
             var courseResponse = await _client.GetAsync($"https://www.linkedin.com/learning-api/detailedCourses?courseSlug={_courseSlug}&fields=chapters,title,exerciseFiles&addParagraphsToTranscript=true&q=slugs");
             var courseResponseText = await courseResponse.Content.ReadAsStringAsync();
-            var course = Course.FromJson(courseResponseText);
+
+            Course course;
+            try
+            {
+                course = Course.FromJson(courseResponseText);
+            }
+            catch (Exception ex)
+            {
+                if (courseResponseText.Contains("CSRF check failed"))
+                {
+                    throw new ArgumentException("Token is expired. Please use a new one.", ex);
+                }
+                else
+                {
+                    Log.Error("Course Deserialization failed. \nResponse text : " + courseResponseText);
+                    throw;
+                }
+            }
+
             course.Slug = _courseSlug;
             float j = 1;
             float totalCount = course.Chapters.SelectMany(c => c.Videos).Count();
@@ -92,7 +114,15 @@ namespace LLCD.CourseExtractor
                     string slug = video.Slug;
                     var videoResponse = await _client.GetAsync($"https://www.linkedin.com/learning-api/detailedCourses?courseSlug={_courseSlug}&resolution=_{_quality.ToHeight()}&q=slugs&fields=selectedVideo&videoSlug={video.Slug}");
                     var videoResponseText = await videoResponse.Content.ReadAsStringAsync();
-                    video = Video.FromJson(videoResponseText);
+                    try
+                    {
+                        video = Video.FromJson(videoResponseText);
+                    }
+                    catch (Exception)
+                    {
+                        Log.Error("Video Deserialization failed. \nResponse text : " + videoResponseText);
+                        throw;
+                    }
                     video.Slug = slug;
                     if (String.IsNullOrWhiteSpace(video.DownloadUrl))
                     {
@@ -101,6 +131,7 @@ namespace LLCD.CourseExtractor
                     }
                     chapter.Videos[i] = video;
                     progress?.Report(j / totalCount);
+                    await Task.Delay(_delay * 1000);
                 }
             }
             return course;

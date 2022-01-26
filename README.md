@@ -6,14 +6,14 @@
 
 ## Features
 
-* Simple and easy to use GUI for windows
+* Simple and easy to use GUI for Windows
 * Download in the video quality you like (720p,  540p or 360p)
-* Download Exercise files automatically
+* Download Exercise files and subtitles automatically
 * Download multiple courses at a time
-* Automatically extract LinkedIn Learning login token from Chrome, Firefox or Microsoft Edge
+* Automatically import LinkedIn Learning login token from Chrome, Firefox or Microsoft Edge
 * Automatically detect the *enterpriseProfileHash* or the  *x-li-identity header* so all organization and library accounts should work
 
-![Downloader Screenshot](https://raw.githubusercontent.com/ahmedayman4a/Linkedin-Learning-Courses-Downloader/main/LLCD.DownloaderGUI/img/LinkedInDownloaderScreenshot.png)
+![Downloader Screenshot](https://raw.githubusercontent.com/ahmedayman4a/Linkedin-Learning-Courses-Downloader/d82584942ed880733edc9445910b7d457c19bb7f/LLCD.DownloaderGUI/img/Linkedin-Learning-Downloader-Screenshot.png)
 
 ## Easy install
 Just go to the [releases section](https://github.com/ahmedayman4a/Linkedin-Learning-Courses-Downloader/releases), download the version that suits your platform and make sure you follow the requirements.
@@ -32,7 +32,7 @@ Just run the Setup file. A shortcut will be added to your desktop and start menu
 Open a terminal in the directory of the LinkedIn Learning Courses Downloader program then type :
 
 ```bash
-  chmod 777 ./LyndaCoursesDownloader
+  chmod 777 ./Linkedin Learning Courses Downloader
 ```
 
   
@@ -40,7 +40,7 @@ Open a terminal in the directory of the LinkedIn Learning Courses Downloader pro
 and to run the program type:
 
 ```bash
-  ./LyndaCoursesDownloader
+  ./Linkedin Learning Courses Downloader
 ```
 
 ## Getting the LinkedIn Learning login token cookie
