@@ -27,6 +27,7 @@ namespace LLCD.CourseExtractor
         private CookieContainer _cookieContainer;
         private string _linkedinHomeRaw;
         private bool _isTokenChecked = false;
+        private static Random _random = new Random();
 
         public string EnterpriseProfileHash { get; set; }
 
@@ -108,31 +109,42 @@ namespace LLCD.CourseExtractor
             float totalCount = course.Chapters.SelectMany(c => c.Videos).Count();
             foreach (var chapter in course.Chapters)
             {
+               
                 for (int i = 0; i < chapter.Videos.Count(); i++, j++)
                 {
-                    var video = chapter.Videos[i];
-                    string slug = video.Slug;
-                    var videoResponse = await _client.GetAsync($"https://www.linkedin.com/learning-api/detailedCourses?courseSlug={_courseSlug}&resolution=_{_quality.ToHeight()}&q=slugs&fields=selectedVideo&videoSlug={video.Slug}");
-                    var videoResponseText = await videoResponse.Content.ReadAsStringAsync();
-                    try
+                    await Retry.Do(async () => 
                     {
-                        video = Video.FromJson(videoResponseText);
-                    }
-                    catch (Exception)
-                    {
-                        Log.Error("Video Deserialization failed. \nResponse text : " + videoResponseText);
-                        throw;
-                    }
-                    video.Slug = slug;
-                    if (String.IsNullOrWhiteSpace(video.DownloadUrl))
-                    {
-                        var cookies = _cookieContainer.GetCookies(new Uri("https://www.linkedin.com/learning-api"));
-                        throw new ArgumentException("Failed to extract a course video. The provided token is probably invalid");
-                    }
-                    chapter.Videos[i] = video;
-                    progress?.Report(j / totalCount);
-                    await Task.Delay(_delay * 1000);
-                }
+                        var video = chapter.Videos[i];
+                        string slug = video.Slug;
+                        var videoResponse = await _client.GetAsync($"https://www.linkedin.com/learning-api/detailedCourses?courseSlug={_courseSlug}&resolution=_{_quality.ToHeight()}&q=slugs&fields=selectedVideo&videoSlug={video.Slug}");
+                        var videoResponseText = await videoResponse.Content.ReadAsStringAsync();
+
+                        try
+                        {
+                            video = Video.FromJson(videoResponseText);
+                        }
+                        catch (Exception)
+                        {
+                            Log.Error("Video Deserialization failed. \nResponse text : " + videoResponseText);
+                            throw;
+                        }
+                        video.Slug = slug;
+                        if (String.IsNullOrWhiteSpace(video.DownloadUrl))
+                        {
+                            var cookies = _cookieContainer.GetCookies(new Uri("https://www.linkedin.com/learning-api"));
+                            Log.Error($"Failed to extract a course video.Request Uri : {videoResponse.RequestMessage.RequestUri}\nResponseMessage : {videoResponse.StatusCode} - {videoResponse.ReasonPhrase}\nResponseText : {videoResponseText}");
+                            throw new ArgumentException("Failed to extract a course video. The provided token is probably invalid");
+                        }
+                        chapter.Videos[i] = video;
+                        progress?.Report(j / totalCount);
+                        double randomDelay = _delay + _random.NextDouble();
+                        randomDelay -=  _random.NextDouble();
+                        var delay = TimeSpan.FromMilliseconds(randomDelay * 1000);
+                        await Task.Delay(delay);
+                    },
+                    exceptionMessage: "Error occured while getting video inside chapter for loop",
+                    retries: 3);
+            }
             }
             return course;
         }
@@ -144,6 +156,11 @@ namespace LLCD.CourseExtractor
             {
                 var response = await _client.GetAsync("https://www.linkedin.com/learning");
                 _linkedinHomeRaw = await response.Content.ReadAsStringAsync();
+                if (!response.IsSuccessStatusCode)
+                {
+                    Log.Error("Home page GET request content : \n" + response.Content);
+                    throw new Exception("Failed to get home page. Error " + response.StatusCode);
+                }
                 _linkedinHomeRaw = WebUtility.HtmlDecode(_linkedinHomeRaw);
             }
 
@@ -152,7 +169,15 @@ namespace LLCD.CourseExtractor
                 return false;
             }
             var cookies = _cookieContainer.GetCookies(new Uri("https://www.linkedin.com/learning"));
+            if (cookies is null)
+            {
+                throw new Exception("No cookies are found for home page.");
+            }
             var jsession = cookies["JSESSIONID"].Value;
+            if (jsession is null)
+            {
+                throw new Exception("JSESSIONID cookie can't be null.");
+            }
             _client.DefaultRequestHeaders.Add("Csrf-Token", jsession);
             _isTokenChecked = true;
             return true;
