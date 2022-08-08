@@ -19,33 +19,7 @@ namespace LLCD.CourseExtractor.Tests
         private const string INVALID_FIREFOX_TOKEN = "QEGAGQBAAAAAAVW6BkPg4R_VgAAR3VybjpsaTplbnRlcnByaXNlUHJvZmlsZToodXJuOmxpOmVudGVycHJpc2VBY2NvdW50OjEwNDk0MjIxMCwxMjY5MzU4NjgpvFufSjdKltNIvqBCEfUtk_v1dKyDW1v4v4T-ULf5HfsBuTtkjYwXKhAq4tzlv77b0TAKjaEB9KG88zz46-O34O-ymauMqZ_C8mWvdKTctBXPEPM0";
         private const string VALID_EnterpriseProfileHash = "";
 
-        [TestMethod]
-        [TestCategory("Cookie Extraction")]
-        public void ExtractToken_ValidFirefoxCookieExtraction_ReturnsEqualTokenValue()
-        {
-            Assert.AreEqual(VALID_FIREFOX_TOKEN, Extractor.ExtractToken(Browser.Firefox));
-        }
-
-        [TestMethod]
-        [TestCategory("Cookie Extraction")]
-        public void ExtractToken_InvalidFirefoxCookieExtraction_ReturnsNonEqualTokenValue()
-        {
-            Assert.AreNotEqual(INVALID_FIREFOX_TOKEN, Extractor.ExtractToken(Browser.Firefox));
-        }
-
-        [TestMethod]
-        [TestCategory("Cookie Extraction")]
-        public void ExtractToken_ValidChromeCookieExtraction_ReturnsEqualTokenValue()
-        {
-            Assert.AreEqual(VALID_CHROME_TOKEN, Extractor.ExtractToken(Browser.Chrome));
-        }
-
-        [TestMethod]
-        [TestCategory("Cookie Extraction")]
-        public void ExtractToken_InvalidChromeCookieExtraction_ReturnsNonEqualTokenValue()
-        {
-            Assert.AreNotEqual(INVALID_CHROME_TOKEN, Extractor.ExtractToken(Browser.Chrome));
-        }
+        
 
         [TestMethod]
         [TestCategory("Token Validity")]
