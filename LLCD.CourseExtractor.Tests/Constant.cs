@@ -1,13 +1,25 @@
-﻿using System;
+﻿using LLCD.CourseContent;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using LLCD.CourseContent;
 
 namespace LLCD.CourseExtractor.Tests
 {
-    static class CourseObjects
+    public class Constant
     {
-        internal static readonly Course VALIDCOURSE = new Course
+        #region Strings
+
+        public const string ValidChromeToken = "";
+        public const string ValidFirefoxToken = "";
+        public const string ExpiredToken = "";
+        public const string InvalidChromeToken = "QEGAGQBAAAAAAVW6BkPg4R_VgAAR3VybjpsaTplbnRlcnByaXNlUHJvZmlsZToodXJuOmxpOmVudGVycHJpc2VBY2NvdW50OjEwNDk0MjIxMCwxMjY5MzU4NjgpvFufSjdKltNIvqBCEfUtk_v1dKyDW1v4v4T-ULf5HfsBuTtkjYwXKhAq4tzlv77b0TAKjaEB9KG88zz46-O34O-ymauMqZ_C8mWvdKTctBXPEPM0";
+        public const string InvalidFirefoxToken = "QEGAGQBAAAAAAVW6BkPg4R_VgAAR3VybjpsaTplbnRlcnByaXNlUHJvZmlsZToodXJuOmxpOmVudGVycHJpc2VBY2NvdW50OjEwNDk0MjIxMCwxMjY5MzU4NjgpvFufSjdKltNIvqBCEfUtk_v1dKyDW1v4v4T-ULf5HfsBuTtkjYwXKhAq4tzlv77b0TAKjaEB9KG88zz46-O34O-ymauMqZ_C8mWvdKTctBXPEPM0";
+        public const string ValidEnterpriseProfileHash = "";
+
+        #endregion
+
+        #region Objects
+        internal static readonly Course ValidCourse = new Course
         {
             Chapters = new List<Chapter>
             {
@@ -202,8 +214,8 @@ namespace LLCD.CourseExtractor.Tests
                 }
               }
             },
-                      Title = "Learning to Be Assertive",
-                      ExerciseFiles = new List<ExerciseFile>
+            Title = "Learning to Be Assertive",
+            ExerciseFiles = new List<ExerciseFile>
             {
               new ExerciseFile
               {
@@ -211,9 +223,9 @@ namespace LLCD.CourseExtractor.Tests
                 DownloadUrl = "https://files3.lynda.com/secure/courses/175640/exercises/Ex_Files_Assertive.zip?FeAuFkiW5Jr6IliZwFyZTEBFci40dNqRlSJMsuCNIxWeROLgTGxdE8YRnENUviXzxLybIR7YJra4E4C05JvhQz254IEYLDZWuOXnqMISomjU37cmS8OKz0_jbVWqnXsfoffFiYtKNT_-h95D__W_7H3Gh45c"
               }
             },
-                      Slug = "learning-to-be-assertive"
-                  };
-        internal static readonly Course INVALIDCOURSE = new Course
+            Slug = "learning-to-be-assertive"
+        };
+        internal static readonly Course InvalidCourse = new Course
         {
             Chapters = new List<Chapter>
             {
@@ -419,5 +431,6 @@ namespace LLCD.CourseExtractor.Tests
             },
             Slug = "learning-to-be-assertive"
         };
+        #endregion
     }
 }

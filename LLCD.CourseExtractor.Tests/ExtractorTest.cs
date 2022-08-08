@@ -12,20 +12,12 @@ namespace LLCD.CourseExtractor.Tests
     [TestClass]
     public class ExtractorTest
     {
-        private const string VALID_CHROME_TOKEN = "";
-        private const string VALID_FIREFOX_TOKEN = "";
-        private const string EXPIRED_TOKEN = "";
-        private const string INVALID_CHROME_TOKEN = "QEGAGQBAAAAAAVW6BkPg4R_VgAAR3VybjpsaTplbnRlcnByaXNlUHJvZmlsZToodXJuOmxpOmVudGVycHJpc2VBY2NvdW50OjEwNDk0MjIxMCwxMjY5MzU4NjgpvFufSjdKltNIvqBCEfUtk_v1dKyDW1v4v4T-ULf5HfsBuTtkjYwXKhAq4tzlv77b0TAKjaEB9KG88zz46-O34O-ymauMqZ_C8mWvdKTctBXPEPM0";
-        private const string INVALID_FIREFOX_TOKEN = "QEGAGQBAAAAAAVW6BkPg4R_VgAAR3VybjpsaTplbnRlcnByaXNlUHJvZmlsZToodXJuOmxpOmVudGVycHJpc2VBY2NvdW50OjEwNDk0MjIxMCwxMjY5MzU4NjgpvFufSjdKltNIvqBCEfUtk_v1dKyDW1v4v4T-ULf5HfsBuTtkjYwXKhAq4tzlv77b0TAKjaEB9KG88zz46-O34O-ymauMqZ_C8mWvdKTctBXPEPM0";
-        private const string VALID_EnterpriseProfileHash = "";
-
-        
 
         [TestMethod]
         [TestCategory("Token Validity")]
         public async Task ExtractToken_ValidToken_ReturnsTrue()
         {
-            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, VALID_FIREFOX_TOKEN);
+            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, Constant.ValidFirefoxToken);
             Assert.IsTrue(await extractor.HasValidToken());
         }
 
@@ -33,7 +25,7 @@ namespace LLCD.CourseExtractor.Tests
         [TestCategory("Token Validity")]
         public async Task ExtractToken_InvalidToken_ReturnsFalse()
         {
-            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, VALID_FIREFOX_TOKEN);
+            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, Constant.InvalidFirefoxToken);
             Assert.IsFalse(await extractor.HasValidToken());
         }
 
@@ -41,15 +33,15 @@ namespace LLCD.CourseExtractor.Tests
         [TestCategory("Course Extraction")]
         public async Task GetCourse_ValidCourse_ReturnsEqualCourseData()
         {
-            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, VALID_FIREFOX_TOKEN);
+            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, Constant.ValidFirefoxToken);
             var progress = new Progress<float>(progressPercent => ConsoleOutput.Instance.WriteLine((progressPercent * 100).ToString(), OutputLevel.Information));
             var course = await extractor.GetCourse(progress);
             CompareLogic compareLogic = new CompareLogic();
             compareLogic.Config.IgnoreProperty<Video>(x => x.DownloadUrl);
             compareLogic.Config.IgnoreProperty<Video>(x => x.TranscriptLines);
             compareLogic.Config.IgnoreProperty<ExerciseFile>(x => x.DownloadUrl);
-            ComparisonResult comparisonResult = compareLogic.Compare(CourseObjects.VALIDCOURSE, course);
-            Assert.AreEqual(CourseObjects.VALIDCOURSE, course, comparisonResult.DifferencesString);
+            ComparisonResult comparisonResult = compareLogic.Compare(Constant.ValidCourse, course);
+            Assert.AreEqual(Constant.ValidCourse, course, comparisonResult.DifferencesString);
         }
 
         [TestMethod]
@@ -83,7 +75,7 @@ namespace LLCD.CourseExtractor.Tests
             foreach (var link in links)
             {
                 i++;
-                var extractor = new Extractor(link, Quality.Low, VALID_FIREFOX_TOKEN);
+                var extractor = new Extractor(link, Quality.Low, Constant.ValidFirefoxToken);
                 var course = await extractor.GetCourse();
             }
             ConsoleOutput.Instance.WriteLine($"Extracted {i} courses", OutputLevel.Information);
@@ -93,16 +85,16 @@ namespace LLCD.CourseExtractor.Tests
         [TestCategory("Course Extraction")]
         public async Task GetCourse_InValidCourse_ReturnsNonEqualCourseData()
         {
-            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, VALID_FIREFOX_TOKEN);
+            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, Constant.ValidFirefoxToken);
             var course = await extractor.GetCourse();
-            Assert.AreNotEqual(CourseObjects.INVALIDCOURSE, course);
+            Assert.AreNotEqual(Constant.InvalidCourse, course);
         }
 
         [TestMethod]
         [TestCategory("Link Validity")]
         public void HasValidUrl_ValidUrl_ReturnsTrue()
         {
-            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive/welcome?u=104942210", Quality.Low, VALID_FIREFOX_TOKEN);
+            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive/welcome?u=104942210", Quality.Low, Constant.ValidFirefoxToken);
             Assert.IsTrue(extractor.HasValidUrl());
         }
 
@@ -110,16 +102,16 @@ namespace LLCD.CourseExtractor.Tests
         [TestCategory("EnterpriseProfileHash Validity")]
         public async Task GetEnterpriseProfileHash_ValidEnterpriseProfileHash_ReturnsSameValue()
         {
-            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, VALID_FIREFOX_TOKEN);
+            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, Constant.ValidFirefoxToken);
             await extractor.GetCourse();
-            Assert.AreEqual(VALID_EnterpriseProfileHash, extractor.EnterpriseProfileHash);
+            Assert.AreEqual(Constant.ValidEnterpriseProfileHash, extractor.EnterpriseProfileHash);
         }
 
         [TestMethod]
         [TestCategory("EnterpriseProfileHash Validity")]
         public async Task GetEnterpriseProfileHash_InvalidToken_ReturnsNull()
         {
-            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, VALID_FIREFOX_TOKEN);
+            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, Constant.InvalidFirefoxToken);
             await extractor.GetCourse();
             Assert.IsNull(extractor.EnterpriseProfileHash);
         }

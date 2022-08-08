@@ -11,25 +11,25 @@ namespace LLCD.CourseExtractor.Tests
         [TestMethod]
         public void ExtractToken_ValidFirefoxCookieExtraction_ReturnsEqualTokenValue()
         {
-            Assert.AreEqual(VALID_FIREFOX_TOKEN, Extractor.ExtractToken(Browser.Firefox));
+            Assert.AreEqual(Constant.ValidFirefoxToken, Extractor.ExtractToken(Browser.Firefox));
         }
 
         [TestMethod]
         public void ExtractToken_InvalidFirefoxCookieExtraction_ReturnsNonEqualTokenValue()
         {
-            Assert.AreNotEqual(INVALID_FIREFOX_TOKEN, Extractor.ExtractToken(Browser.Firefox));
+            Assert.AreNotEqual(Constant.InvalidFirefoxToken, Extractor.ExtractToken(Browser.Firefox));
         }
 
         [TestMethod]
         public void ExtractToken_ValidChromeCookieExtraction_ReturnsEqualTokenValue()
         {
-            Assert.AreEqual(VALID_CHROME_TOKEN, Extractor.ExtractToken(Browser.Chrome));
+            Assert.AreEqual(Constant.ValidChromeToken, Extractor.ExtractToken(Browser.Chrome));
         }
 
         [TestMethod]
         public void ExtractToken_InvalidChromeCookieExtraction_ReturnsNonEqualTokenValue()
         {
-            Assert.AreNotEqual(INVALID_CHROME_TOKEN, Extractor.ExtractToken(Browser.Chrome));
+            Assert.AreNotEqual(Constant.InvalidChromeToken, Extractor.ExtractToken(Browser.Chrome));
         }
     }
 }
