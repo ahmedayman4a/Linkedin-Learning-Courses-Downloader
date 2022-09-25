@@ -50,15 +50,16 @@ namespace LLCD.DownloaderGUI
             txtToken.Text = txtToken.Text.Trim();
             var extractors = new List<Extractor>();
             Quality quality = (Quality)cmboxQuality.SelectedIndex;
-            foreach (var courseUrl in txtCourseUrls.Text.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries))
+            string[] urls = txtCourseUrls.Text.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+            foreach (var url in urls)
             {
-                extractors.Add(new Extractor(courseUrl.Trim(), quality, txtToken.Text.Trim(),(int)numericUpDownDelay.Value));
+                extractors.Add(new Extractor(url.Trim(), quality, txtToken.Text.Trim(),(int)numericUpDownDelay.Value));
             }
             UC_CourseExtractorStatus.Status = CourseStatus.Starting;
             Log.Information("Validating Input");
             lblCurrentExtractionOperation.Text = "Validating Input";
 
-            if (!await IsInputValid(extractors))
+            if (!await IsInputValid(urls, txtToken.Text))
             {
                 UC_CourseExtractorStatus.Status = CourseStatus.NotRunning;
                 lblCurrentExtractionOperation.Text = "Please recheck your input";
@@ -94,7 +95,7 @@ namespace LLCD.DownloaderGUI
             lblCurrentExtractionOperation.Text = $"Extracting Courses ({currentCourse + 1}/{totalCourses})";
             progressBarCourses.PerformStep();
         }
-        private async Task<bool> IsInputValid(List<Extractor> extractors)
+        private async Task<bool> IsInputValid(string[] urls,string token)
         {
             int numberOfErrors = 0;
             StringBuilder sb = new StringBuilder();
@@ -130,20 +131,16 @@ namespace LLCD.DownloaderGUI
                 MessageBox.Show(sb.ToString(), "Fields can't be empty", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            if (!await extractors[0].HasValidToken())
+            if (!await Validator.IsTokenValid(token))
             {
                 MessageBox.Show("The token you supplied is invalid", "Invalid token", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            foreach (var extractor in extractors)
-            {
-                if (!extractor.HasValidUrl())
+                if (!Validator.AreUrlsValid(urls))
                 {
                     MessageBox.Show("One or more course urls are not valid", "Invalid url", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
-
-            }
             return true;
         }
         private async Task ExtractAndDownloadAsync(List<Extractor> extractors)
@@ -385,7 +382,7 @@ namespace LLCD.DownloaderGUI
 
         private void btnExtractToken_Click(object sender, EventArgs e)
         {
-            string token = Extractor.ExtractToken((Browser)cmboxBrowser.SelectedIndex);
+            string token = TokenExtractor.ExtractToken((Browser)cmboxBrowser.SelectedIndex);
             if (token is null)
             {
                 MessageBox.Show($"No linkedin learning token is found for {cmboxBrowser.SelectedItem.ToString().Replace("From ", "")}.\nPlease make sure that you are logged into linkedin.com/learning on the browser's default profile", "Token not found", MessageBoxButtons.OK, MessageBoxIcon.Warning);

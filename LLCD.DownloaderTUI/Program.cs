@@ -86,7 +86,7 @@ namespace LLCD.DownloaderTUI
             foreach (var courseUrl in Urls)
             {
                 var extractor = new Extractor(courseUrl, (Quality)DownloadQuality, Token, Delay);
-                await ValidateFields(extractor);
+                await ValidateFields();
                 if (!isConfigSaved)
                 {
                     await SaveConfig();
@@ -224,14 +224,14 @@ namespace LLCD.DownloaderTUI
                 DownloadQuality ??= TUI.GetQuality();
             }
 
-            async Task ValidateFields(Extractor extractor)
+            async Task ValidateFields()
             {
                 ValidateUrls();
                 await ValidateToken();
 
                 void ValidateUrls()
                 {
-                    if (!extractor.HasValidUrl())
+                    if (!CourseExtractor.Validator.AreUrlsValid(Urls))
                     {
                         TUI.ShowError("The course url you provided is not a recognized valid Linkedin Learning link");
                         string url = TUI.GetCourseUrl();
@@ -242,7 +242,7 @@ namespace LLCD.DownloaderTUI
 
                 async Task ValidateToken()
                 {
-                    if (!await extractor.HasValidToken())
+                    if (!await CourseExtractor.Validator.IsTokenValid(Token))
                     {
                         TUI.ShowError("The token you provided is not valid");
                         Token = TUI.GetLoginToken();
