@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -65,12 +66,29 @@ namespace LLCD.CourseContent
                                                 .FirstOrDefault();
 
                 string jsonPath = (att != null ? att.PropertyName : prop.Name);
-                JToken token = jo.SelectToken(jsonPath);
-
-                if (token != null && token.Type != JTokenType.Null)
+                if (jsonPath.Contains("*") && typeof(IList).IsAssignableFrom(prop.PropertyType))
                 {
-                    object value = token.ToObject(prop.PropertyType, serializer);
-                    prop.SetValue(targetObj, value, null);
+                    var tokens = jo.SelectTokens(jsonPath);
+                    var values = (IList)Activator.CreateInstance(prop.PropertyType);
+                    foreach (var token in tokens)
+                    {
+                        if (token != null && token.Type != JTokenType.Null)
+                        {
+                            object value = token.ToObject(Helpers.GetCollectionElementType(prop.PropertyType), serializer);
+                            values.Add(value);
+                        }
+                    }
+                    prop.SetValue(targetObj, values, null);
+                }
+                else
+                {
+                    JToken token = jo.SelectToken(jsonPath);
+
+                    if (token != null && token.Type != JTokenType.Null)
+                    {
+                        object value = token.ToObject(Helpers.GetCollectionElementType(prop.PropertyType), serializer);
+                        prop.SetValue(targetObj, value, null);
+                    }
                 }
             }
 
