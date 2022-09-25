@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -6,10 +6,12 @@
     <IsPackable>false</IsPackable>
 
     <Platforms>AnyCPU;x64</Platforms>
+    <UserSecretsId>a2fb6ab0-8fdc-41aa-9961-b44b512e7515</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="CompareNETObjects" Version="4.73.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.1" />
     <PackageReference Include="MSTest.TestFramework" Version="2.1.1" />
