@@ -11,7 +11,7 @@ namespace LLCD.CourseExtractor
     public static class CoursesExtractorsBuilder
     {
 
-        public static async Task<List<Extractor>> BuildExtractors(List<string> urls, Quality quality, string token, int delay = 0)
+        public static async Task<List<Extractor>> BuildExtractors(IEnumerable<string> urls, Quality quality, string token, int delay = 0)
         {
             var extractors = new List<Extractor>();
 
