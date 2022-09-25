@@ -1,0 +1,1213 @@
+{
+    "elements": [{
+        "totalAssessments": 20,
+        "durationInSeconds": 60606,
+        "learningPathStatus": {
+            "cachingKey": "ConsistentListedLearningPathStatus;urn:li:lyndaLearningPath:5a735c55498e9ec2d5060360"
+        },
+        "description": "C# is Microsoft's primary programming language, and is a key skill needed by all developers working with Microsoft tools.  Whether you are new to programming or new to the Microsoft ecosystem, this learning path will give you the foundation you need for developing applications using Visual Studio and other key Microsoft tools.",
+        "bannerV2": {
+            "sourceUnion": {
+                "vectorImage": {
+                    "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0DAQGmr0upvqXe2g",
+                    "artifacts": [{
+                        "width": 1400,
+                        "fileIdentifyingUrlPathSegment": "https://media-exp1.licdn.com/dms/image/C4E0DAQGmr0upvqXe2g/learning-public-banner-crop_300_1400/0/1582672197981?e=1660312800&v=beta&t=rWuUn7-M6epkirGdISj-e0BqBZlSsxS5JD0c-UUSFuQ",
+                        "expiresAt": 1660312800000,
+                        "height": 300
+                    }],
+                    "rootUrl": ""
+                }
+            },
+            "source": {
+                "com.linkedin.common.VectorImage": {
+                    "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0DAQGmr0upvqXe2g",
+                    "artifacts": [{
+                        "width": 1400,
+                        "fileIdentifyingUrlPathSegment": "https://media-exp1.licdn.com/dms/image/C4E0DAQGmr0upvqXe2g/learning-public-banner-crop_300_1400/0/1582672197981?e=1660312800&v=beta&t=rWuUn7-M6epkirGdISj-e0BqBZlSsxS5JD0c-UUSFuQ",
+                        "expiresAt": 1660312800000,
+                        "height": 300
+                    }],
+                    "rootUrl": ""
+                }
+            }
+        },
+        "title": "Become a C# Developer",
+        "sections": [{
+            "title": "Section 1",
+            "durationInSeconds": 60606,
+            "contentDurationInSeconds": 60606,
+            "items": [{
+                "content": {
+                    "com.linkedin.learning.api.ListedCourse": {
+                        "durationInSeconds": 9514,
+                        "like": {
+                            "cachingKey": "ConsistentContentLike;scrubbed_like_object"
+                        },
+                        "difficultyLevel": "BEGINNER",
+                        "viewingStatus": {
+                            "cachingKey": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:3008786",
+                            "videosToBeCompleted": ["urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3043325)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3043324)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3042310)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3043323)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3043322)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3043327)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3043326)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048360)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048362)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048361)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3044281)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046288)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3044285)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046289)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3044284)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3044283)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3044282)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046285)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046286)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046287)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3045258)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3045259)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3042309)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046291)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046292)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046293)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3045260)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046290)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048357)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048356)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048359)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048358)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3045261)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3045262)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3045263)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048355)"]
+                        },
+                        "welcomeVideo": "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3042308)",
+                        "description": "Do you need to learn the essentials of C#? This two-part series shows you through all the basics. In this course, part one of the series, instructor Matt Milner shows you classes, structs, variables, and much more. Matt begins by placing C# in context with .NET, MSIL, and the Base Class Library. He walks you through understanding and working with classes, structs, and records. Then Matt shows you several useful techniques to organize your C# code. He discusses variables in-depth, then dives into how to define, enable, and test enums, as well as how to use nullable types and work with null objects. Matt goes over if, else, and switch statements and covers switch expressions, the is expression, and an introduction to patterns. Plus, he explains several types of patterns and describes how to use guard conditions to further refine your switch case matches.",
+                        "viewerCount": 126,
+                        "shortDescription": "Learn about classes, structs, record, organizing C# code, variables, enums, nullable types, and more.",
+                        "source": "LYNDA",
+                        "title": "C# Essential Training 1: Types and Control Flow",
+                        "locale": {
+                            "country": "US",
+                            "language": "en"
+                        },
+                        "releasedOn": 1643328000000,
+                        "urn": "urn:li:lyndaCourse:3008786",
+                        "lifecycle": "ACTIVE",
+                        "bookmark": {
+                            "cachingKey": "ConsistentBasicBookmark;urn:li:lyndaCourse:3008786"
+                        },
+                        "associatedSkills": [{
+                            "name": "Control Flow",
+                            "urn": "urn:li:skill:56106"
+                        }, {
+                            "name": "C#",
+                            "urn": "urn:li:skill:284",
+                            "mappedCategory": {
+                                "urn": "urn:li:lyndaCategory:1022",
+                                "name": "C#",
+                                "locale": {
+                                    "country": "US",
+                                    "language": "en"
+                                },
+                                "type": "SOFTWARE",
+                                "slug": "c-sharp",
+                                "trackingId": "09AH8h3wSgyDYaBWnHIjWg=="
+                            }
+                        }],
+                        "canAddToProfile": true,
+                        "inactive": false,
+                        "thumbnailV2": {
+                            "sourceUnion": {
+                                "vectorImage": {
+                                    "artifacts": [{
+                                        "width": 256,
+                                        "fileIdentifyingUrlPathSegment": "144_256/0/1643218793462?e=1660312800&v=beta&t=0KClAqUFTW4dcgheWP8LJF_PVEvuJGaqrd_oJlLw9Wg",
+                                        "expiresAt": 1660312800000,
+                                        "height": 144
+                                    }, {
+                                        "width": 512,
+                                        "fileIdentifyingUrlPathSegment": "288_512/0/1643218793462?e=1660312800&v=beta&t=nM_62DvyUuOWuBuXjmhcDqdC1jtOZhJDZLUAvflwPlE",
+                                        "expiresAt": 1660312800000,
+                                        "height": 288
+                                    }, {
+                                        "width": 100,
+                                        "fileIdentifyingUrlPathSegment": "60_100/0/1643218793462?e=1660312800&v=beta&t=4kA1PhpoyvScL8PEMNTvhuXX4xe6keDLph7PGGZCfl8",
+                                        "expiresAt": 1660312800000,
+                                        "height": 60
+                                    }, {
+                                        "width": 432,
+                                        "fileIdentifyingUrlPathSegment": "240_432/0/1643218793462?e=1660312800&v=beta&t=McdfL8cllG988H-hWREaUrMjNhktwmy9FW3xPlN-BkU",
+                                        "expiresAt": 1660312800000,
+                                        "height": 240
+                                    }, {
+                                        "width": 1200,
+                                        "fileIdentifyingUrlPathSegment": "675_1200/0/1643218793462?e=1660312800&v=beta&t=nMN-fppQ5l3Y6PaK2sATxNuCIWbK_X3ynHcU9OCevvA",
+                                        "expiresAt": 1660312800000,
+                                        "height": 675
+                                    }],
+                                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQG56xrUU6obXg/learning-public-crop_"
+                                }
+                            },
+                            "source": {
+                                "com.linkedin.common.VectorImage": {
+                                    "artifacts": [{
+                                        "width": 256,
+                                        "fileIdentifyingUrlPathSegment": "144_256/0/1643218793462?e=1660312800&v=beta&t=0KClAqUFTW4dcgheWP8LJF_PVEvuJGaqrd_oJlLw9Wg",
+                                        "expiresAt": 1660312800000,
+                                        "height": 144
+                                    }, {
+                                        "width": 512,
+                                        "fileIdentifyingUrlPathSegment": "288_512/0/1643218793462?e=1660312800&v=beta&t=nM_62DvyUuOWuBuXjmhcDqdC1jtOZhJDZLUAvflwPlE",
+                                        "expiresAt": 1660312800000,
+                                        "height": 288
+                                    }, {
+                                        "width": 100,
+                                        "fileIdentifyingUrlPathSegment": "60_100/0/1643218793462?e=1660312800&v=beta&t=4kA1PhpoyvScL8PEMNTvhuXX4xe6keDLph7PGGZCfl8",
+                                        "expiresAt": 1660312800000,
+                                        "height": 60
+                                    }, {
+                                        "width": 432,
+                                        "fileIdentifyingUrlPathSegment": "240_432/0/1643218793462?e=1660312800&v=beta&t=McdfL8cllG988H-hWREaUrMjNhktwmy9FW3xPlN-BkU",
+                                        "expiresAt": 1660312800000,
+                                        "height": 240
+                                    }, {
+                                        "width": 1200,
+                                        "fileIdentifyingUrlPathSegment": "675_1200/0/1643218793462?e=1660312800&v=beta&t=nMN-fppQ5l3Y6PaK2sATxNuCIWbK_X3ynHcU9OCevvA",
+                                        "expiresAt": 1660312800000,
+                                        "height": 675
+                                    }],
+                                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQG56xrUU6obXg/learning-public-crop_"
+                                }
+                            }
+                        },
+                        "containsSummativeExam": false,
+                        "suppressUpsell": false,
+                        "slug": "c-sharp-essential-training-1-types-and-control-flow",
+                        "containsPracticeExam": false,
+                        "authors": [{
+                            "lastName": "Milner",
+                            "autoPopulateMentionForCertificateShares": true,
+                            "memberDisplayName": "Matt Milner",
+                            "biography": "Matt Milner is an independent consultant, web developer, and trainer.<br><br>From the early days of the internet, Matt was building websites and databases to help organizations manage their business. Over the years he has built numerous systems using web technologies such as ASP.NET, and integration technologies, including BizTalk Server, WCF, WF, and yes, even MSMQ. Currently Matt splits his time between building applications and teaching other developers about the latest Microsoft technologies, including Azure, Xamarin, and Web API.<br><br>In addition to creating training videos, Matt contributes to the community by speaking at code camps, user groups, and international conferences, including Tech Ed, Dev Days, and DevWeek. Learn more at <a href=\"http://www.m3technologypartners.com\" target=\"_blank\">m3technologypartners.com</a>.",
+                            "encodedProfileId": "AEQAAAC6JSYBb-9t-LxCnumD1ski_dNDNZH5MSM",
+                            "urn": "urn:li:lyndaAuthor:10973304",
+                            "firstName": "Matt",
+                            "influencer": false,
+                            "thumbnailV2": {
+                                "sourceUnion": {
+                                    "vectorImage": {
+                                        "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQFP5-Sj2kapPw",
+                                        "artifacts": [{
+                                            "width": 88,
+                                            "fileIdentifyingUrlPathSegment": "50_88/0/1576188706929?e=1660312800&v=beta&t=513tjwy89fs4mPKG_IgsGX7Xwo9xF2vD_niRQJLZv5g",
+                                            "expiresAt": 1660312800000,
+                                            "height": 50
+                                        }, {
+                                            "width": 200,
+                                            "fileIdentifyingUrlPathSegment": "200_200/0/1576188706951?e=1660312800&v=beta&t=H3pj_FixKLC51XMdYdn_4alqueqdo65QQSeSm-a3djY",
+                                            "expiresAt": 1660312800000,
+                                            "height": 200
+                                        }],
+                                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQFP5-Sj2kapPw/learning-author-crop_"
+                                    }
+                                },
+                                "source": {
+                                    "com.linkedin.common.VectorImage": {
+                                        "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQFP5-Sj2kapPw",
+                                        "artifacts": [{
+                                            "width": 88,
+                                            "fileIdentifyingUrlPathSegment": "50_88/0/1576188706929?e=1660312800&v=beta&t=513tjwy89fs4mPKG_IgsGX7Xwo9xF2vD_niRQJLZv5g",
+                                            "expiresAt": 1660312800000,
+                                            "height": 50
+                                        }, {
+                                            "width": 200,
+                                            "fileIdentifyingUrlPathSegment": "200_200/0/1576188706951?e=1660312800&v=beta&t=H3pj_FixKLC51XMdYdn_4alqueqdo65QQSeSm-a3djY",
+                                            "expiresAt": 1660312800000,
+                                            "height": 200
+                                        }],
+                                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQFP5-Sj2kapPw/learning-author-crop_"
+                                    }
+                                }
+                            },
+                            "publicUrl": "https://www.linkedin.com/in/mattmilner",
+                            "canFollow": false,
+                            "headline": "Independent Consultant, Web Developer, Trainer",
+                            "slug": "matt-milner"
+                        }]
+                    }
+                }
+            }, {
+                "content": {
+                    "com.linkedin.learning.api.ListedCourse": {
+                        "durationInSeconds": 10730,
+                        "like": {
+                            "cachingKey": "ConsistentContentLike;scrubbed_like_object"
+                        },
+                        "difficultyLevel": "BEGINNER",
+                        "viewingStatus": {
+                            "cachingKey": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:3022384",
+                            "videosToBeCompleted": ["urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3053851)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3055831)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3053852)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3056822)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3054808)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3055827)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3053847)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3050833)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3052872)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3051823)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3050832)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3052873)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3052874)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3050831)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3051827)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3051826)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3051825)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3050834)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3051824)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3055829)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3053848)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3055828)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3053849)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3057237)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3057235)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3055830)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3057236)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3053850)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3057233)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3057234)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3057231)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3057232)"]
+                        },
+                        "welcomeVideo": "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3056821)",
+                        "description": "As one of the most popular programming languages, C# continues to make programming easier and more fun with each new version. In this course, instructor Matt Milner digs deeper into essential features of C#, such as generic types, collections, handling exceptions, asynchronous programming with tasks, and more. Matt begins with helping you understand and work with generic types, then moves on to understanding collection types, working with collections, and understanding concurrent collections. He walks you through handling different types of exceptions, including creating custom exceptions. Matt explains threading basics and shows you how to use async and await in the task based programming model. After covering delegates and events, he goes over the case for extension methods, as well as how to write and use an extension method. Plus, Matt discusses the goals of Language Integrated Query (LINQ), how to query collections with LINQ, and how to filter and order your queries.",
+                        "viewerCount": 3,
+                        "shortDescription": "Learn about generics in C#, find out how to work with collections, handle exceptions, use async and await for asynchronous programming, and more.",
+                        "source": "LYNDA",
+                        "title": "C# Essential Training 2: Generics, Collections, and LINQ",
+                        "locale": {
+                            "country": "US",
+                            "language": "en"
+                        },
+                        "releasedOn": 1647820800000,
+                        "urn": "urn:li:lyndaCourse:3022384",
+                        "lifecycle": "ACTIVE",
+                        "bookmark": {
+                            "cachingKey": "ConsistentBasicBookmark;urn:li:lyndaCourse:3022384"
+                        },
+                        "associatedSkills": [{
+                            "name": "C#",
+                            "urn": "urn:li:skill:284",
+                            "mappedCategory": {
+                                "urn": "urn:li:lyndaCategory:1022",
+                                "name": "C#",
+                                "locale": {
+                                    "country": "US",
+                                    "language": "en"
+                                },
+                                "type": "SOFTWARE",
+                                "slug": "c-sharp",
+                                "trackingId": "09AH8h3wSgyDYaBWnHIjWg=="
+                            }
+                        }],
+                        "canAddToProfile": true,
+                        "inactive": false,
+                        "thumbnailV2": {
+                            "sourceUnion": {
+                                "vectorImage": {
+                                    "artifacts": [{
+                                        "width": 256,
+                                        "fileIdentifyingUrlPathSegment": "144_256/0/1647535471105?e=1660312800&v=beta&t=eh5gswL5ZfioDsuNzg4kR96Aj9ySMYX80Bpy_3I07m0",
+                                        "expiresAt": 1660312800000,
+                                        "height": 144
+                                    }, {
+                                        "width": 512,
+                                        "fileIdentifyingUrlPathSegment": "288_512/0/1647535471105?e=1660312800&v=beta&t=sNNQJBFBsjYzjgwBq74uXuWVnHTDEcgydrkZZ8rcjeU",
+                                        "expiresAt": 1660312800000,
+                                        "height": 288
+                                    }, {
+                                        "width": 100,
+                                        "fileIdentifyingUrlPathSegment": "60_100/0/1647535471105?e=1660312800&v=beta&t=QAgpnQc0lsn9pdTFsUM3YTAHO-IIi25jsRBhXREcmD4",
+                                        "expiresAt": 1660312800000,
+                                        "height": 60
+                                    }, {
+                                        "width": 432,
+                                        "fileIdentifyingUrlPathSegment": "240_432/0/1647535471105?e=1660312800&v=beta&t=njcGxz6ZSsO01ms393iw43nfo55OuQdOs_g03p6-_7Y",
+                                        "expiresAt": 1660312800000,
+                                        "height": 240
+                                    }, {
+                                        "width": 1200,
+                                        "fileIdentifyingUrlPathSegment": "675_1200/0/1647535471105?e=1660312800&v=beta&t=E8IcrkS1e88kFb3Ch0ld5JJ3ETzid1B4IbWyLJjfJgw",
+                                        "expiresAt": 1660312800000,
+                                        "height": 675
+                                    }],
+                                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQEHgNQH1dSH4g/learning-public-crop_"
+                                }
+                            },
+                            "source": {
+                                "com.linkedin.common.VectorImage": {
+                                    "artifacts": [{
+                                        "width": 256,
+                                        "fileIdentifyingUrlPathSegment": "144_256/0/1647535471105?e=1660312800&v=beta&t=eh5gswL5ZfioDsuNzg4kR96Aj9ySMYX80Bpy_3I07m0",
+                                        "expiresAt": 1660312800000,
+                                        "height": 144
+                                    }, {
+                                        "width": 512,
+                                        "fileIdentifyingUrlPathSegment": "288_512/0/1647535471105?e=1660312800&v=beta&t=sNNQJBFBsjYzjgwBq74uXuWVnHTDEcgydrkZZ8rcjeU",
+                                        "expiresAt": 1660312800000,
+                                        "height": 288
+                                    }, {
+                                        "width": 100,
+                                        "fileIdentifyingUrlPathSegment": "60_100/0/1647535471105?e=1660312800&v=beta&t=QAgpnQc0lsn9pdTFsUM3YTAHO-IIi25jsRBhXREcmD4",
+                                        "expiresAt": 1660312800000,
+                                        "height": 60
+                                    }, {
+                                        "width": 432,
+                                        "fileIdentifyingUrlPathSegment": "240_432/0/1647535471105?e=1660312800&v=beta&t=njcGxz6ZSsO01ms393iw43nfo55OuQdOs_g03p6-_7Y",
+                                        "expiresAt": 1660312800000,
+                                        "height": 240
+                                    }, {
+                                        "width": 1200,
+                                        "fileIdentifyingUrlPathSegment": "675_1200/0/1647535471105?e=1660312800&v=beta&t=E8IcrkS1e88kFb3Ch0ld5JJ3ETzid1B4IbWyLJjfJgw",
+                                        "expiresAt": 1660312800000,
+                                        "height": 675
+                                    }],
+                                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQEHgNQH1dSH4g/learning-public-crop_"
+                                }
+                            }
+                        },
+                        "containsSummativeExam": false,
+                        "suppressUpsell": false,
+                        "slug": "c-sharp-essential-training-2-generics-collections-and-linq",
+                        "containsPracticeExam": false,
+                        "authors": [{
+                            "lastName": "Milner",
+                            "autoPopulateMentionForCertificateShares": true,
+                            "memberDisplayName": "Matt Milner",
+                            "biography": "Matt Milner is an independent consultant, web developer, and trainer.<br><br>From the early days of the internet, Matt was building websites and databases to help organizations manage their business. Over the years he has built numerous systems using web technologies such as ASP.NET, and integration technologies, including BizTalk Server, WCF, WF, and yes, even MSMQ. Currently Matt splits his time between building applications and teaching other developers about the latest Microsoft technologies, including Azure, Xamarin, and Web API.<br><br>In addition to creating training videos, Matt contributes to the community by speaking at code camps, user groups, and international conferences, including Tech Ed, Dev Days, and DevWeek. Learn more at <a href=\"http://www.m3technologypartners.com\" target=\"_blank\">m3technologypartners.com</a>.",
+                            "encodedProfileId": "AEQAAAC6JSYBb-9t-LxCnumD1ski_dNDNZH5MSM",
+                            "urn": "urn:li:lyndaAuthor:10973304",
+                            "firstName": "Matt",
+                            "influencer": false,
+                            "thumbnailV2": {
+                                "sourceUnion": {
+                                    "vectorImage": {
+                                        "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQFP5-Sj2kapPw",
+                                        "artifacts": [{
+                                            "width": 88,
+                                            "fileIdentifyingUrlPathSegment": "50_88/0/1576188706929?e=1660312800&v=beta&t=513tjwy89fs4mPKG_IgsGX7Xwo9xF2vD_niRQJLZv5g",
+                                            "expiresAt": 1660312800000,
+                                            "height": 50
+                                        }, {
+                                            "width": 200,
+                                            "fileIdentifyingUrlPathSegment": "200_200/0/1576188706951?e=1660312800&v=beta&t=H3pj_FixKLC51XMdYdn_4alqueqdo65QQSeSm-a3djY",
+                                            "expiresAt": 1660312800000,
+                                            "height": 200
+                                        }],
+                                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQFP5-Sj2kapPw/learning-author-crop_"
+                                    }
+                                },
+                                "source": {
+                                    "com.linkedin.common.VectorImage": {
+                                        "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQFP5-Sj2kapPw",
+                                        "artifacts": [{
+                                            "width": 88,
+                                            "fileIdentifyingUrlPathSegment": "50_88/0/1576188706929?e=1660312800&v=beta&t=513tjwy89fs4mPKG_IgsGX7Xwo9xF2vD_niRQJLZv5g",
+                                            "expiresAt": 1660312800000,
+                                            "height": 50
+                                        }, {
+                                            "width": 200,
+                                            "fileIdentifyingUrlPathSegment": "200_200/0/1576188706951?e=1660312800&v=beta&t=H3pj_FixKLC51XMdYdn_4alqueqdo65QQSeSm-a3djY",
+                                            "expiresAt": 1660312800000,
+                                            "height": 200
+                                        }],
+                                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQFP5-Sj2kapPw/learning-author-crop_"
+                                    }
+                                }
+                            },
+                            "publicUrl": "https://www.linkedin.com/in/mattmilner",
+                            "canFollow": false,
+                            "headline": "Independent Consultant, Web Developer, Trainer",
+                            "slug": "matt-milner"
+                        }]
+                    }
+                }
+            }, {
+                "content": {
+                    "com.linkedin.learning.api.ListedCourse": {
+                        "durationInSeconds": 17495,
+                        "like": {
+                            "cachingKey": "ConsistentContentLike;scrubbed_like_object"
+                        },
+                        "difficultyLevel": "INTERMEDIATE",
+                        "viewingStatus": {
+                            "cachingKey": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:765321",
+                            "videosToBeCompleted": ["urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802416)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802417)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802414)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802458)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802415)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802418)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802419)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802453)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802451)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802412)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802456)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802410)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802411)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802427)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802428)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802429)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802461)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802462)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802423)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802467)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802424)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802421)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802465)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802422)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802438)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802439)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802470)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802474)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802475)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802473)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802478)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802479)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802435)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802432)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802477)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802433)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802405)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802449)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802406)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802403)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802447)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802404)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802409)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802407)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802408)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802481)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802482)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802480)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802485)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802441)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802486)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802483)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802484)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802489)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802445)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802487)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802443)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802488)"]
+                        },
+                        "welcomeVideo": "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802398)",
+                        "description": "Successful programmers know more than just how to code. They also know how to think about solving problems. <i>Code Clinic</i> is a series of courses in which our instructors solve the same problems using different programming languages. In each course, instructors provide tips and tricks for working in a particular language and help you grasp why you might want to learn one language over another. Here, Anton Delsink works with C#. Throughout the course, Anton introduces challenges and then provides an overview of his solutions in C#. Challenges include topics such as geolocation, face recognition, and accessing peripherals. Visit other courses in the series to see how to solve the same challenges in languages like C++, JavaScript, PHP, Python, Ruby, Go, and Swift.",
+                        "viewerCount": 4921,
+                        "shortDescription": "Explore solutions to common C# programming challenges—and compare the results with other programming languages—in this installment of the Code Clinic series.",
+                        "source": "LYNDA",
+                        "title": "Code Clinic: C#",
+                        "locale": {
+                            "country": "US",
+                            "language": "en"
+                        },
+                        "releasedOn": 1540944000000,
+                        "urn": "urn:li:lyndaCourse:765321",
+                        "lifecycle": "ACTIVE",
+                        "bookmark": {
+                            "cachingKey": "ConsistentBasicBookmark;urn:li:lyndaCourse:765321"
+                        },
+                        "associatedSkills": [{
+                            "name": "C#",
+                            "urn": "urn:li:skill:284",
+                            "mappedCategory": {
+                                "urn": "urn:li:lyndaCategory:1022",
+                                "name": "C#",
+                                "locale": {
+                                    "country": "US",
+                                    "language": "en"
+                                },
+                                "type": "SOFTWARE",
+                                "slug": "c-sharp",
+                                "trackingId": "09AH8h3wSgyDYaBWnHIjWg=="
+                            }
+                        }],
+                        "canAddToProfile": true,
+                        "inactive": false,
+                        "thumbnailV2": {
+                            "sourceUnion": {
+                                "vectorImage": {
+                                    "artifacts": [{
+                                        "width": 256,
+                                        "fileIdentifyingUrlPathSegment": "144_256/0/1568666900266?e=1660312800&v=beta&t=A76Lv-uEKEKQmG4F_qo-f57NAozw6cA6QQTxB7pT0jw",
+                                        "expiresAt": 1660312800000,
+                                        "height": 144
+                                    }, {
+                                        "width": 512,
+                                        "fileIdentifyingUrlPathSegment": "288_512/0/1568666901372?e=1660312800&v=beta&t=4UmYMzW5fp1FDpJZipPahjA7r7FbJ2jra50tVEM2XdY",
+                                        "expiresAt": 1660312800000,
+                                        "height": 288
+                                    }, {
+                                        "width": 100,
+                                        "fileIdentifyingUrlPathSegment": "60_100/0/1568666901639?e=1660312800&v=beta&t=qN3wE3HKeOSL_xx5GAAQJRG9EfAX3oB9sX1oBHJ12xM",
+                                        "expiresAt": 1660312800000,
+                                        "height": 60
+                                    }, {
+                                        "width": 432,
+                                        "fileIdentifyingUrlPathSegment": "240_432/0/1568666900113?e=1660312800&v=beta&t=pgpJqqjEAwMKZeVBFx4c_vZEKiUl-qXHvpXc83Y3J_U",
+                                        "expiresAt": 1660312800000,
+                                        "height": 240
+                                    }, {
+                                        "width": 1200,
+                                        "fileIdentifyingUrlPathSegment": "675_1200/0/1568666900960?e=1660312800&v=beta&t=YlQfQhy7OCVog7j1PxMo5w4PQh6ManqvNu7mxa0jcJM",
+                                        "expiresAt": 1660312800000,
+                                        "height": 675
+                                    }],
+                                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQGSZEJf9tgtdA/learning-public-crop_"
+                                }
+                            },
+                            "source": {
+                                "com.linkedin.common.VectorImage": {
+                                    "artifacts": [{
+                                        "width": 256,
+                                        "fileIdentifyingUrlPathSegment": "144_256/0/1568666900266?e=1660312800&v=beta&t=A76Lv-uEKEKQmG4F_qo-f57NAozw6cA6QQTxB7pT0jw",
+                                        "expiresAt": 1660312800000,
+                                        "height": 144
+                                    }, {
+                                        "width": 512,
+                                        "fileIdentifyingUrlPathSegment": "288_512/0/1568666901372?e=1660312800&v=beta&t=4UmYMzW5fp1FDpJZipPahjA7r7FbJ2jra50tVEM2XdY",
+                                        "expiresAt": 1660312800000,
+                                        "height": 288
+                                    }, {
+                                        "width": 100,
+                                        "fileIdentifyingUrlPathSegment": "60_100/0/1568666901639?e=1660312800&v=beta&t=qN3wE3HKeOSL_xx5GAAQJRG9EfAX3oB9sX1oBHJ12xM",
+                                        "expiresAt": 1660312800000,
+                                        "height": 60
+                                    }, {
+                                        "width": 432,
+                                        "fileIdentifyingUrlPathSegment": "240_432/0/1568666900113?e=1660312800&v=beta&t=pgpJqqjEAwMKZeVBFx4c_vZEKiUl-qXHvpXc83Y3J_U",
+                                        "expiresAt": 1660312800000,
+                                        "height": 240
+                                    }, {
+                                        "width": 1200,
+                                        "fileIdentifyingUrlPathSegment": "675_1200/0/1568666900960?e=1660312800&v=beta&t=YlQfQhy7OCVog7j1PxMo5w4PQh6ManqvNu7mxa0jcJM",
+                                        "expiresAt": 1660312800000,
+                                        "height": 675
+                                    }],
+                                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQGSZEJf9tgtdA/learning-public-crop_"
+                                }
+                            }
+                        },
+                        "containsSummativeExam": false,
+                        "suppressUpsell": false,
+                        "slug": "code-clinic-c-sharp-2018",
+                        "containsPracticeExam": false,
+                        "authors": [{
+                            "urn": "urn:li:lyndaAuthor:9515027",
+                            "firstName": "Anton",
+                            "lastName": "Delsink",
+                            "autoPopulateMentionForCertificateShares": true,
+                            "influencer": false,
+                            "thumbnailV2": {
+                                "sourceUnion": {
+                                    "vectorImage": {
+                                        "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQF1Z-VWI8S5wQ",
+                                        "artifacts": [{
+                                            "width": 88,
+                                            "fileIdentifyingUrlPathSegment": "50_88/0/1576190999818?e=1660312800&v=beta&t=R4mqYPF81ym-4EBHAUsgDSx-Y3PBavuG2HzBzvanNXA",
+                                            "expiresAt": 1660312800000,
+                                            "height": 50
+                                        }, {
+                                            "width": 200,
+                                            "fileIdentifyingUrlPathSegment": "200_200/0/1576190999841?e=1660312800&v=beta&t=0dTfaiKqBUm_E2mL1912FMV13xt-nmSFlw7suIlcysQ",
+                                            "expiresAt": 1660312800000,
+                                            "height": 200
+                                        }],
+                                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQF1Z-VWI8S5wQ/learning-author-crop_"
+                                    }
+                                },
+                                "source": {
+                                    "com.linkedin.common.VectorImage": {
+                                        "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQF1Z-VWI8S5wQ",
+                                        "artifacts": [{
+                                            "width": 88,
+                                            "fileIdentifyingUrlPathSegment": "50_88/0/1576190999818?e=1660312800&v=beta&t=R4mqYPF81ym-4EBHAUsgDSx-Y3PBavuG2HzBzvanNXA",
+                                            "expiresAt": 1660312800000,
+                                            "height": 50
+                                        }, {
+                                            "width": 200,
+                                            "fileIdentifyingUrlPathSegment": "200_200/0/1576190999841?e=1660312800&v=beta&t=0dTfaiKqBUm_E2mL1912FMV13xt-nmSFlw7suIlcysQ",
+                                            "expiresAt": 1660312800000,
+                                            "height": 200
+                                        }],
+                                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQF1Z-VWI8S5wQ/learning-author-crop_"
+                                    }
+                                }
+                            },
+                            "publicUrl": "https://www.linkedin.com/in/antondelsink",
+                            "canFollow": false,
+                            "biography": "A programmer and teacher at heart, Anton Delsink enjoys working with students and professionals of all levels.<br><br>Learning and teaching have been present throughout his career, which has included working as a full-stack developer, a Microsoft Certified Trainer, a solutions architect, and even in software sales. You may have seen him onstage at events such as Microsoft TechEd or SharePoint Saturday, or met him on his travels—where his camera and laptop are always close at hand.<br><br>Even though C# was love at first sight for Anton, he's never far from a PowerShell script or SQL statement, especially when there's an opportunity for automation. With the advent of public cloud offerings, Anton has immersed himself further in architecture and DevOps, and continues to learn, use, and teach both programming and cloud services.",
+                            "headline": "Programmer, Teacher",
+                            "slug": "anton-delsink"
+                        }]
+                    }
+                }
+            }, {
+                "content": {
+                    "com.linkedin.learning.api.ListedCourse": {
+                        "durationInSeconds": 10550,
+                        "like": {
+                            "cachingKey": "ConsistentContentLike;scrubbed_like_object"
+                        },
+                        "difficultyLevel": "ADVANCED",
+                        "viewingStatus": {
+                            "cachingKey": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:2426542",
+                            "videosToBeCompleted": ["urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3013220)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3013221)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3009685)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3009687)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3009686)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3009689)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3009688)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3007700)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3013217)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3013219)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3010661)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3013218)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3010660)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3008682)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3006681)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3008684)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3006682)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3008683)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3006683)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3004835)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3008686)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3006684)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3004834)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3008685)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3007698)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3004833)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3004832)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3004831)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3007699)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3004830)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3007702)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3007701)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3010659)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3011621)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3011622)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3011623)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3011624)"]
+                        },
+                        "welcomeVideo": "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3007697)",
+                        "description": "Algorithms are one of the fundamental pillars in every software application, and once you understand them, you can create more efficient and maintainable programs. In this course, instructor Kathryn Hodge shows you how to create better C# programs by using efficient algorithms. Kathryn discusses what makes an algorithm effective, as well as how to make informed assumptions about your data to create better algorithms. She focuses on how to create efficient algorithms to work with different types of data, including strings, arrays, linked lists, queues, stacks, hash-based structures, and trees. Many algorithms are built into the C# language, and Kathryn covers how to use these to create your own custom algorithms, so you can work with your data exactly the way you want. She also dives into how to leverage different data structures to create better algorithms in analyzing or manipulating their data.",
+                        "viewerCount": 1931,
+                        "shortDescription": "Learn how to create better C# programs by using efficient algorithms.",
+                        "source": "LYNDA",
+                        "title": "C# Algorithms",
+                        "locale": {
+                            "country": "US",
+                            "language": "en"
+                        },
+                        "releasedOn": 1632700800000,
+                        "urn": "urn:li:lyndaCourse:2426542",
+                        "lifecycle": "ACTIVE",
+                        "bookmark": {
+                            "cachingKey": "ConsistentBasicBookmark;urn:li:lyndaCourse:2426542"
+                        },
+                        "associatedSkills": [{
+                            "name": "C#",
+                            "urn": "urn:li:skill:284",
+                            "mappedCategory": {
+                                "urn": "urn:li:lyndaCategory:1022",
+                                "name": "C#",
+                                "locale": {
+                                    "country": "US",
+                                    "language": "en"
+                                },
+                                "type": "SOFTWARE",
+                                "slug": "c-sharp",
+                                "trackingId": "09AH8h3wSgyDYaBWnHIjWg=="
+                            }
+                        }, {
+                            "name": "Algorithms",
+                            "urn": "urn:li:skill:1070"
+                        }],
+                        "canAddToProfile": true,
+                        "inactive": false,
+                        "thumbnailV2": {
+                            "sourceUnion": {
+                                "vectorImage": {
+                                    "artifacts": [{
+                                        "width": 256,
+                                        "fileIdentifyingUrlPathSegment": "144_256/0/1632415966015?e=1660312800&v=beta&t=RPyEfcGcdEe4dLG-QbQxJs5SOYxUg7Fxp_svBL1DNKs",
+                                        "expiresAt": 1660312800000,
+                                        "height": 144
+                                    }, {
+                                        "width": 512,
+                                        "fileIdentifyingUrlPathSegment": "288_512/0/1632415966015?e=1660312800&v=beta&t=tv4QI4RkOMevf65VYBIMLxHIrnvmQ3aFf6AGy9V7ZYo",
+                                        "expiresAt": 1660312800000,
+                                        "height": 288
+                                    }, {
+                                        "width": 100,
+                                        "fileIdentifyingUrlPathSegment": "60_100/0/1632415966015?e=1660312800&v=beta&t=jeiUfujSSkp7s5Hob5dE8bv3x4erSW5uGKdLrQKytlU",
+                                        "expiresAt": 1660312800000,
+                                        "height": 60
+                                    }, {
+                                        "width": 432,
+                                        "fileIdentifyingUrlPathSegment": "240_432/0/1632415966015?e=1660312800&v=beta&t=PW_kRhb4bu_SayyFrzZZKvuGD877pF6q6i_fA6l1BhE",
+                                        "expiresAt": 1660312800000,
+                                        "height": 240
+                                    }, {
+                                        "width": 1200,
+                                        "fileIdentifyingUrlPathSegment": "675_1200/0/1632415966015?e=1660312800&v=beta&t=JuLT9hGum22lT_xc4vv0tHYS0ya8TnbrKtGI0-LkAyQ",
+                                        "expiresAt": 1660312800000,
+                                        "height": 675
+                                    }],
+                                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQHtWT5vdWicsw/learning-public-crop_"
+                                }
+                            },
+                            "source": {
+                                "com.linkedin.common.VectorImage": {
+                                    "artifacts": [{
+                                        "width": 256,
+                                        "fileIdentifyingUrlPathSegment": "144_256/0/1632415966015?e=1660312800&v=beta&t=RPyEfcGcdEe4dLG-QbQxJs5SOYxUg7Fxp_svBL1DNKs",
+                                        "expiresAt": 1660312800000,
+                                        "height": 144
+                                    }, {
+                                        "width": 512,
+                                        "fileIdentifyingUrlPathSegment": "288_512/0/1632415966015?e=1660312800&v=beta&t=tv4QI4RkOMevf65VYBIMLxHIrnvmQ3aFf6AGy9V7ZYo",
+                                        "expiresAt": 1660312800000,
+                                        "height": 288
+                                    }, {
+                                        "width": 100,
+                                        "fileIdentifyingUrlPathSegment": "60_100/0/1632415966015?e=1660312800&v=beta&t=jeiUfujSSkp7s5Hob5dE8bv3x4erSW5uGKdLrQKytlU",
+                                        "expiresAt": 1660312800000,
+                                        "height": 60
+                                    }, {
+                                        "width": 432,
+                                        "fileIdentifyingUrlPathSegment": "240_432/0/1632415966015?e=1660312800&v=beta&t=PW_kRhb4bu_SayyFrzZZKvuGD877pF6q6i_fA6l1BhE",
+                                        "expiresAt": 1660312800000,
+                                        "height": 240
+                                    }, {
+                                        "width": 1200,
+                                        "fileIdentifyingUrlPathSegment": "675_1200/0/1632415966015?e=1660312800&v=beta&t=JuLT9hGum22lT_xc4vv0tHYS0ya8TnbrKtGI0-LkAyQ",
+                                        "expiresAt": 1660312800000,
+                                        "height": 675
+                                    }],
+                                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQHtWT5vdWicsw/learning-public-crop_"
+                                }
+                            }
+                        },
+                        "containsSummativeExam": false,
+                        "suppressUpsell": false,
+                        "slug": "c-sharp-algorithms",
+                        "containsPracticeExam": false,
+                        "authors": [{
+                            "lastName": "Hodge",
+                            "autoPopulateMentionForCertificateShares": false,
+                            "memberDisplayName": "Kathryn Hodge",
+                            "biography": "Kathryn Hodge works as a software developer at a media company.<br><br>In addition to her work as a developer, Kathryn runs a YouTube channel for people wanting to learn how to code. Before graduating college, she worked for three years as a computer science teaching assistant. She is very interested in the intersection of media, entertainment, and technology, and is focused on creating software that makes an impact.",
+                            "encodedProfileId": "AEQAABM6fMoBinqTGqFglg1H_ftEY-6ElHzGQ3M",
+                            "urn": "urn:li:lyndaAuthor:8553602",
+                            "firstName": "Kathryn",
+                            "influencer": false,
+                            "thumbnailV2": {
+                                "sourceUnion": {
+                                    "vectorImage": {
+                                        "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0DAQH4L2obAXwWVw",
+                                        "artifacts": [{
+                                            "width": 88,
+                                            "fileIdentifyingUrlPathSegment": "50_88/0/1643838084853?e=1660312800&v=beta&t=pP618AhIOinwOxtWpVkYDcu9yUTc9jWNUaYfvFJcllY",
+                                            "expiresAt": 1660312800000,
+                                            "height": 50
+                                        }, {
+                                            "width": 200,
+                                            "fileIdentifyingUrlPathSegment": "200_200/0/1643838084853?e=1660312800&v=beta&t=SKeZEggq1X_iTkyvG7ovg5t_I_s5ZqcCtjT6lKTSUtM",
+                                            "expiresAt": 1660312800000,
+                                            "height": 200
+                                        }],
+                                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQH4L2obAXwWVw/learning-author-crop_"
+                                    }
+                                },
+                                "source": {
+                                    "com.linkedin.common.VectorImage": {
+                                        "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0DAQH4L2obAXwWVw",
+                                        "artifacts": [{
+                                            "width": 88,
+                                            "fileIdentifyingUrlPathSegment": "50_88/0/1643838084853?e=1660312800&v=beta&t=pP618AhIOinwOxtWpVkYDcu9yUTc9jWNUaYfvFJcllY",
+                                            "expiresAt": 1660312800000,
+                                            "height": 50
+                                        }, {
+                                            "width": 200,
+                                            "fileIdentifyingUrlPathSegment": "200_200/0/1643838084853?e=1660312800&v=beta&t=SKeZEggq1X_iTkyvG7ovg5t_I_s5ZqcCtjT6lKTSUtM",
+                                            "expiresAt": 1660312800000,
+                                            "height": 200
+                                        }],
+                                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQH4L2obAXwWVw/learning-author-crop_"
+                                    }
+                                }
+                            },
+                            "publicUrl": "https://www.linkedin.com/in/blondiebytes",
+                            "canFollow": false,
+                            "headline": "Software Developer",
+                            "slug": "kathryn-hodge"
+                        }]
+                    }
+                }
+            }, {
+                "content": {
+                    "com.linkedin.learning.api.ListedCourse": {
+                        "durationInSeconds": 7697,
+                        "like": {
+                            "cachingKey": "ConsistentContentLike;scrubbed_like_object"
+                        },
+                        "difficultyLevel": "INTERMEDIATE",
+                        "viewingStatus": {
+                            "cachingKey": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:2314072",
+                            "videosToBeCompleted": ["urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377310)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372680)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2375651)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372681)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2375650)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2374300)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372682)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372683)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372684)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2374296)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2374298)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377302)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2374297)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377303)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2374299)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377306)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377307)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377304)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2375646)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377305)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372676)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372677)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2375648)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2375647)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372678)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377308)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372679)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377309)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2375649)"]
+                        },
+                        "welcomeVideo": "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377301)",
+                        "description": "Design patterns are an important part of programming. Rather than programming solutions to every issue from scratch, developers can implement these patterns that solve common problems. In this course, instructor Richard Goforth explains the purpose and effective use of key design patterns in C#. Richard begins by discussing why design patterns make sense, what they are, and how they are grouped and categorized. He then provides an overview of the creational, behavioral, and structural Gang of Four design patterns and how they are applied in C# and .NET. Next, he takes a deeper dive into the Iterator, Factory Method, and Adapter patterns, providing hands-on challenges that help you master the application of these patterns in your own code.",
+                        "viewerCount": 5804,
+                        "shortDescription": "Build better code by leveraging design patterns in C#. Learn about the purpose and effective use of design patterns, and discover how to apply Gang of Four patterns in your code.",
+                        "source": "LYNDA",
+                        "title": "C#: Design Patterns Part 1",
+                        "locale": {
+                            "country": "US",
+                            "language": "en"
+                        },
+                        "releasedOn": 1602720000000,
+                        "urn": "urn:li:lyndaCourse:2314072",
+                        "lifecycle": "ACTIVE",
+                        "bookmark": {
+                            "cachingKey": "ConsistentBasicBookmark;urn:li:lyndaCourse:2314072"
+                        },
+                        "associatedSkills": [{
+                            "name": "C#",
+                            "urn": "urn:li:skill:284",
+                            "mappedCategory": {
+                                "urn": "urn:li:lyndaCategory:1022",
+                                "name": "C#",
+                                "locale": {
+                                    "country": "US",
+                                    "language": "en"
+                                },
+                                "type": "SOFTWARE",
+                                "slug": "c-sharp",
+                                "trackingId": "09AH8h3wSgyDYaBWnHIjWg=="
+                            }
+                        }, {
+                            "name": "Software Design Patterns",
+                            "urn": "urn:li:skill:18348"
+                        }],
+                        "canAddToProfile": true,
+                        "inactive": false,
+                        "thumbnailV2": {
+                            "sourceUnion": {
+                                "vectorImage": {
+                                    "artifacts": [{
+                                        "width": 256,
+                                        "fileIdentifyingUrlPathSegment": "144_256/0/1602606441011?e=1660312800&v=beta&t=1dyFanIX6rYcOJl829KwLr3WyKO1tq2TUgaEtM7Wtqk",
+                                        "expiresAt": 1660312800000,
+                                        "height": 144
+                                    }, {
+                                        "width": 512,
+                                        "fileIdentifyingUrlPathSegment": "288_512/0/1602606441011?e=1660312800&v=beta&t=lrC3Yp-wqWLAHUtVS0JTDeLi7jhn1xCix7k19yAmqP8",
+                                        "expiresAt": 1660312800000,
+                                        "height": 288
+                                    }, {
+                                        "width": 100,
+                                        "fileIdentifyingUrlPathSegment": "60_100/0/1602606441011?e=1660312800&v=beta&t=f5-jnMp1WIMzvsFawaUHc0nV8482fLN33dodilEzBTo",
+                                        "expiresAt": 1660312800000,
+                                        "height": 60
+                                    }, {
+                                        "width": 432,
+                                        "fileIdentifyingUrlPathSegment": "240_432/0/1602606441011?e=1660312800&v=beta&t=ZVNjrvNFBzHC_ORBcsVbauQGOoaGqJKe-zNsoomHw9c",
+                                        "expiresAt": 1660312800000,
+                                        "height": 240
+                                    }, {
+                                        "width": 1200,
+                                        "fileIdentifyingUrlPathSegment": "675_1200/0/1602606441011?e=1660312800&v=beta&t=6xRP8Qudus1RgTL3AZxXQdJuOrveVnmcC6PtFT-1ZVk",
+                                        "expiresAt": 1660312800000,
+                                        "height": 675
+                                    }],
+                                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQGABZchVc3mTw/learning-public-crop_"
+                                }
+                            },
+                            "source": {
+                                "com.linkedin.common.VectorImage": {
+                                    "artifacts": [{
+                                        "width": 256,
+                                        "fileIdentifyingUrlPathSegment": "144_256/0/1602606441011?e=1660312800&v=beta&t=1dyFanIX6rYcOJl829KwLr3WyKO1tq2TUgaEtM7Wtqk",
+                                        "expiresAt": 1660312800000,
+                                        "height": 144
+                                    }, {
+                                        "width": 512,
+                                        "fileIdentifyingUrlPathSegment": "288_512/0/1602606441011?e=1660312800&v=beta&t=lrC3Yp-wqWLAHUtVS0JTDeLi7jhn1xCix7k19yAmqP8",
+                                        "expiresAt": 1660312800000,
+                                        "height": 288
+                                    }, {
+                                        "width": 100,
+                                        "fileIdentifyingUrlPathSegment": "60_100/0/1602606441011?e=1660312800&v=beta&t=f5-jnMp1WIMzvsFawaUHc0nV8482fLN33dodilEzBTo",
+                                        "expiresAt": 1660312800000,
+                                        "height": 60
+                                    }, {
+                                        "width": 432,
+                                        "fileIdentifyingUrlPathSegment": "240_432/0/1602606441011?e=1660312800&v=beta&t=ZVNjrvNFBzHC_ORBcsVbauQGOoaGqJKe-zNsoomHw9c",
+                                        "expiresAt": 1660312800000,
+                                        "height": 240
+                                    }, {
+                                        "width": 1200,
+                                        "fileIdentifyingUrlPathSegment": "675_1200/0/1602606441011?e=1660312800&v=beta&t=6xRP8Qudus1RgTL3AZxXQdJuOrveVnmcC6PtFT-1ZVk",
+                                        "expiresAt": 1660312800000,
+                                        "height": 675
+                                    }],
+                                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQGABZchVc3mTw/learning-public-crop_"
+                                }
+                            }
+                        },
+                        "containsSummativeExam": false,
+                        "suppressUpsell": false,
+                        "slug": "c-sharp-design-patterns-part-1-14140825",
+                        "containsPracticeExam": false,
+                        "authors": [{
+                            "lastName": "Goforth",
+                            "autoPopulateMentionForCertificateShares": true,
+                            "memberDisplayName": "Richard Goforth",
+                            "biography": "Richard Goforth is a software architect and consultant, primarily in the Microsoft space.<br><br>He's experienced in C# development with Xamarin, Windows Presentation Foundation, and ASP.NET, and has also developed some small applications with Java and JavaScript.<br><br>\n\nA solutions architect at CEI, Richard enjoys coming up with solid efficient solutions that are clean and maintainable, with a focus on the whole software development life cycle. Problem solving for optimal solutions in software design drives him when writing code or courses.",
+                            "encodedProfileId": "AEQAAAcQQOkBdNlQlPvQYXfoPQKfsX_V2SjZkjk",
+                            "urn": "urn:li:lyndaAuthor:7537438",
+                            "firstName": "Richard",
+                            "influencer": false,
+                            "thumbnailV2": {
+                                "sourceUnion": {
+                                    "vectorImage": {
+                                        "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQEl0-nbExZ-Xg",
+                                        "artifacts": [{
+                                            "width": 88,
+                                            "fileIdentifyingUrlPathSegment": "50_88/0/1576190528954?e=1660312800&v=beta&t=NowcY1IzItzRgARCyS3h_iffLUk3IGnYytz2mPzBJwk",
+                                            "expiresAt": 1660312800000,
+                                            "height": 50
+                                        }, {
+                                            "width": 200,
+                                            "fileIdentifyingUrlPathSegment": "200_200/0/1576190528977?e=1660312800&v=beta&t=laVpjzuNoS8d5XedOchsK3wK596YfQ9ktVhi5NkM-iA",
+                                            "expiresAt": 1660312800000,
+                                            "height": 200
+                                        }],
+                                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQEl0-nbExZ-Xg/learning-author-crop_"
+                                    }
+                                },
+                                "source": {
+                                    "com.linkedin.common.VectorImage": {
+                                        "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQEl0-nbExZ-Xg",
+                                        "artifacts": [{
+                                            "width": 88,
+                                            "fileIdentifyingUrlPathSegment": "50_88/0/1576190528954?e=1660312800&v=beta&t=NowcY1IzItzRgARCyS3h_iffLUk3IGnYytz2mPzBJwk",
+                                            "expiresAt": 1660312800000,
+                                            "height": 50
+                                        }, {
+                                            "width": 200,
+                                            "fileIdentifyingUrlPathSegment": "200_200/0/1576190528977?e=1660312800&v=beta&t=laVpjzuNoS8d5XedOchsK3wK596YfQ9ktVhi5NkM-iA",
+                                            "expiresAt": 1660312800000,
+                                            "height": 200
+                                        }],
+                                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQEl0-nbExZ-Xg/learning-author-crop_"
+                                    }
+                                }
+                            },
+                            "publicUrl": "https://www.linkedin.com/in/richgoforth",
+                            "canFollow": false,
+                            "headline": "Software Architect and Consultant",
+                            "slug": "richard-goforth"
+                        }]
+                    }
+                }
+            }, {
+                "content": {
+                    "com.linkedin.learning.api.ListedCourse": {
+                        "durationInSeconds": 4620,
+                        "like": {
+                            "cachingKey": "ConsistentContentLike;scrubbed_like_object"
+                        },
+                        "difficultyLevel": "BEGINNER",
+                        "viewingStatus": {
+                            "cachingKey": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:604242",
+                            "videosToBeCompleted": ["urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634161)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634162)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634140)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634160)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634165)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634143)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634166)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634141)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634164)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634142)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634169)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634147)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634148)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634145)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634168)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634146)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634172)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634150)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634173)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634151)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634170)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634171)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634132)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634155)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634152)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634130)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634153)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634131)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634136)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634159)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634137)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634156)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634134)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634157)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634135)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634138)"]
+                        },
+                        "welcomeVideo": "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634126)",
+                        "description": "Applying for C# programming jobs? Find out what questions to expect in your C# or .NET developer interview and how to answer them to demonstrate mastery of key concepts. Reynald Adolphe explores the kinds of questions you can anticipate in a typical interview, including common topics on C# syntax, object-oriented programming, .NET and ASP.NET, databases, and design patterns. Plus, learn how to paint your technical background in a positive light, field bad or irrelevant interview questions, and handle incoming offers. Reynald offers candid answers and career advice based on his years of experience working as a C# developer.",
+                        "viewerCount": 9403,
+                        "shortDescription": "Applying for C# programming jobs? Find out what questions to expect in your C# or .NET developer interview and how to answer them to demonstrate mastery of key concepts.",
+                        "source": "LYNDA",
+                        "title": "Nail Your C# Developer Interview",
+                        "locale": {
+                            "country": "US",
+                            "language": "en"
+                        },
+                        "releasedOn": 1500336000000,
+                        "urn": "urn:li:lyndaCourse:604242",
+                        "lifecycle": "ACTIVE",
+                        "bookmark": {
+                            "cachingKey": "ConsistentBasicBookmark;urn:li:lyndaCourse:604242"
+                        },
+                        "associatedSkills": [{
+                            "name": "Interviewing",
+                            "urn": "urn:li:skill:542",
+                            "mappedCategory": {
+                                "urn": "urn:li:lyndaCategory:750190",
+                                "name": "Hiring and Interviewing",
+                                "locale": {
+                                    "country": "US",
+                                    "language": "en"
+                                },
+                                "type": "TOPIC",
+                                "slug": "hiring-and-interviewing",
+                                "trackingId": "Vh3E2zxYRKOBNyktLMl3ag=="
+                            }
+                        }, {
+                            "name": "C#",
+                            "urn": "urn:li:skill:284",
+                            "mappedCategory": {
+                                "urn": "urn:li:lyndaCategory:1022",
+                                "name": "C#",
+                                "locale": {
+                                    "country": "US",
+                                    "language": "en"
+                                },
+                                "type": "SOFTWARE",
+                                "slug": "c-sharp",
+                                "trackingId": "09AH8h3wSgyDYaBWnHIjWg=="
+                            }
+                        }],
+                        "canAddToProfile": true,
+                        "inactive": false,
+                        "thumbnailV2": {
+                            "sourceUnion": {
+                                "vectorImage": {
+                                    "artifacts": [{
+                                        "width": 256,
+                                        "fileIdentifyingUrlPathSegment": "144_256/0/1568667142993?e=1660312800&v=beta&t=Xok4QiqHujBZQx9QddAalseXOUofGRg386go58weHMU",
+                                        "expiresAt": 1660312800000,
+                                        "height": 144
+                                    }, {
+                                        "width": 512,
+                                        "fileIdentifyingUrlPathSegment": "288_512/0/1568667143694?e=1660312800&v=beta&t=9MSLLT_1hS5U-blyFgyXwf-t23ZEIL_sGBstEyt0oZE",
+                                        "expiresAt": 1660312800000,
+                                        "height": 288
+                                    }, {
+                                        "width": 100,
+                                        "fileIdentifyingUrlPathSegment": "60_100/0/1568667143962?e=1660312800&v=beta&t=giI97-KcnsnXUltz1b-Mpc5BuA7-H4b69J_rEW8MLgg",
+                                        "expiresAt": 1660312800000,
+                                        "height": 60
+                                    }, {
+                                        "width": 432,
+                                        "fileIdentifyingUrlPathSegment": "240_432/0/1568667142788?e=1660312800&v=beta&t=TGmkZPKYkyn63SqbSEvvgdY3cTZTsP0MTTpJXBSCMr4",
+                                        "expiresAt": 1660312800000,
+                                        "height": 240
+                                    }, {
+                                        "width": 1200,
+                                        "fileIdentifyingUrlPathSegment": "675_1200/0/1568667143452?e=1660312800&v=beta&t=deDq0-9P8pEkgQT1z7nWNcT9IyTCVT_cAfPg5kPGTpg",
+                                        "expiresAt": 1660312800000,
+                                        "height": 675
+                                    }],
+                                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQGEj9WEyGTpjA/learning-public-crop_"
+                                }
+                            },
+                            "source": {
+                                "com.linkedin.common.VectorImage": {
+                                    "artifacts": [{
+                                        "width": 256,
+                                        "fileIdentifyingUrlPathSegment": "144_256/0/1568667142993?e=1660312800&v=beta&t=Xok4QiqHujBZQx9QddAalseXOUofGRg386go58weHMU",
+                                        "expiresAt": 1660312800000,
+                                        "height": 144
+                                    }, {
+                                        "width": 512,
+                                        "fileIdentifyingUrlPathSegment": "288_512/0/1568667143694?e=1660312800&v=beta&t=9MSLLT_1hS5U-blyFgyXwf-t23ZEIL_sGBstEyt0oZE",
+                                        "expiresAt": 1660312800000,
+                                        "height": 288
+                                    }, {
+                                        "width": 100,
+                                        "fileIdentifyingUrlPathSegment": "60_100/0/1568667143962?e=1660312800&v=beta&t=giI97-KcnsnXUltz1b-Mpc5BuA7-H4b69J_rEW8MLgg",
+                                        "expiresAt": 1660312800000,
+                                        "height": 60
+                                    }, {
+                                        "width": 432,
+                                        "fileIdentifyingUrlPathSegment": "240_432/0/1568667142788?e=1660312800&v=beta&t=TGmkZPKYkyn63SqbSEvvgdY3cTZTsP0MTTpJXBSCMr4",
+                                        "expiresAt": 1660312800000,
+                                        "height": 240
+                                    }, {
+                                        "width": 1200,
+                                        "fileIdentifyingUrlPathSegment": "675_1200/0/1568667143452?e=1660312800&v=beta&t=deDq0-9P8pEkgQT1z7nWNcT9IyTCVT_cAfPg5kPGTpg",
+                                        "expiresAt": 1660312800000,
+                                        "height": 675
+                                    }],
+                                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQGEj9WEyGTpjA/learning-public-crop_"
+                                }
+                            }
+                        },
+                        "containsSummativeExam": false,
+                        "suppressUpsell": false,
+                        "slug": "nail-your-c-sharp-developer-interview",
+                        "containsPracticeExam": false,
+                        "authors": [{
+                            "lastName": "Adolphe",
+                            "autoPopulateMentionForCertificateShares": true,
+                            "memberDisplayName": "Reynald Adolphe",
+                            "biography": "Reynald Adolphe is a technologist and .NET developer specializing in website consulting and development.<br><br>He focuses on user experience, user interface, back-end development, and the languages used to create web applications. He's a speaker and personal technology coach helping programmers build their brand and career to the next level and guiding new-comers to become elite software engineers. Previously, he worked for the Tribune Company in Los Angeles and Accenture in Chicago. Reynald's specialties include C#, Silverlight, ASP.NET, MVC, Razor, LINQ, Java, JavaScript, JQuery, AJAX, HTML5, CSS3, SOAP, Knockout.js, RequireJS, Underscore.js, AmplifyJS, XML, WCF, SQL, SDLC, MSTest, Moq, QUnit, and Bootstrap. Reynald also produces tech events, featuring popular tech speakers, musicians, and comedians. You can learn more about his events/coaching at <a href=\"http://reynaldadolphe.com/\" target=\"_blank\">reynaldadolphe.com</a> and follow him on Twitter <a href=\"https://twitter.com/ReynaldAdolphe?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor\" target=\"_blank\">@reynaldadolphe</a>.",
+                            "encodedProfileId": "AEQAAAPZmvwBrOXkcf-hOaSvyBR7sP-edEAbd1s",
+                            "urn": "urn:li:lyndaAuthor:4738654",
+                            "firstName": "Reynald",
+                            "influencer": false,
+                            "thumbnailV2": {
+                                "sourceUnion": {
+                                    "vectorImage": {
+                                        "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQHmohf7_oSZOQ",
+                                        "artifacts": [{
+                                            "width": 88,
+                                            "fileIdentifyingUrlPathSegment": "50_88/0/1576191174815?e=1660312800&v=beta&t=5hAj6vx0RqufyfQH6YJZGbXax56GV6BNSQGhpsu497s",
+                                            "expiresAt": 1660312800000,
+                                            "height": 50
+                                        }, {
+                                            "width": 200,
+                                            "fileIdentifyingUrlPathSegment": "200_200/0/1576191174844?e=1660312800&v=beta&t=OWJkZP1tjTGDfbw5SYSYyNakrRO3BoFQoL4qlzFrKTQ",
+                                            "expiresAt": 1660312800000,
+                                            "height": 200
+                                        }],
+                                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQHmohf7_oSZOQ/learning-author-crop_"
+                                    }
+                                },
+                                "source": {
+                                    "com.linkedin.common.VectorImage": {
+                                        "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQHmohf7_oSZOQ",
+                                        "artifacts": [{
+                                            "width": 88,
+                                            "fileIdentifyingUrlPathSegment": "50_88/0/1576191174815?e=1660312800&v=beta&t=5hAj6vx0RqufyfQH6YJZGbXax56GV6BNSQGhpsu497s",
+                                            "expiresAt": 1660312800000,
+                                            "height": 50
+                                        }, {
+                                            "width": 200,
+                                            "fileIdentifyingUrlPathSegment": "200_200/0/1576191174844?e=1660312800&v=beta&t=OWJkZP1tjTGDfbw5SYSYyNakrRO3BoFQoL4qlzFrKTQ",
+                                            "expiresAt": 1660312800000,
+                                            "height": 200
+                                        }],
+                                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQHmohf7_oSZOQ/learning-author-crop_"
+                                    }
+                                }
+                            },
+                            "publicUrl": "https://www.linkedin.com/in/reynaldadolphe",
+                            "canFollow": false,
+                            "headline": "Technologist and .NET Developer ",
+                            "slug": "reynald-adolphe"
+                        }]
+                    }
+                }
+            }]
+        }],
+        "urn": "urn:li:lyndaLearningPath:5a735c55498e9ec2d5060360",
+        "bookmark": {
+            "cachingKey": "ConsistentBasicBookmark;urn:li:lyndaLearningPath:5a735c55498e9ec2d5060360"
+        },
+        "associatedSkills": [{
+            "name": "C#",
+            "urn": "urn:li:skill:284",
+            "mappedCategory": {
+                "urn": "urn:li:lyndaCategory:1022",
+                "name": "C#",
+                "locale": {
+                    "country": "US",
+                    "language": "en"
+                },
+                "type": "SOFTWARE",
+                "slug": "c-sharp",
+                "trackingId": "fr/v5ADRQPuBb62+pqnZOg=="
+            }
+        }, {
+            "name": "Visual Studio",
+            "urn": "urn:li:skill:1311",
+            "mappedCategory": {
+                "urn": "urn:li:lyndaCategory:439",
+                "name": "Visual Studio",
+                "locale": {
+                    "country": "US",
+                    "language": "en"
+                },
+                "type": "SOFTWARE",
+                "slug": "visual-studio",
+                "trackingId": "JHzw/YlvShiXlHeKqjHETQ=="
+            }
+        }],
+        "library": {
+            "urn": "urn:li:lyndaCategory:7162",
+            "name": "Business",
+            "slug": "business"
+        },
+        "enterprisePath": false,
+        "thumbnailV2": {
+            "sourceUnion": {
+                "vectorImage": {
+                    "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0DAQHRTQJYf1Q35w",
+                    "artifacts": [{
+                        "width": 256,
+                        "fileIdentifyingUrlPathSegment": "144_256/0/1582672201142?e=1660312800&v=beta&t=oQ0KM9u2Ov6t8cKeWk-f3q3KE_J1NhAt_sfpKCRpSU0",
+                        "expiresAt": 1660312800000,
+                        "height": 144
+                    }, {
+                        "width": 512,
+                        "fileIdentifyingUrlPathSegment": "288_512/0/1582672201328?e=1660312800&v=beta&t=zqSNw0xS0ARy6qWJzwVNUAH35gByvsqfievmOuY5NYg",
+                        "expiresAt": 1660312800000,
+                        "height": 288
+                    }, {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "60_100/0/1582672201484?e=1660312800&v=beta&t=VFxP6dS7wE4SiGHkajnvJ6Bq2GonEk5zY74peCgfImU",
+                        "expiresAt": 1660312800000,
+                        "height": 60
+                    }, {
+                        "width": 432,
+                        "fileIdentifyingUrlPathSegment": "240_432/0/1582672201061?e=1660312800&v=beta&t=pah9kWHP1wBiDYq_Gjp2f6b7h8SQuQzTfm73ucUP9Qo",
+                        "expiresAt": 1660312800000,
+                        "height": 240
+                    }, {
+                        "width": 1001,
+                        "fileIdentifyingUrlPathSegment": "675_1200/0/1582672201222?e=1660312800&v=beta&t=Bq8RYTfAgSlnXSDH8P6rlPcv4ftcix4Lx1MNaKdnlzc",
+                        "expiresAt": 1660312800000,
+                        "height": 563
+                    }],
+                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQHRTQJYf1Q35w/learning-public-crop_"
+                }
+            },
+            "source": {
+                "com.linkedin.common.VectorImage": {
+                    "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0DAQHRTQJYf1Q35w",
+                    "artifacts": [{
+                        "width": 256,
+                        "fileIdentifyingUrlPathSegment": "144_256/0/1582672201142?e=1660312800&v=beta&t=oQ0KM9u2Ov6t8cKeWk-f3q3KE_J1NhAt_sfpKCRpSU0",
+                        "expiresAt": 1660312800000,
+                        "height": 144
+                    }, {
+                        "width": 512,
+                        "fileIdentifyingUrlPathSegment": "288_512/0/1582672201328?e=1660312800&v=beta&t=zqSNw0xS0ARy6qWJzwVNUAH35gByvsqfievmOuY5NYg",
+                        "expiresAt": 1660312800000,
+                        "height": 288
+                    }, {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "60_100/0/1582672201484?e=1660312800&v=beta&t=VFxP6dS7wE4SiGHkajnvJ6Bq2GonEk5zY74peCgfImU",
+                        "expiresAt": 1660312800000,
+                        "height": 60
+                    }, {
+                        "width": 432,
+                        "fileIdentifyingUrlPathSegment": "240_432/0/1582672201061?e=1660312800&v=beta&t=pah9kWHP1wBiDYq_Gjp2f6b7h8SQuQzTfm73ucUP9Qo",
+                        "expiresAt": 1660312800000,
+                        "height": 240
+                    }, {
+                        "width": 1001,
+                        "fileIdentifyingUrlPathSegment": "675_1200/0/1582672201222?e=1660312800&v=beta&t=Bq8RYTfAgSlnXSDH8P6rlPcv4ftcix4Lx1MNaKdnlzc",
+                        "expiresAt": 1660312800000,
+                        "height": 563
+                    }],
+                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQHRTQJYf1Q35w/learning-public-crop_"
+                }
+            }
+        },
+        "tagline": "You'll learn C# development skills with these experts",
+        "totalCourses": 6,
+        "learningOutcomes": ["<strong>Understand</strong> the syntax of C#. ", "<strong>Learn</strong> the key elements of object-oriented programming.  ", "<strong>Master</strong> application development concepts. "],
+        "categories": [{
+            "urn": "urn:li:lyndaCategory:7386",
+            "name": "Programming Languages",
+            "locale": {
+                "country": "US",
+                "language": "en"
+            },
+            "type": "TOPIC",
+            "slug": "programming-languages",
+            "trackingId": "fFkJL2btT8GjkxkhFT2zYg=="
+        }, {
+            "urn": "urn:li:lyndaCategory:7271",
+            "name": "Software Development Tools",
+            "locale": {
+                "country": "US",
+                "language": "en"
+            },
+            "type": "TOPIC",
+            "slug": "software-development-tools",
+            "trackingId": "GHjyN4PKRxiUFt+nOHiuzw=="
+        }, {
+            "urn": "urn:li:lyndaCategory:1022",
+            "name": "C#",
+            "locale": {
+                "country": "US",
+                "language": "en"
+            },
+            "type": "SOFTWARE",
+            "slug": "c-sharp",
+            "trackingId": "/zVmqwgMQFKznqDjPyvFmQ=="
+        }, {
+            "urn": "urn:li:lyndaCategory:574023",
+            "name": "Web Development Tools",
+            "locale": {
+                "country": "US",
+                "language": "en"
+            },
+            "type": "TOPIC",
+            "slug": "web-development-tools",
+            "trackingId": "wB/ZQXxpQqWFS0m8NlwMAw=="
+        }],
+        "bureauOfLaborStatistics": [],
+        "contentDurationInSeconds": 60606,
+        "suppressUpsell": false,
+        "totalContents": 6,
+        "slug": "become-a-c-sharp-developer"
+    }],
+    "paging": {
+        "count": 10,
+        "start": 0,
+        "links": []
+    }
+}

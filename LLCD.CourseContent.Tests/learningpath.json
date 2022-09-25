@@ -1,0 +1,1617 @@
+{
+  "data": {
+    "elements": [
+      {
+        "*bookmark": "ConsistentBasicBookmark;urn:li:lyndaLearningPath:5a735c55498e9ec2d5060360",
+        "totalAssessments": 20,
+        "durationInSeconds": 60638,
+        "description": "C# is Microsoft's primary programming language, and is a key skill needed by all developers working with Microsoft tools.  Whether you are new to programming or new to the Microsoft ecosystem, this learning path will give you the foundation you need for developing applications using Visual Studio and other key Microsoft tools.",
+        "bannerV2": {
+          "source": {
+            "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0DAQGmr0upvqXe2g",
+            "artifacts": [
+              {
+                "width": 1400,
+                "fileIdentifyingUrlPathSegment": "https://media-exp1.licdn.com/dms/image/C4E0DAQGmr0upvqXe2g/learning-public-banner-crop_300_1400/0/1582672197981?e=2147483647&v=beta&t=WBM4OTYGi0CaR05xvQoTsBgiE2kUVp-L0u82BuQ47WE",
+                "expiresAt": 1650283200000,
+                "height": 300,
+                "$type": "com.linkedin.common.VectorArtifact"
+              }
+            ],
+            "rootUrl": "",
+            "$type": "com.linkedin.common.VectorImage"
+          },
+          "$type": "com.linkedin.learning.api.common.Image"
+        },
+        "title": "Become a C# Developer",
+        "sections": [
+          {
+            "title": "Section 1",
+            "contentDurationInSeconds": 60638,
+            "items": [
+              {
+                "$type": "com.linkedin.learning.api.learningpaths.LearningPathItem",
+                "*content": "urn:li:learningApiCard:urn:li:lyndaCourse:3008786"
+              },
+              {
+                "$type": "com.linkedin.learning.api.learningpaths.LearningPathItem",
+                "*content": "urn:li:learningApiCard:urn:li:lyndaCourse:3022384"
+              },
+              {
+                "$type": "com.linkedin.learning.api.learningpaths.LearningPathItem",
+                "*content": "urn:li:learningApiCard:urn:li:lyndaCourse:765321"
+              },
+              {
+                "$type": "com.linkedin.learning.api.learningpaths.LearningPathItem",
+                "*content": "urn:li:learningApiCard:urn:li:lyndaCourse:2426542"
+              },
+              {
+                "$type": "com.linkedin.learning.api.learningpaths.LearningPathItem",
+                "*content": "urn:li:learningApiCard:urn:li:lyndaCourse:2314072"
+              },
+              {
+                "$type": "com.linkedin.learning.api.learningpaths.LearningPathItem",
+                "*content": "urn:li:learningApiCard:urn:li:lyndaCourse:604242"
+              }
+            ],
+            "$type": "com.linkedin.learning.api.learningpaths.LearningPathSection"
+          }
+        ],
+        "$type": "com.linkedin.learning.api.learningpaths.DetailedLearningPath",
+        "urn": "urn:li:lyndaLearningPath:5a735c55498e9ec2d5060360",
+        "associatedSkills": [
+          {
+            "name": "C#",
+            "urn": "urn:li:skill:284",
+            "mappedCategory": {
+              "urn": "urn:li:lyndaCategory:1022",
+              "name": "C#",
+              "locale": {
+                "country": "US",
+                "language": "en",
+                "$type": "com.linkedin.common.Locale"
+              },
+              "type": "SOFTWARE",
+              "slug": "c-sharp",
+              "trackingId": "chOe4PywRw+mQsXoI2MVOQ==",
+              "$type": "com.linkedin.learning.api.BasicCategory"
+            },
+            "$type": "com.linkedin.learning.api.BasicSkill"
+          },
+          {
+            "name": "Visual Studio",
+            "urn": "urn:li:skill:1311",
+            "mappedCategory": {
+              "urn": "urn:li:lyndaCategory:439",
+              "name": "Visual Studio",
+              "locale": {
+                "country": "US",
+                "language": "en",
+                "$type": "com.linkedin.common.Locale"
+              },
+              "type": "SOFTWARE",
+              "slug": "visual-studio",
+              "trackingId": "j9Buw+rsRyKFErmNHuhY0g==",
+              "$type": "com.linkedin.learning.api.BasicCategory"
+            },
+            "$type": "com.linkedin.learning.api.BasicSkill"
+          }
+        ],
+        "library": {
+          "urn": "urn:li:lyndaCategory:7164",
+          "name": "Technology",
+          "locale": {
+            "country": "US",
+            "language": "en",
+            "$type": "com.linkedin.common.Locale"
+          },
+          "type": "LIBRARY",
+          "slug": "technology",
+          "trackingId": "dI+PuWNdTAmKRfDKX6vQwA==",
+          "$type": "com.linkedin.learning.api.BasicCategory"
+        },
+        "enterprisePath": false,
+        "thumbnailV2": {
+          "source": {
+            "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0DAQHRTQJYf1Q35w",
+            "artifacts": [
+              {
+                "width": 256,
+                "fileIdentifyingUrlPathSegment": "144_256/0/1582672201142?e=2147483647&v=beta&t=O24JtaSWN8iUCmjszqGt-RMdMjANJrxl-pbCR_jfpEE",
+                "expiresAt": 1650283200000,
+                "height": 144,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 512,
+                "fileIdentifyingUrlPathSegment": "288_512/0/1582672201328?e=2147483647&v=beta&t=VV19OjioSX5ZTmBubqQjFrfNZ9fKcd9x_y4haGDF4oA",
+                "expiresAt": 1650283200000,
+                "height": 288,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 100,
+                "fileIdentifyingUrlPathSegment": "60_100/0/1582672201484?e=2147483647&v=beta&t=3-kP7NlyxlaLR4d8Bu8Ac2oXo45RKQLFup9qIYPwThU",
+                "expiresAt": 1650283200000,
+                "height": 60,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 432,
+                "fileIdentifyingUrlPathSegment": "240_432/0/1582672201061?e=2147483647&v=beta&t=vENt1zO-lSrmu4JwrP2x0MOIddnjz6BLSbYO3riTfgs",
+                "expiresAt": 1650283200000,
+                "height": 240,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 1001,
+                "fileIdentifyingUrlPathSegment": "675_1200/0/1582672201222?e=2147483647&v=beta&t=-o5w-15Tz7reDSD5S5uth_zcZiqJoA-dwImBuwAB43Q",
+                "expiresAt": 1650283200000,
+                "height": 563,
+                "$type": "com.linkedin.common.VectorArtifact"
+              }
+            ],
+            "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQHRTQJYf1Q35w/learning-public-crop_",
+            "$type": "com.linkedin.common.VectorImage"
+          },
+          "$type": "com.linkedin.learning.api.common.Image"
+        },
+        "tagline": "You'll learn C# development skills with these experts",
+        "*learningPathStatus": "ConsistentListedLearningPathStatus;urn:li:lyndaLearningPath:5a735c55498e9ec2d5060360",
+        "totalCourses": 6,
+        "learningOutcomes": [ "<strong>Understand</strong> the syntax of C#. ", "<strong>Learn</strong> the key elements of object-oriented programming.  ", "<strong>Master</strong> application development concepts. " ],
+        "categories": [
+          {
+            "urn": "urn:li:lyndaCategory:7164",
+            "name": "Technology",
+            "locale": {
+              "country": "US",
+              "language": "en",
+              "$type": "com.linkedin.common.Locale"
+            },
+            "type": "LIBRARY",
+            "slug": "technology",
+            "trackingId": "dI+PuWNdTAmKRfDKX6vQwA==",
+            "$type": "com.linkedin.learning.api.BasicCategory"
+          },
+          {
+            "urn": "urn:li:lyndaCategory:7186",
+            "name": "Software Development",
+            "locale": {
+              "country": "US",
+              "language": "en",
+              "$type": "com.linkedin.common.Locale"
+            },
+            "type": "SUBJECT",
+            "slug": "software-development",
+            "trackingId": "/+nJOcXuQKey08VeB89I3w==",
+            "$type": "com.linkedin.learning.api.BasicCategory"
+          },
+          {
+            "urn": "urn:li:lyndaCategory:7386",
+            "name": "Programming Languages",
+            "locale": {
+              "country": "US",
+              "language": "en",
+              "$type": "com.linkedin.common.Locale"
+            },
+            "type": "TOPIC",
+            "slug": "programming-languages",
+            "trackingId": "Px30GfMmQyuThk6h9qPNDQ==",
+            "$type": "com.linkedin.learning.api.BasicCategory"
+          },
+          {
+            "urn": "urn:li:lyndaCategory:50",
+            "name": "Developer",
+            "locale": {
+              "country": "US",
+              "language": "en",
+              "$type": "com.linkedin.common.Locale"
+            },
+            "type": "OTHER",
+            "slug": "developer",
+            "trackingId": "rQg46F9CRVO2xBF3ReCjdQ==",
+            "$type": "com.linkedin.learning.api.BasicCategory"
+          },
+          {
+            "urn": "urn:li:lyndaCategory:1022",
+            "name": "C#",
+            "locale": {
+              "country": "US",
+              "language": "en",
+              "$type": "com.linkedin.common.Locale"
+            },
+            "type": "SOFTWARE",
+            "slug": "c-sharp",
+            "trackingId": "w7wPJMsnQLCfiLfN1AJBDw==",
+            "$type": "com.linkedin.learning.api.BasicCategory"
+          }
+        ],
+        "bureauOfLaborStatistics": [],
+        "contentDurationInSeconds": 60638,
+        "suppressUpsell": false,
+        "totalContents": 6,
+        "slug": "become-a-c-sharp-developer"
+      }
+    ],
+    "paging": {
+      "count": 10,
+      "start": 0,
+      "links": []
+    },
+    "cachingKey": "urn:li:collectionResponse:w5ydBNqaLkMUtScEtIkmicdeGZvMB1cVdfgg+9STPlQ=",
+    "$type": "com.linkedin.restli.common.CollectionResponse"
+  },
+  "included": [
+    {
+      "parent": null,
+      "externalLink": null,
+      "difficultyLevel": "BEGINNER",
+      "trackingUrn": "urn:li:lyndaCourse:3022384",
+      "description": {
+        "text": "Learn about generics in C#, find out how to work with collections, handle exceptions, use async and await for asynchronous programming, and more.",
+        "$type": "com.linkedin.learning.api.common.AnnotatedText"
+      },
+      "childUrns": null,
+      "localizedEntityName": "COURSE",
+      "inactive": false,
+      "children": [
+        {
+          "urn": "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3056821)",
+          "entityType": "VIDEO",
+          "trackingUrn": "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3056821)",
+          "slug": "essentials-deep-dive",
+          "trackingId": "lboYssgxTreaevprvitQOw==",
+          "$type": "com.linkedin.learning.api.common.Card"
+        }
+      ],
+      "entityUrn": "urn:li:learningApiCourse:36696017",
+      "price": null,
+      "context": null,
+      "contentProviderInfo": null,
+      "socialProof": null,
+      "eligibleForBindingUpsell": null,
+      "headline": {
+        "title": {
+          "text": "C# Essential Training 2: Generics, Collections, and LINQ",
+          "$type": "com.linkedin.learning.api.common.AnnotatedText"
+        },
+        "$type": "com.linkedin.learning.api.common.Headline"
+      },
+      "brand": null,
+      "slug": "c-sharp-essential-training-2-generics-collections-and-linq",
+      "contentCount": null,
+      "trackingId": "A+BGWbl6RL+4cUK1+bwV0g==",
+      "updatedAt": null,
+      "annotation": null,
+      "*bookmark": "urn:li:learningApiBookmark:urn:li:learningApiCourse:36696017",
+      "contentInteractionStatus": null,
+      "visibility": null,
+      "entityType": "COURSE",
+      "assignment": null,
+      "length": {
+        "duration": 10730,
+        "unit": "SECOND",
+        "$type": "com.linkedin.common.TimeSpan"
+      },
+      "viewerCount": 1231,
+      "formattedDescription": null,
+      "contentSchedule": null,
+      "follow": null,
+      "navigationDetails": { "navigationDestination": "CCR" },
+      "releasedOn": 1647820800000,
+      "$type": "com.linkedin.learning.api.common.Card",
+      "badges": [
+        {
+          "badgeType": "NEW",
+          "label": {
+            "attributes": [],
+            "text": "NEW",
+            "$type": "com.linkedin.learning.api.text.AttributedText"
+          },
+          "$type": "com.linkedin.learning.api.common.CardBadge"
+        }
+      ],
+      "urn": "urn:li:lyndaCourse:3022384",
+      "associatedSkills": [
+        {
+          "name": "C#",
+          "urn": "urn:li:skill:284",
+          "mappedCategory": {
+            "urn": "urn:li:lyndaCategory:1022",
+            "name": "C#",
+            "locale": {
+              "country": "US",
+              "language": "en",
+              "$type": "com.linkedin.common.Locale"
+            },
+            "type": "SOFTWARE",
+            "slug": "c-sharp",
+            "trackingId": "eFJPvWYTQKCUL6laa1Z8+w==",
+            "$type": "com.linkedin.learning.api.BasicCategory"
+          },
+          "$type": "com.linkedin.learning.api.BasicSkill"
+        }
+      ],
+      "legacyInteractionStatus": {
+        "*bookmarkStatus": "ConsistentBasicBookmark;urn:li:lyndaCourse:3022384",
+        "*courseViewingStatus": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:3022384",
+        "$type": "com.linkedin.learning.api.common.LegacyInteractionStatuses"
+      },
+      "cachingKey": "urn:li:learningApiCard:urn:li:lyndaCourse:3022384",
+      "thumbnails": [
+        {
+          "source": {
+            "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQEHgNQH1dSH4g",
+            "artifacts": [
+              {
+                "width": 256,
+                "fileIdentifyingUrlPathSegment": "144_256/0/1647535471105?e=2147483647&v=beta&t=vN8A_ODBLkbrvYyLPJ2AItORcKcygdtVgzmzvCS2OVE",
+                "expiresAt": 1650283200000,
+                "height": 144,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 512,
+                "fileIdentifyingUrlPathSegment": "288_512/0/1647535471105?e=2147483647&v=beta&t=CPawd_n0eCIo6myfTqaPfpn2axfhPhF4wu1G8DDig4s",
+                "expiresAt": 1650283200000,
+                "height": 288,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 100,
+                "fileIdentifyingUrlPathSegment": "60_100/0/1647535471105?e=2147483647&v=beta&t=Wml9EcKZObaxiEigbdHVYnT6BsaaSKJHYeNFxb8DnlQ",
+                "expiresAt": 1650283200000,
+                "height": 60,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 432,
+                "fileIdentifyingUrlPathSegment": "240_432/0/1647535471105?e=2147483647&v=beta&t=v2SkOd7LsNn5MbdPJtiJ3zWUmtUOT1_IySwFrLeuSrY",
+                "expiresAt": 1650283200000,
+                "height": 240,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 1200,
+                "fileIdentifyingUrlPathSegment": "675_1200/0/1647535471105?e=2147483647&v=beta&t=bKkHOVNH1Em0sW2RqtHBDiyVnhrCdVNO9PIynWV2J9E",
+                "expiresAt": 1650283200000,
+                "height": 675,
+                "$type": "com.linkedin.common.VectorArtifact"
+              }
+            ],
+            "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQEHgNQH1dSH4g/learning-public-crop_",
+            "$type": "com.linkedin.common.VectorImage"
+          },
+          "$type": "com.linkedin.learning.api.common.Image"
+        }
+      ],
+      "actions": [
+        {
+          "actionType": "BOOKMARK",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "DELETE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "DISMISS",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "ADD_TO_COLLECTION",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "MARK_DONE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "SHARE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        }
+      ],
+      "authors": [
+        {
+          "urn": "urn:li:lyndaAuthor:10973304",
+          "firstName": "Matt",
+          "lastName": "Milner",
+          "autoPopulateMentionForCertificateShares": true,
+          "memberDisplayName": "Matt Milner",
+          "biography": "Matt Milner is an independent consultant, web developer, and trainer.<br><br>From the early days of the internet, Matt was building websites and databases to help organizations manage their business. Over the years he has built numerous systems using web technologies such as ASP.NET, and integration technologies, including BizTalk Server, WCF, WF, and yes, even MSMQ. Currently Matt splits his time between building applications and teaching other developers about the latest Microsoft technologies, including Azure, Xamarin, and Web API.<br><br>In addition to creating training videos, Matt contributes to the community by speaking at code camps, user groups, and international conferences, including Tech Ed, Dev Days, and DevWeek. Learn more at <a href=\"http://www.m3technologypartners.com\" target=\"_blank\">m3technologypartners.com</a>.",
+          "encodedProfileId": "AEQAAAC6JSYBb-9t-LxCnumD1ski_dNDNZH5MSM",
+          "thumbnails": [
+            {
+              "source": {
+                "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQFP5-Sj2kapPw",
+                "artifacts": [
+                  {
+                    "width": 88,
+                    "fileIdentifyingUrlPathSegment": "50_88/0/1576188706929?e=2147483647&v=beta&t=8xodGlU_CsprAqKq3j0TkizYlcBnIfDLdERDzGJ4VtQ",
+                    "expiresAt": 1650283200000,
+                    "height": 50,
+                    "$type": "com.linkedin.common.VectorArtifact"
+                  },
+                  {
+                    "width": 200,
+                    "fileIdentifyingUrlPathSegment": "200_200/0/1576188706951?e=2147483647&v=beta&t=T72V7--lwiIdUGQXW6jhk924djXzmwq-8UQJPIK65iQ",
+                    "expiresAt": 1650283200000,
+                    "height": 200,
+                    "$type": "com.linkedin.common.VectorArtifact"
+                  }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQFP5-Sj2kapPw/learning-author-crop_",
+                "$type": "com.linkedin.common.VectorImage"
+              },
+              "$type": "com.linkedin.learning.api.common.Image"
+            }
+          ],
+          "headline": "Independent Consultant, Web Developer, Trainer",
+          "slug": "matt-milner",
+          "$type": "com.linkedin.learning.api.common.CardAuthor"
+        }
+      ]
+    },
+    {
+      "parent": null,
+      "externalLink": null,
+      "difficultyLevel": "BEGINNER",
+      "trackingUrn": "urn:li:lyndaCourse:604242",
+      "description": {
+        "text": "Applying for C# programming jobs? Find out what questions to expect in your C# or .NET developer interview and how to answer them to demonstrate mastery of key concepts.",
+        "$type": "com.linkedin.learning.api.common.AnnotatedText"
+      },
+      "childUrns": null,
+      "localizedEntityName": "COURSE",
+      "inactive": false,
+      "children": [
+        {
+          "urn": "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634126)",
+          "entityType": "VIDEO",
+          "trackingUrn": "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634126)",
+          "slug": "welcome",
+          "trackingId": "zdaMkof/RUOQBgcksXNNPA==",
+          "$type": "com.linkedin.learning.api.common.Card"
+        }
+      ],
+      "entityUrn": "urn:li:learningApiCourse:4532395",
+      "price": null,
+      "context": null,
+      "contentProviderInfo": null,
+      "socialProof": null,
+      "eligibleForBindingUpsell": null,
+      "headline": {
+        "title": {
+          "text": "Nail Your C# Developer Interview",
+          "$type": "com.linkedin.learning.api.common.AnnotatedText"
+        },
+        "$type": "com.linkedin.learning.api.common.Headline"
+      },
+      "brand": null,
+      "slug": "nail-your-c-sharp-developer-interview",
+      "contentCount": null,
+      "trackingId": "IMdp0kcsRty9kpPktN/FwA==",
+      "updatedAt": null,
+      "annotation": null,
+      "*bookmark": "urn:li:learningApiBookmark:urn:li:learningApiCourse:4532395",
+      "contentInteractionStatus": null,
+      "visibility": null,
+      "entityType": "COURSE",
+      "assignment": null,
+      "length": {
+        "duration": 4620,
+        "unit": "SECOND",
+        "$type": "com.linkedin.common.TimeSpan"
+      },
+      "viewerCount": 61137,
+      "formattedDescription": null,
+      "contentSchedule": null,
+      "follow": null,
+      "navigationDetails": { "navigationDestination": "CCR" },
+      "releasedOn": 1500336000000,
+      "$type": "com.linkedin.learning.api.common.Card",
+      "badges": [],
+      "urn": "urn:li:lyndaCourse:604242",
+      "associatedSkills": [
+        {
+          "name": "Interviewing",
+          "urn": "urn:li:skill:542",
+          "mappedCategory": {
+            "urn": "urn:li:lyndaCategory:750190",
+            "name": "Hiring and Interviewing",
+            "locale": {
+              "country": "US",
+              "language": "en",
+              "$type": "com.linkedin.common.Locale"
+            },
+            "type": "TOPIC",
+            "slug": "hiring-and-interviewing",
+            "trackingId": "Tf4+VBrGQ+a8A5e0+wLPkA==",
+            "$type": "com.linkedin.learning.api.BasicCategory"
+          },
+          "$type": "com.linkedin.learning.api.BasicSkill"
+        },
+        {
+          "name": "C#",
+          "urn": "urn:li:skill:284",
+          "mappedCategory": {
+            "urn": "urn:li:lyndaCategory:1022",
+            "name": "C#",
+            "locale": {
+              "country": "US",
+              "language": "en",
+              "$type": "com.linkedin.common.Locale"
+            },
+            "type": "SOFTWARE",
+            "slug": "c-sharp",
+            "trackingId": "8Orm61lCSwy+7ISZ5EDVIg==",
+            "$type": "com.linkedin.learning.api.BasicCategory"
+          },
+          "$type": "com.linkedin.learning.api.BasicSkill"
+        }
+      ],
+      "legacyInteractionStatus": {
+        "*bookmarkStatus": "ConsistentBasicBookmark;urn:li:lyndaCourse:604242",
+        "*courseViewingStatus": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:604242",
+        "$type": "com.linkedin.learning.api.common.LegacyInteractionStatuses"
+      },
+      "cachingKey": "urn:li:learningApiCard:urn:li:lyndaCourse:604242",
+      "thumbnails": [
+        {
+          "source": {
+            "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0DAQGEj9WEyGTpjA",
+            "artifacts": [
+              {
+                "width": 256,
+                "fileIdentifyingUrlPathSegment": "144_256/0/1568667142993?e=2147483647&v=beta&t=nBG7VrAs66h_WOHhbcF2b8Xvm-LoQjdZP3topsN83Lo",
+                "expiresAt": 1650283200000,
+                "height": 144,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 512,
+                "fileIdentifyingUrlPathSegment": "288_512/0/1568667143694?e=2147483647&v=beta&t=dBjLIPevSWrHVUinf7bBe19JpGqoHb-aeF0L9wCe0iQ",
+                "expiresAt": 1650283200000,
+                "height": 288,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 100,
+                "fileIdentifyingUrlPathSegment": "60_100/0/1568667143962?e=2147483647&v=beta&t=xsLQFityV14Xyc9N4ZrKnD8cD5S1yQYsVZMhXOoFWeM",
+                "expiresAt": 1650283200000,
+                "height": 60,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 432,
+                "fileIdentifyingUrlPathSegment": "240_432/0/1568667142788?e=2147483647&v=beta&t=P_lJ7PX3YoOoN06xMUf69IlF1GtsUqaRCvtHMXwgG7U",
+                "expiresAt": 1650283200000,
+                "height": 240,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 1200,
+                "fileIdentifyingUrlPathSegment": "675_1200/0/1568667143452?e=2147483647&v=beta&t=NGPtB_GF_OGDaxXSHMttvKm76KOhp3f8u5Jt34chVpc",
+                "expiresAt": 1650283200000,
+                "height": 675,
+                "$type": "com.linkedin.common.VectorArtifact"
+              }
+            ],
+            "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQGEj9WEyGTpjA/learning-public-crop_",
+            "$type": "com.linkedin.common.VectorImage"
+          },
+          "$type": "com.linkedin.learning.api.common.Image"
+        }
+      ],
+      "actions": [
+        {
+          "actionType": "BOOKMARK",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "DELETE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "DISMISS",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "ADD_TO_COLLECTION",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "MARK_DONE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "SHARE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        }
+      ],
+      "authors": [
+        {
+          "urn": "urn:li:lyndaAuthor:4738654",
+          "firstName": "Reynald",
+          "lastName": "Adolphe",
+          "autoPopulateMentionForCertificateShares": true,
+          "memberDisplayName": "Reynald Adolphe",
+          "biography": "Reynald Adolphe is a technologist and .NET developer specializing in website consulting and development.<br><br>He focuses on user experience, user interface, back-end development, and the languages used to create web applications. He's a speaker and personal technology coach helping programmers build their brand and career to the next level and guiding new-comers to become elite software engineers. Previously, he worked for the Tribune Company in Los Angeles and Accenture in Chicago. Reynald's specialties include C#, Silverlight, ASP.NET, MVC, Razor, LINQ, Java, JavaScript, JQuery, AJAX, HTML5, CSS3, SOAP, Knockout.js, RequireJS, Underscore.js, AmplifyJS, XML, WCF, SQL, SDLC, MSTest, Moq, QUnit, and Bootstrap. Reynald also produces tech events, featuring popular tech speakers, musicians, and comedians. You can learn more about his events/coaching at <a href=\"http://reynaldadolphe.com/\" target=\"_blank\">reynaldadolphe.com</a> and follow him on Twitter <a href=\"https://twitter.com/ReynaldAdolphe?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor\" target=\"_blank\">@reynaldadolphe</a>.",
+          "encodedProfileId": "AEQAAAPZmvwBrOXkcf-hOaSvyBR7sP-edEAbd1s",
+          "thumbnails": [
+            {
+              "source": {
+                "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQHmohf7_oSZOQ",
+                "artifacts": [
+                  {
+                    "width": 88,
+                    "fileIdentifyingUrlPathSegment": "50_88/0/1576191174815?e=2147483647&v=beta&t=haLyYFn3dsIsO5y6eagBdv-iAaU-0N6ZvV2OzjcfN2w",
+                    "expiresAt": 1650283200000,
+                    "height": 50,
+                    "$type": "com.linkedin.common.VectorArtifact"
+                  },
+                  {
+                    "width": 200,
+                    "fileIdentifyingUrlPathSegment": "200_200/0/1576191174844?e=2147483647&v=beta&t=nf0lVEHa13g3G4STORLox-IqDxNxVqkjtLn9n3879ZM",
+                    "expiresAt": 1650283200000,
+                    "height": 200,
+                    "$type": "com.linkedin.common.VectorArtifact"
+                  }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQHmohf7_oSZOQ/learning-author-crop_",
+                "$type": "com.linkedin.common.VectorImage"
+              },
+              "$type": "com.linkedin.learning.api.common.Image"
+            }
+          ],
+          "headline": "Technologist and .NET Developer ",
+          "slug": "reynald-adolphe",
+          "$type": "com.linkedin.learning.api.common.CardAuthor"
+        }
+      ]
+    },
+    {
+      "parent": null,
+      "externalLink": null,
+      "difficultyLevel": "ADVANCED",
+      "trackingUrn": "urn:li:lyndaCourse:2426542",
+      "description": {
+        "text": "Learn how to create better C# programs by using efficient algorithms.",
+        "$type": "com.linkedin.learning.api.common.AnnotatedText"
+      },
+      "childUrns": null,
+      "localizedEntityName": "COURSE",
+      "inactive": false,
+      "children": [
+        {
+          "urn": "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3007697)",
+          "entityType": "VIDEO",
+          "trackingUrn": "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3007697)",
+          "slug": "improve-your-c-sharp-applications-with-efficient-algorithms",
+          "trackingId": "F/iOaoL9QhWuwRpqtK2hUA==",
+          "$type": "com.linkedin.learning.api.common.Card"
+        }
+      ],
+      "entityUrn": "urn:li:learningApiCourse:37491605",
+      "price": null,
+      "context": null,
+      "contentProviderInfo": null,
+      "socialProof": null,
+      "eligibleForBindingUpsell": null,
+      "headline": {
+        "title": {
+          "text": "C# Algorithms",
+          "$type": "com.linkedin.learning.api.common.AnnotatedText"
+        },
+        "$type": "com.linkedin.learning.api.common.Headline"
+      },
+      "brand": null,
+      "slug": "c-sharp-algorithms",
+      "contentCount": null,
+      "trackingId": "28NmnL5KQs6k9/eNbg1HVg==",
+      "updatedAt": null,
+      "annotation": null,
+      "*bookmark": "urn:li:learningApiBookmark:urn:li:learningApiCourse:37491605",
+      "contentInteractionStatus": null,
+      "visibility": null,
+      "entityType": "COURSE",
+      "assignment": null,
+      "length": {
+        "duration": 10550,
+        "unit": "SECOND",
+        "$type": "com.linkedin.common.TimeSpan"
+      },
+      "viewerCount": 21346,
+      "formattedDescription": null,
+      "contentSchedule": null,
+      "follow": null,
+      "navigationDetails": { "navigationDestination": "CCR" },
+      "releasedOn": 1632700800000,
+      "$type": "com.linkedin.learning.api.common.Card",
+      "badges": [
+        {
+          "badgeType": "POPULAR",
+          "label": {
+            "attributes": [],
+            "text": "POPULAR",
+            "$type": "com.linkedin.learning.api.text.AttributedText"
+          },
+          "$type": "com.linkedin.learning.api.common.CardBadge"
+        }
+      ],
+      "urn": "urn:li:lyndaCourse:2426542",
+      "associatedSkills": [
+        {
+          "name": "Algorithms",
+          "urn": "urn:li:skill:1070",
+          "$type": "com.linkedin.learning.api.BasicSkill"
+        },
+        {
+          "name": "C#",
+          "urn": "urn:li:skill:284",
+          "mappedCategory": {
+            "urn": "urn:li:lyndaCategory:1022",
+            "name": "C#",
+            "locale": {
+              "country": "US",
+              "language": "en",
+              "$type": "com.linkedin.common.Locale"
+            },
+            "type": "SOFTWARE",
+            "slug": "c-sharp",
+            "trackingId": "DpvODdHPTRCNO5CFIdfkXA==",
+            "$type": "com.linkedin.learning.api.BasicCategory"
+          },
+          "$type": "com.linkedin.learning.api.BasicSkill"
+        }
+      ],
+      "legacyInteractionStatus": {
+        "*bookmarkStatus": "ConsistentBasicBookmark;urn:li:lyndaCourse:2426542",
+        "*courseViewingStatus": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:2426542",
+        "$type": "com.linkedin.learning.api.common.LegacyInteractionStatuses"
+      },
+      "cachingKey": "urn:li:learningApiCard:urn:li:lyndaCourse:2426542",
+      "thumbnails": [
+        {
+          "source": {
+            "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0DAQHtWT5vdWicsw",
+            "artifacts": [
+              {
+                "width": 256,
+                "fileIdentifyingUrlPathSegment": "144_256/0/1632415966015?e=2147483647&v=beta&t=cVmPZ5uYE4rPGF5ORfypfL-67TVvUe3lVAaKT_Ho2J0",
+                "expiresAt": 1650283200000,
+                "height": 144,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 512,
+                "fileIdentifyingUrlPathSegment": "288_512/0/1632415966015?e=2147483647&v=beta&t=jB9u_RLn65ROWgfAANvVx6jDNqc8LsaE3VR0TrhxBj0",
+                "expiresAt": 1650283200000,
+                "height": 288,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 100,
+                "fileIdentifyingUrlPathSegment": "60_100/0/1632415966015?e=2147483647&v=beta&t=hfoU0T7CwKgym-97SMH0NUwhKqh0nHHpWGuP5Pv80a0",
+                "expiresAt": 1650283200000,
+                "height": 60,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 432,
+                "fileIdentifyingUrlPathSegment": "240_432/0/1632415966015?e=2147483647&v=beta&t=vhvk5dFs14-V4ifTBPFzlPRTXfZ3DzT6LbMbK25cqbA",
+                "expiresAt": 1650283200000,
+                "height": 240,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 1200,
+                "fileIdentifyingUrlPathSegment": "675_1200/0/1632415966015?e=2147483647&v=beta&t=qbG9fTfXdfKaAhqB96DJxABdkdbmxc1C2qh1ULxxOlE",
+                "expiresAt": 1650283200000,
+                "height": 675,
+                "$type": "com.linkedin.common.VectorArtifact"
+              }
+            ],
+            "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQHtWT5vdWicsw/learning-public-crop_",
+            "$type": "com.linkedin.common.VectorImage"
+          },
+          "$type": "com.linkedin.learning.api.common.Image"
+        }
+      ],
+      "actions": [
+        {
+          "actionType": "BOOKMARK",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "DELETE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "DISMISS",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "ADD_TO_COLLECTION",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "MARK_DONE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "SHARE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        }
+      ],
+      "authors": [
+        {
+          "urn": "urn:li:lyndaAuthor:8553602",
+          "firstName": "Kathryn",
+          "lastName": "Hodge",
+          "autoPopulateMentionForCertificateShares": false,
+          "memberDisplayName": "Kathryn Hodge",
+          "biography": "Kathryn Hodge works as a software developer at a media company.<br><br>In addition to her work as a developer, Kathryn runs a YouTube channel for people wanting to learn how to code. Before graduating college, she worked for three years as a computer science teaching assistant. She is very interested in the intersection of media, entertainment, and technology, and is focused on creating software that makes an impact.",
+          "encodedProfileId": "AEQAABM6fMoBinqTGqFglg1H_ftEY-6ElHzGQ3M",
+          "thumbnails": [
+            {
+              "source": {
+                "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0DAQH4L2obAXwWVw",
+                "artifacts": [
+                  {
+                    "width": 88,
+                    "fileIdentifyingUrlPathSegment": "50_88/0/1643838084853?e=2147483647&v=beta&t=imXmFU1V8SUgItWngjVUhpDT1mKcxbuXsxGpliMgaGM",
+                    "expiresAt": 1650283200000,
+                    "height": 50,
+                    "$type": "com.linkedin.common.VectorArtifact"
+                  },
+                  {
+                    "width": 200,
+                    "fileIdentifyingUrlPathSegment": "200_200/0/1643838084853?e=2147483647&v=beta&t=g-Retj9qHpusynkEi6huKD6Fhhm76L6n6lSZvwX_NX4",
+                    "expiresAt": 1650283200000,
+                    "height": 200,
+                    "$type": "com.linkedin.common.VectorArtifact"
+                  }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQH4L2obAXwWVw/learning-author-crop_",
+                "$type": "com.linkedin.common.VectorImage"
+              },
+              "$type": "com.linkedin.learning.api.common.Image"
+            }
+          ],
+          "headline": "Software Developer",
+          "slug": "kathryn-hodge",
+          "$type": "com.linkedin.learning.api.common.CardAuthor"
+        }
+      ]
+    },
+    {
+      "parent": null,
+      "externalLink": null,
+      "difficultyLevel": "INTERMEDIATE",
+      "trackingUrn": "urn:li:lyndaCourse:765321",
+      "description": {
+        "text": "Explore solutions to common C# programming challenges—and compare the results with other programming languages—in this installment of the <i>Code Clinic</i> series.",
+        "$type": "com.linkedin.learning.api.common.AnnotatedText"
+      },
+      "childUrns": null,
+      "localizedEntityName": "COURSE",
+      "inactive": false,
+      "children": [
+        {
+          "urn": "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802398)",
+          "entityType": "VIDEO",
+          "trackingUrn": "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802398)",
+          "slug": "welcome",
+          "trackingId": "Lu4L4i2MRxSsxAUq82s+Gw==",
+          "$type": "com.linkedin.learning.api.common.Card"
+        }
+      ],
+      "entityUrn": "urn:li:learningApiCourse:4541902",
+      "price": null,
+      "context": null,
+      "contentProviderInfo": null,
+      "socialProof": null,
+      "eligibleForBindingUpsell": null,
+      "headline": {
+        "title": {
+          "text": "Code Clinic: C#",
+          "$type": "com.linkedin.learning.api.common.AnnotatedText"
+        },
+        "$type": "com.linkedin.learning.api.common.Headline"
+      },
+      "brand": null,
+      "slug": "code-clinic-c-sharp-2018",
+      "contentCount": null,
+      "trackingId": "w3iHAU+MToypiC16FEtETA==",
+      "updatedAt": null,
+      "annotation": null,
+      "*bookmark": "urn:li:learningApiBookmark:urn:li:learningApiCourse:4541902",
+      "contentInteractionStatus": null,
+      "visibility": null,
+      "entityType": "COURSE",
+      "assignment": null,
+      "length": {
+        "duration": 17495,
+        "unit": "SECOND",
+        "$type": "com.linkedin.common.TimeSpan"
+      },
+      "viewerCount": 28293,
+      "formattedDescription": null,
+      "contentSchedule": null,
+      "follow": null,
+      "navigationDetails": { "navigationDestination": "CCR" },
+      "releasedOn": 1540944000000,
+      "$type": "com.linkedin.learning.api.common.Card",
+      "badges": [],
+      "urn": "urn:li:lyndaCourse:765321",
+      "associatedSkills": [
+        {
+          "name": "C#",
+          "urn": "urn:li:skill:284",
+          "mappedCategory": {
+            "urn": "urn:li:lyndaCategory:1022",
+            "name": "C#",
+            "locale": {
+              "country": "US",
+              "language": "en",
+              "$type": "com.linkedin.common.Locale"
+            },
+            "type": "SOFTWARE",
+            "slug": "c-sharp",
+            "trackingId": "r44YPRjmTbu8ZkT6wyohcg==",
+            "$type": "com.linkedin.learning.api.BasicCategory"
+          },
+          "$type": "com.linkedin.learning.api.BasicSkill"
+        }
+      ],
+      "legacyInteractionStatus": {
+        "*bookmarkStatus": "ConsistentBasicBookmark;urn:li:lyndaCourse:765321",
+        "*courseViewingStatus": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:765321",
+        "$type": "com.linkedin.learning.api.common.LegacyInteractionStatuses"
+      },
+      "cachingKey": "urn:li:learningApiCard:urn:li:lyndaCourse:765321",
+      "thumbnails": [
+        {
+          "source": {
+            "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0DAQGSZEJf9tgtdA",
+            "artifacts": [
+              {
+                "width": 256,
+                "fileIdentifyingUrlPathSegment": "144_256/0/1568666900266?e=2147483647&v=beta&t=gluwfieCooWfq1L4JZ1kwfZkRiyvfOuhr2xS55cKIUo",
+                "expiresAt": 1650283200000,
+                "height": 144,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 512,
+                "fileIdentifyingUrlPathSegment": "288_512/0/1568666901372?e=2147483647&v=beta&t=ASD8FyELek2zxMRqgGq5hRXLIHqNu3h03_y31dFFtJs",
+                "expiresAt": 1650283200000,
+                "height": 288,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 100,
+                "fileIdentifyingUrlPathSegment": "60_100/0/1568666901639?e=2147483647&v=beta&t=42zoARErRHEJpfT6cHvXe-409WhWUi5f9FBNdP8zIqc",
+                "expiresAt": 1650283200000,
+                "height": 60,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 432,
+                "fileIdentifyingUrlPathSegment": "240_432/0/1568666900113?e=2147483647&v=beta&t=TlSSGB9GSaXDPkbUR1xDDhu7S00ISl9sBefLCU3w-Wo",
+                "expiresAt": 1650283200000,
+                "height": 240,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 1200,
+                "fileIdentifyingUrlPathSegment": "675_1200/0/1568666900960?e=2147483647&v=beta&t=A8H8uevX7ibfP7P-lyBtRlYnNG33zb0Bsrx1MxdMCM8",
+                "expiresAt": 1650283200000,
+                "height": 675,
+                "$type": "com.linkedin.common.VectorArtifact"
+              }
+            ],
+            "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQGSZEJf9tgtdA/learning-public-crop_",
+            "$type": "com.linkedin.common.VectorImage"
+          },
+          "$type": "com.linkedin.learning.api.common.Image"
+        }
+      ],
+      "actions": [
+        {
+          "actionType": "BOOKMARK",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "DELETE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "DISMISS",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "ADD_TO_COLLECTION",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "MARK_DONE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "SHARE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        }
+      ],
+      "authors": [
+        {
+          "urn": "urn:li:lyndaAuthor:9515027",
+          "firstName": "Anton",
+          "lastName": "Delsink",
+          "autoPopulateMentionForCertificateShares": true,
+          "biography": "A programmer and teacher at heart, Anton Delsink enjoys working with students and professionals of all levels.<br><br>Learning and teaching have been present throughout his career, which has included working as a full-stack developer, a Microsoft Certified Trainer, a solutions architect, and even in software sales. You may have seen him onstage at events such as Microsoft TechEd or SharePoint Saturday, or met him on his travels—where his camera and laptop are always close at hand.<br><br>Even though C# was love at first sight for Anton, he's never far from a PowerShell script or SQL statement, especially when there's an opportunity for automation. With the advent of public cloud offerings, Anton has immersed himself further in architecture and DevOps, and continues to learn, use, and teach both programming and cloud services.",
+          "thumbnails": [
+            {
+              "source": {
+                "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQF1Z-VWI8S5wQ",
+                "artifacts": [
+                  {
+                    "width": 88,
+                    "fileIdentifyingUrlPathSegment": "50_88/0/1576190999818?e=2147483647&v=beta&t=aYTpl1J2_GCHBVoGwndO8h1JA3V8l-DQm6IH_LNJ1pc",
+                    "expiresAt": 1650283200000,
+                    "height": 50,
+                    "$type": "com.linkedin.common.VectorArtifact"
+                  },
+                  {
+                    "width": 200,
+                    "fileIdentifyingUrlPathSegment": "200_200/0/1576190999841?e=2147483647&v=beta&t=1OvMzpDyT3adtS4FngVBNbP2eygtEKnP_3vtT9XqpY4",
+                    "expiresAt": 1650283200000,
+                    "height": 200,
+                    "$type": "com.linkedin.common.VectorArtifact"
+                  }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQF1Z-VWI8S5wQ/learning-author-crop_",
+                "$type": "com.linkedin.common.VectorImage"
+              },
+              "$type": "com.linkedin.learning.api.common.Image"
+            }
+          ],
+          "headline": "Programmer, Teacher",
+          "slug": "anton-delsink",
+          "$type": "com.linkedin.learning.api.common.CardAuthor"
+        }
+      ]
+    },
+    {
+      "parent": null,
+      "externalLink": null,
+      "difficultyLevel": "BEGINNER",
+      "trackingUrn": "urn:li:lyndaCourse:3008786",
+      "description": {
+        "text": "Learn about classes, structs, record, organizing C# code, variables, enums, nullable types, and more.",
+        "$type": "com.linkedin.learning.api.common.AnnotatedText"
+      },
+      "childUrns": null,
+      "localizedEntityName": "COURSE",
+      "inactive": false,
+      "children": [
+        {
+          "urn": "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3042308)",
+          "entityType": "VIDEO",
+          "trackingUrn": "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3042308)",
+          "slug": "explore-the-essentials",
+          "trackingId": "roOppUZ+RuuaaMD5yIXNPA==",
+          "$type": "com.linkedin.learning.api.common.Card"
+        }
+      ],
+      "entityUrn": "urn:li:learningApiCourse:36628316",
+      "price": null,
+      "context": null,
+      "contentProviderInfo": null,
+      "socialProof": null,
+      "eligibleForBindingUpsell": null,
+      "headline": {
+        "title": {
+          "text": "C# Essential Training 1: Types and Control Flow",
+          "$type": "com.linkedin.learning.api.common.AnnotatedText"
+        },
+        "$type": "com.linkedin.learning.api.common.Headline"
+      },
+      "brand": null,
+      "slug": "c-sharp-essential-training-1-types-and-control-flow",
+      "contentCount": null,
+      "trackingId": "XMSJsfaJRIGRpFBImWjlrA==",
+      "updatedAt": null,
+      "annotation": null,
+      "*bookmark": "urn:li:learningApiBookmark:urn:li:learningApiCourse:36628316",
+      "contentInteractionStatus": null,
+      "visibility": null,
+      "entityType": "COURSE",
+      "assignment": null,
+      "length": {
+        "duration": 9514,
+        "unit": "SECOND",
+        "$type": "com.linkedin.common.TimeSpan"
+      },
+      "viewerCount": 4531,
+      "formattedDescription": null,
+      "contentSchedule": null,
+      "follow": null,
+      "navigationDetails": { "navigationDestination": "CCR" },
+      "releasedOn": 1643328000000,
+      "$type": "com.linkedin.learning.api.common.Card",
+      "badges": [],
+      "urn": "urn:li:lyndaCourse:3008786",
+      "associatedSkills": [
+        {
+          "name": "Control Flow",
+          "urn": "urn:li:skill:56106",
+          "$type": "com.linkedin.learning.api.BasicSkill"
+        },
+        {
+          "name": "C#",
+          "urn": "urn:li:skill:284",
+          "mappedCategory": {
+            "urn": "urn:li:lyndaCategory:1022",
+            "name": "C#",
+            "locale": {
+              "country": "US",
+              "language": "en",
+              "$type": "com.linkedin.common.Locale"
+            },
+            "type": "SOFTWARE",
+            "slug": "c-sharp",
+            "trackingId": "hIjLm2t4RKy+1+nHTBZnJQ==",
+            "$type": "com.linkedin.learning.api.BasicCategory"
+          },
+          "$type": "com.linkedin.learning.api.BasicSkill"
+        }
+      ],
+      "legacyInteractionStatus": {
+        "*bookmarkStatus": "ConsistentBasicBookmark;urn:li:lyndaCourse:3008786",
+        "*courseViewingStatus": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:3008786",
+        "$type": "com.linkedin.learning.api.common.LegacyInteractionStatuses"
+      },
+      "cachingKey": "urn:li:learningApiCard:urn:li:lyndaCourse:3008786",
+      "thumbnails": [
+        {
+          "source": {
+            "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0DAQG56xrUU6obXg",
+            "artifacts": [
+              {
+                "width": 256,
+                "fileIdentifyingUrlPathSegment": "144_256/0/1643218793462?e=2147483647&v=beta&t=JnTZNohYbJhUjqK4IPqMvcxnv8nBRd5Qo-kiGFDxG4s",
+                "expiresAt": 1650283200000,
+                "height": 144,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 512,
+                "fileIdentifyingUrlPathSegment": "288_512/0/1643218793462?e=2147483647&v=beta&t=95VaZb1aC6OrLEJf4Ccv1dAMSJI6IZTgaUxbCTgzTgM",
+                "expiresAt": 1650283200000,
+                "height": 288,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 100,
+                "fileIdentifyingUrlPathSegment": "60_100/0/1643218793462?e=2147483647&v=beta&t=nbPtCUHnZMnVB45yAlfukkHmlPOhoLxzuqkevJTF-qw",
+                "expiresAt": 1650283200000,
+                "height": 60,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 432,
+                "fileIdentifyingUrlPathSegment": "240_432/0/1643218793462?e=2147483647&v=beta&t=XXu-aB8apiWABjit7Q-qF6fIeM1HHd5o3fXNaPLHsJQ",
+                "expiresAt": 1650283200000,
+                "height": 240,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 1200,
+                "fileIdentifyingUrlPathSegment": "675_1200/0/1643218793462?e=2147483647&v=beta&t=ezuG2Y2hgf5nHrFYYOsNY5RP2EsRte90Q0a_nBpiluk",
+                "expiresAt": 1650283200000,
+                "height": 675,
+                "$type": "com.linkedin.common.VectorArtifact"
+              }
+            ],
+            "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQG56xrUU6obXg/learning-public-crop_",
+            "$type": "com.linkedin.common.VectorImage"
+          },
+          "$type": "com.linkedin.learning.api.common.Image"
+        }
+      ],
+      "actions": [
+        {
+          "actionType": "BOOKMARK",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "DELETE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "DISMISS",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "ADD_TO_COLLECTION",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "MARK_DONE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "SHARE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        }
+      ],
+      "authors": [
+        {
+          "urn": "urn:li:lyndaAuthor:10973304",
+          "firstName": "Matt",
+          "lastName": "Milner",
+          "autoPopulateMentionForCertificateShares": true,
+          "memberDisplayName": "Matt Milner",
+          "biography": "Matt Milner is an independent consultant, web developer, and trainer.<br><br>From the early days of the internet, Matt was building websites and databases to help organizations manage their business. Over the years he has built numerous systems using web technologies such as ASP.NET, and integration technologies, including BizTalk Server, WCF, WF, and yes, even MSMQ. Currently Matt splits his time between building applications and teaching other developers about the latest Microsoft technologies, including Azure, Xamarin, and Web API.<br><br>In addition to creating training videos, Matt contributes to the community by speaking at code camps, user groups, and international conferences, including Tech Ed, Dev Days, and DevWeek. Learn more at <a href=\"http://www.m3technologypartners.com\" target=\"_blank\">m3technologypartners.com</a>.",
+          "encodedProfileId": "AEQAAAC6JSYBb-9t-LxCnumD1ski_dNDNZH5MSM",
+          "thumbnails": [
+            {
+              "source": {
+                "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQFP5-Sj2kapPw",
+                "artifacts": [
+                  {
+                    "width": 88,
+                    "fileIdentifyingUrlPathSegment": "50_88/0/1576188706929?e=2147483647&v=beta&t=8xodGlU_CsprAqKq3j0TkizYlcBnIfDLdERDzGJ4VtQ",
+                    "expiresAt": 1650283200000,
+                    "height": 50,
+                    "$type": "com.linkedin.common.VectorArtifact"
+                  },
+                  {
+                    "width": 200,
+                    "fileIdentifyingUrlPathSegment": "200_200/0/1576188706951?e=2147483647&v=beta&t=T72V7--lwiIdUGQXW6jhk924djXzmwq-8UQJPIK65iQ",
+                    "expiresAt": 1650283200000,
+                    "height": 200,
+                    "$type": "com.linkedin.common.VectorArtifact"
+                  }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQFP5-Sj2kapPw/learning-author-crop_",
+                "$type": "com.linkedin.common.VectorImage"
+              },
+              "$type": "com.linkedin.learning.api.common.Image"
+            }
+          ],
+          "headline": "Independent Consultant, Web Developer, Trainer",
+          "slug": "matt-milner",
+          "$type": "com.linkedin.learning.api.common.CardAuthor"
+        }
+      ]
+    },
+    {
+      "parent": null,
+      "externalLink": null,
+      "difficultyLevel": "INTERMEDIATE",
+      "trackingUrn": "urn:li:lyndaCourse:2314072",
+      "description": {
+        "text": "Build better code by leveraging design patterns in C#. Learn about the purpose and effective use of design patterns, and discover how to apply Gang of Four patterns in your code.",
+        "$type": "com.linkedin.learning.api.common.AnnotatedText"
+      },
+      "childUrns": null,
+      "localizedEntityName": "COURSE",
+      "inactive": false,
+      "children": [
+        {
+          "urn": "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377301)",
+          "entityType": "VIDEO",
+          "trackingUrn": "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377301)",
+          "slug": "object-oriented-design-patterns-in-c-sharp",
+          "trackingId": "3wZAeIbcQ7K2DPutRDyF2A==",
+          "$type": "com.linkedin.learning.api.common.Card"
+        }
+      ],
+      "entityUrn": "urn:li:learningApiCourse:7114448",
+      "price": null,
+      "context": null,
+      "contentProviderInfo": null,
+      "socialProof": null,
+      "eligibleForBindingUpsell": null,
+      "headline": {
+        "title": {
+          "text": "C#: Design Patterns Part 1",
+          "$type": "com.linkedin.learning.api.common.AnnotatedText"
+        },
+        "$type": "com.linkedin.learning.api.common.Headline"
+      },
+      "brand": null,
+      "slug": "c-sharp-design-patterns-part-1-14140825",
+      "contentCount": null,
+      "trackingId": "Uega3RjlQjiw9sZMBbjiwQ==",
+      "updatedAt": null,
+      "annotation": null,
+      "*bookmark": "urn:li:learningApiBookmark:urn:li:learningApiCourse:7114448",
+      "contentInteractionStatus": null,
+      "visibility": null,
+      "entityType": "COURSE",
+      "assignment": null,
+      "length": {
+        "duration": 7729,
+        "unit": "SECOND",
+        "$type": "com.linkedin.common.TimeSpan"
+      },
+      "viewerCount": 15917,
+      "formattedDescription": null,
+      "contentSchedule": null,
+      "follow": null,
+      "navigationDetails": { "navigationDestination": "CCR" },
+      "releasedOn": 1602720000000,
+      "$type": "com.linkedin.learning.api.common.Card",
+      "badges": [],
+      "urn": "urn:li:lyndaCourse:2314072",
+      "associatedSkills": [
+        {
+          "name": "Software Design Patterns",
+          "urn": "urn:li:skill:18348",
+          "$type": "com.linkedin.learning.api.BasicSkill"
+        },
+        {
+          "name": "C#",
+          "urn": "urn:li:skill:284",
+          "mappedCategory": {
+            "urn": "urn:li:lyndaCategory:1022",
+            "name": "C#",
+            "locale": {
+              "country": "US",
+              "language": "en",
+              "$type": "com.linkedin.common.Locale"
+            },
+            "type": "SOFTWARE",
+            "slug": "c-sharp",
+            "trackingId": "BxXHfiWXSkGjxsGjlG87gA==",
+            "$type": "com.linkedin.learning.api.BasicCategory"
+          },
+          "$type": "com.linkedin.learning.api.BasicSkill"
+        }
+      ],
+      "legacyInteractionStatus": {
+        "*bookmarkStatus": "ConsistentBasicBookmark;urn:li:lyndaCourse:2314072",
+        "*courseViewingStatus": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:2314072",
+        "$type": "com.linkedin.learning.api.common.LegacyInteractionStatuses"
+      },
+      "cachingKey": "urn:li:learningApiCard:urn:li:lyndaCourse:2314072",
+      "thumbnails": [
+        {
+          "source": {
+            "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0DAQGABZchVc3mTw",
+            "artifacts": [
+              {
+                "width": 256,
+                "fileIdentifyingUrlPathSegment": "144_256/0/1602606441011?e=2147483647&v=beta&t=3IAKaj5tikU2qU_i-6AFmM-zyD_gfQEi-9tcSBOasok",
+                "expiresAt": 1650283200000,
+                "height": 144,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 512,
+                "fileIdentifyingUrlPathSegment": "288_512/0/1602606441011?e=2147483647&v=beta&t=JqV_RldwfIH1Ir7Izzox9JAYNrGHSU3ALjehPc5-waY",
+                "expiresAt": 1650283200000,
+                "height": 288,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 100,
+                "fileIdentifyingUrlPathSegment": "60_100/0/1602606441011?e=2147483647&v=beta&t=kqaZBqcVdUpX3LJPfqpGTdJH99llDqrBpTHyNtoi44M",
+                "expiresAt": 1650283200000,
+                "height": 60,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 432,
+                "fileIdentifyingUrlPathSegment": "240_432/0/1602606441011?e=2147483647&v=beta&t=qTzKS2Gdhf_6KWb9FZPPuBoWFwX0vqwD5nzhibTaMrs",
+                "expiresAt": 1650283200000,
+                "height": 240,
+                "$type": "com.linkedin.common.VectorArtifact"
+              },
+              {
+                "width": 1200,
+                "fileIdentifyingUrlPathSegment": "675_1200/0/1602606441011?e=2147483647&v=beta&t=kXochGum2AyJPAgHxWMkvDerZEYe9I8lY3v_m8h4954",
+                "expiresAt": 1650283200000,
+                "height": 675,
+                "$type": "com.linkedin.common.VectorArtifact"
+              }
+            ],
+            "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0DAQGABZchVc3mTw/learning-public-crop_",
+            "$type": "com.linkedin.common.VectorImage"
+          },
+          "$type": "com.linkedin.learning.api.common.Image"
+        }
+      ],
+      "actions": [
+        {
+          "actionType": "BOOKMARK",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "DELETE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "DISMISS",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "ADD_TO_COLLECTION",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "MARK_DONE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        },
+        {
+          "actionType": "SHARE",
+          "$type": "com.linkedin.learning.api.common.CardAction"
+        }
+      ],
+      "authors": [
+        {
+          "urn": "urn:li:lyndaAuthor:7537438",
+          "firstName": "Richard",
+          "lastName": "Goforth",
+          "autoPopulateMentionForCertificateShares": true,
+          "memberDisplayName": "Richard Goforth",
+          "biography": "Richard Goforth is a software architect and consultant, primarily in the Microsoft space.<br><br>He's experienced in C# development with Xamarin, Windows Presentation Foundation, and ASP.NET, and has also developed some small applications with Java and JavaScript.<br><br>\n\nA solutions architect at CEI, Richard enjoys coming up with solid efficient solutions that are clean and maintainable, with a focus on the whole software development life cycle. Problem solving for optimal solutions in software design drives him when writing code or courses.",
+          "encodedProfileId": "AEQAAAcQQOkBdNlQlPvQYXfoPQKfsX_V2SjZkjk",
+          "thumbnails": [
+            {
+              "source": {
+                "digitalmediaAsset": "urn:li:digitalmediaAsset:C560DAQEl0-nbExZ-Xg",
+                "artifacts": [
+                  {
+                    "width": 88,
+                    "fileIdentifyingUrlPathSegment": "50_88/0/1576190528954?e=2147483647&v=beta&t=2zcT1PWqBCqWnsvT1MMgWuTZso2sKfMulI9ECm9BD7s",
+                    "expiresAt": 1650283200000,
+                    "height": 50,
+                    "$type": "com.linkedin.common.VectorArtifact"
+                  },
+                  {
+                    "width": 200,
+                    "fileIdentifyingUrlPathSegment": "200_200/0/1576190528977?e=2147483647&v=beta&t=WM5oO1_koonmxxo7zC3MP2Ni8mry9vY8vYI8XORGOxc",
+                    "expiresAt": 1650283200000,
+                    "height": 200,
+                    "$type": "com.linkedin.common.VectorArtifact"
+                  }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C560DAQEl0-nbExZ-Xg/learning-author-crop_",
+                "$type": "com.linkedin.common.VectorImage"
+              },
+              "$type": "com.linkedin.learning.api.common.Image"
+            }
+          ],
+          "headline": "Software Architect and Consultant",
+          "slug": "richard-goforth",
+          "$type": "com.linkedin.learning.api.common.CardAuthor"
+        }
+      ]
+    },
+    {
+      "totalBookmarks": 12714,
+      "createdAt": null,
+      "cachingKey": "urn:li:learningApiBookmark:urn:li:learningApiCourse:37491605",
+      "entityUrn": "urn:li:learningApiBookmark:urn:li:learningApiCourse:37491605",
+      "$type": "com.linkedin.learning.api.deco.content.Bookmark"
+    },
+    {
+      "totalBookmarks": 649,
+      "createdAt": null,
+      "cachingKey": "urn:li:learningApiBookmark:urn:li:learningApiCourse:36696017",
+      "entityUrn": "urn:li:learningApiBookmark:urn:li:learningApiCourse:36696017",
+      "$type": "com.linkedin.learning.api.deco.content.Bookmark"
+    },
+    {
+      "totalBookmarks": 6165,
+      "createdAt": null,
+      "cachingKey": "urn:li:learningApiBookmark:urn:li:learningApiCourse:4541902",
+      "entityUrn": "urn:li:learningApiBookmark:urn:li:learningApiCourse:4541902",
+      "$type": "com.linkedin.learning.api.deco.content.Bookmark"
+    },
+    {
+      "totalBookmarks": 9891,
+      "createdAt": null,
+      "cachingKey": "urn:li:learningApiBookmark:urn:li:learningApiCourse:4532395",
+      "entityUrn": "urn:li:learningApiBookmark:urn:li:learningApiCourse:4532395",
+      "$type": "com.linkedin.learning.api.deco.content.Bookmark"
+    },
+    {
+      "totalBookmarks": 1437,
+      "createdAt": null,
+      "cachingKey": "urn:li:learningApiBookmark:urn:li:learningApiCourse:36628316",
+      "entityUrn": "urn:li:learningApiBookmark:urn:li:learningApiCourse:36628316",
+      "$type": "com.linkedin.learning.api.deco.content.Bookmark"
+    },
+    {
+      "totalBookmarks": 10237,
+      "createdAt": null,
+      "cachingKey": "urn:li:learningApiBookmark:urn:li:learningApiCourse:7114448",
+      "entityUrn": "urn:li:learningApiBookmark:urn:li:learningApiCourse:7114448",
+      "$type": "com.linkedin.learning.api.deco.content.Bookmark"
+    },
+    {
+      "details": null,
+      "cachingKey": "ConsistentBasicBookmark;urn:li:lyndaCourse:765321",
+      "$type": "com.linkedin.learning.api.interaction.ConsistentBasicBookmark"
+    },
+    {
+      "details": null,
+      "cachingKey": "ConsistentBasicBookmark;urn:li:lyndaCourse:3008786",
+      "$type": "com.linkedin.learning.api.interaction.ConsistentBasicBookmark"
+    },
+    {
+      "details": null,
+      "cachingKey": "ConsistentBasicBookmark;urn:li:lyndaCourse:2426542",
+      "$type": "com.linkedin.learning.api.interaction.ConsistentBasicBookmark"
+    },
+    {
+      "details": null,
+      "cachingKey": "ConsistentBasicBookmark;urn:li:lyndaLearningPath:5a735c55498e9ec2d5060360",
+      "$type": "com.linkedin.learning.api.interaction.ConsistentBasicBookmark"
+    },
+    {
+      "details": null,
+      "cachingKey": "ConsistentBasicBookmark;urn:li:lyndaCourse:2314072",
+      "$type": "com.linkedin.learning.api.interaction.ConsistentBasicBookmark"
+    },
+    {
+      "details": null,
+      "cachingKey": "ConsistentBasicBookmark;urn:li:lyndaCourse:3022384",
+      "$type": "com.linkedin.learning.api.interaction.ConsistentBasicBookmark"
+    },
+    {
+      "details": null,
+      "cachingKey": "ConsistentBasicBookmark;urn:li:lyndaCourse:604242",
+      "$type": "com.linkedin.learning.api.interaction.ConsistentBasicBookmark"
+    },
+    {
+      "details": null,
+      "cachingKey": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:3022384",
+      "videosToBeCompleted": [ "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3053851)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3055831)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3053852)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3056822)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3054808)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3055827)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3053847)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3050833)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3052872)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3051823)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3050832)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3052873)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3052874)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3050831)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3051827)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3051826)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3051825)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3050834)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3051824)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3055829)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3053848)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3055828)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3053849)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3057237)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3057235)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3055830)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3057236)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3053850)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3057233)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3057234)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3057231)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3022384,3057232)" ],
+      "$type": "com.linkedin.learning.api.interaction.ConsistentBasicCourseViewingStatus"
+    },
+    {
+      "details": null,
+      "cachingKey": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:3008786",
+      "videosToBeCompleted": [ "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3043325)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3043324)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3042310)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3043323)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3043322)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3043327)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3043326)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048360)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048362)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048361)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3044281)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046288)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3044285)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046289)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3044284)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3044283)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3044282)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046285)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046286)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046287)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3045258)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3045259)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3042309)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046291)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046292)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046293)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3045260)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3046290)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048357)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048356)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048359)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048358)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3045261)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3045262)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3045263)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:3008786,3048355)" ],
+      "$type": "com.linkedin.learning.api.interaction.ConsistentBasicCourseViewingStatus"
+    },
+    {
+      "details": null,
+      "cachingKey": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:765321",
+      "videosToBeCompleted": [ "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802416)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802417)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802414)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802458)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802415)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802418)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802419)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802453)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802451)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802412)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802456)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802410)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802411)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802427)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802428)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802429)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802461)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802462)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802423)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802467)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802424)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802421)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802465)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802422)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802438)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802439)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802470)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802474)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802475)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802473)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802478)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802479)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802435)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802432)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802477)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802433)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802405)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802449)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802406)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802403)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802447)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802404)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802409)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802407)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802408)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802481)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802482)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802480)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802485)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802441)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802486)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802483)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802484)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802489)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802445)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802487)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802443)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:765321,802488)" ],
+      "$type": "com.linkedin.learning.api.interaction.ConsistentBasicCourseViewingStatus"
+    },
+    {
+      "details": null,
+      "cachingKey": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:604242",
+      "videosToBeCompleted": [ "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634161)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634162)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634140)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634160)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634165)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634143)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634166)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634141)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634164)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634142)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634169)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634147)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634148)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634145)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634168)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634146)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634172)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634150)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634173)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634151)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634170)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634171)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634132)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634155)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634152)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634130)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634153)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634131)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634136)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634159)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634137)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634156)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634134)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634157)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634135)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:604242,634138)" ],
+      "$type": "com.linkedin.learning.api.interaction.ConsistentBasicCourseViewingStatus"
+    },
+    {
+      "details": null,
+      "cachingKey": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:2314072",
+      "videosToBeCompleted": [ "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377310)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372680)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2375651)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372681)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2375650)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2374300)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372682)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372683)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372684)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2374296)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2374298)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377302)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2374297)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377303)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2374299)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377306)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377307)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377304)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2375646)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377305)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372676)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372677)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2375648)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2375647)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372678)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377308)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2372679)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2377309)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2314072,2375649)" ],
+      "$type": "com.linkedin.learning.api.interaction.ConsistentBasicCourseViewingStatus"
+    },
+    {
+      "details": null,
+      "cachingKey": "ConsistentBasicCourseViewingStatus;urn:li:lyndaCourseViewingStatus:urn:li:lyndaCourse:2426542",
+      "videosToBeCompleted": [ "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3013220)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3013221)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3009685)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3009687)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3009686)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3009689)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3009688)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3007700)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3013217)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3013219)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3010661)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3013218)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3010660)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3008682)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3006681)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3008684)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3006682)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3008683)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3006683)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3004835)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3008686)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3006684)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3004834)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3008685)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3007698)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3004833)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3004832)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3004831)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3007699)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3004830)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3007702)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3007701)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3010659)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3011621)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3011622)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3011623)", "urn:li:lyndaVideo:(urn:li:lyndaCourse:2426542,3011624)" ],
+      "$type": "com.linkedin.learning.api.interaction.ConsistentBasicCourseViewingStatus"
+    },
+    {
+      "details": null,
+      "cachingKey": "ConsistentListedLearningPathStatus;urn:li:lyndaLearningPath:5a735c55498e9ec2d5060360",
+      "$type": "com.linkedin.learning.api.learningpaths.ConsistentListedLearningPathStatus",
+      "completedAllSections": null
+    }
+  ]
+}
