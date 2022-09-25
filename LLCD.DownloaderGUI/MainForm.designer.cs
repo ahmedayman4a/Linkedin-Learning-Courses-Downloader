@@ -42,7 +42,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnDownload = new System.Windows.Forms.Button();
             this.btnBrowse = new System.Windows.Forms.Button();
-            this.txtCourseUrls = new System.Windows.Forms.TextBox();
+            this.txtUrls = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCourseDirectory = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -166,7 +166,7 @@
             this.panelInput.Controls.Add(this.label1);
             this.panelInput.Controls.Add(this.btnDownload);
             this.panelInput.Controls.Add(this.btnBrowse);
-            this.panelInput.Controls.Add(this.txtCourseUrls);
+            this.panelInput.Controls.Add(this.txtUrls);
             this.panelInput.Controls.Add(this.label2);
             this.panelInput.Controls.Add(this.txtCourseDirectory);
             this.panelInput.Controls.Add(this.label4);
@@ -227,21 +227,21 @@
             this.btnBrowse.UseVisualStyleBackColor = false;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
-            // txtCourseUrls
+            // txtUrls
             // 
-            this.txtCourseUrls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.txtCourseUrls.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCourseUrls.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCourseUrls.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(210)))), ((int)(((byte)(214)))));
-            this.txtCourseUrls.Location = new System.Drawing.Point(187, 192);
-            this.txtCourseUrls.Multiline = true;
-            this.txtCourseUrls.Name = "txtCourseUrls";
-            this.txtCourseUrls.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtCourseUrls.Size = new System.Drawing.Size(463, 126);
-            this.txtCourseUrls.TabIndex = 20;
-            this.txtCourseUrls.Text = "One url per line";
-            this.txtCourseUrls.Enter += new System.EventHandler(this.txtCourseUrls_Enter);
-            this.txtCourseUrls.Leave += new System.EventHandler(this.txtCourseUrls_Leave);
+            this.txtUrls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.txtUrls.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUrls.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUrls.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(210)))), ((int)(((byte)(214)))));
+            this.txtUrls.Location = new System.Drawing.Point(187, 192);
+            this.txtUrls.Multiline = true;
+            this.txtUrls.Name = "txtUrls";
+            this.txtUrls.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtUrls.Size = new System.Drawing.Size(463, 126);
+            this.txtUrls.TabIndex = 20;
+            this.txtUrls.Text = "One url per line";
+            this.txtUrls.Enter += new System.EventHandler(this.txtCourseUrls_Enter);
+            this.txtUrls.Leave += new System.EventHandler(this.txtCourseUrls_Leave);
             // 
             // label2
             // 
@@ -455,7 +455,7 @@
         private System.Windows.Forms.ComboBox cmboxBrowser;
         private System.Windows.Forms.CheckBox checkBoxExerciseFiles;
         private System.Windows.Forms.Panel panelInput;
-        private System.Windows.Forms.TextBox txtCourseUrls;
+        private System.Windows.Forms.TextBox txtUrls;
         private System.Windows.Forms.TextBox txtCourseDirectory;
         private System.Windows.Forms.TextBox txtToken;
         private System.Windows.Forms.Button btnExtractToken;

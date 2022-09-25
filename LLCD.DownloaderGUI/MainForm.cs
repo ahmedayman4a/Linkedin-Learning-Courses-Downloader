@@ -46,11 +46,11 @@ namespace LLCD.DownloaderGUI
             progressBarExtractor.Value = 0;
             progressBarCourses.Value = 0;
             txtCourseDirectory.Text = txtCourseDirectory.Text.Trim();
-            txtCourseUrls.Text = txtCourseUrls.Text.Trim();
+            txtUrls.Text = txtUrls.Text.Trim();
             txtToken.Text = txtToken.Text.Trim();
             var extractors = new List<Extractor>();
             Quality quality = (Quality)cmboxQuality.SelectedIndex;
-            string[] urls = txtCourseUrls.Text.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+            string[] urls = txtUrls.Text.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
             foreach (var url in urls)
             {
                 extractors.Add(new Extractor(url.Trim(), quality, txtToken.Text.Trim(),(int)numericUpDownDelay.Value));
@@ -76,7 +76,7 @@ namespace LLCD.DownloaderGUI
             catch (Exception ex)
             {
                 MessageBox.Show("An unknown error occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                string courses = String.Join(" -- ", txtCourseUrls.Text.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries));
+                string courses = String.Join(" -- ", txtUrls.Text.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries));
                 Log.Error(ex, "Unknown error occured. Courses : " + courses);
                 UC_CourseExtractorStatus.Status = CourseStatus.Failed;
                 lblCurrentExtractionOperation.Text = "Course Extraction Failed";
@@ -100,7 +100,7 @@ namespace LLCD.DownloaderGUI
             int numberOfErrors = 0;
             StringBuilder sb = new StringBuilder();
 
-            if (String.IsNullOrWhiteSpace(txtCourseUrls.Text) || txtCourseUrls.Text == "One course url per line")
+            if (String.IsNullOrWhiteSpace(txtUrls.Text) || txtUrls.Text == "One course url per line")
             {
                 sb.Append("• ");
                 sb.AppendLine("Course Url");
@@ -208,7 +208,7 @@ namespace LLCD.DownloaderGUI
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Course Extraction Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                string courses = String.Join(" -- ", txtCourseUrls.Text.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries));
+                string courses = String.Join(" -- ", txtUrls.Text.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries));
                 Log.Error(ex, "Course Extraction Failed" + courses);
                 FormHelpers.SetLoadingStatus(false, panelBody, this, _exceptionControls, false);
                 UC_CourseExtractorStatus.Status = CourseStatus.Failed;
@@ -341,7 +341,7 @@ namespace LLCD.DownloaderGUI
             }
 
             btnBrowse.Font = new Font(FormHelpers.QuicksandFontFamilySemiBold, 12, FontStyle.Bold);
-            txtCourseUrls.Font = new Font(FormHelpers.QuicksandFontFamilyRegular, 12);
+            txtUrls.Font = new Font(FormHelpers.QuicksandFontFamilyRegular, 12);
 
             if (File.Exists("./Config.json"))
             {
@@ -369,14 +369,14 @@ namespace LLCD.DownloaderGUI
 
         private void txtCourseUrls_Enter(object sender, EventArgs e)
         {
-            if (txtCourseUrls.Text == "One course url per line")
-                txtCourseUrls.Text = "";
+            if (txtUrls.Text == "One course url per line")
+                txtUrls.Text = "";
         }
 
         private void txtCourseUrls_Leave(object sender, EventArgs e)
         {
-            if (String.IsNullOrWhiteSpace(txtCourseUrls.Text))
-                txtCourseUrls.Text = "One course url per line";
+            if (String.IsNullOrWhiteSpace(txtUrls.Text))
+                txtUrls.Text = "One course url per line";
         }
 
 
