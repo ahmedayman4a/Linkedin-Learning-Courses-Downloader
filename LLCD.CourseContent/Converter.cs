@@ -86,7 +86,22 @@ namespace LLCD.CourseContent
 
                     if (token != null && token.Type != JTokenType.Null)
                     {
-                        object value = token.ToObject(Helpers.GetCollectionElementType(prop.PropertyType), serializer);
+                        object value;
+                        try
+                        {
+                            value = token.ToObject(prop.PropertyType, serializer);
+                        }
+                        catch (JsonSerializationException ex)
+                        {
+                            if (ex.Message.Contains("Cannot deserialize the current JSON object (e.g. {\"name\":\"value\"}) into type 'System.Collections.Generic.List"))
+                            {
+                                value = null;
+                            }
+                            else
+                            {
+                                throw ex;
+                            }
+                        }
                         prop.SetValue(targetObj, value, null);
                     }
                 }
