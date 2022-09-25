@@ -1,4 +1,6 @@
 ﻿using LLCD.CourseContent;
+using Microsoft.Extensions.Configuration;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,14 +9,47 @@ namespace LLCD.CourseExtractor.Tests
 {
     public class Constant
     {
+        public static IConfiguration Configuration { get; set; }
+
+        static Constant()
+        {
+            // the type specified here is just so the secrets library can 
+            // find the UserSecretId we added in the csproj file
+            var builder = new ConfigurationBuilder()
+                .AddUserSecrets<Constant>();
+
+            Configuration = builder.Build();
+
+            ValidChromeToken = Configuration["ValidChromeToken"].ToString();
+            ValidFirefoxToken = Configuration["ValidFirefoxToken"].ToString();
+            ExpiredToken = Configuration["ExpiredToken"].ToString();
+            InvalidChromeToken = Configuration["InvalidChromeToken"].ToString();
+            InvalidFirefoxToken = Configuration["InvalidFirefoxToken"].ToString();
+            ValidEnterpriseProfileHash = Configuration["ValidEnterpriseProfileHash"].ToString();
+
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Debug()
+                .WriteTo.File("./logs/log.txt", rollingInterval: RollingInterval.Day, retainedFileCountLimit: 10)
+                .CreateLogger();
+
+        }
+
+
         #region Strings
 
-        public const string ValidChromeToken = "";
-        public const string ValidFirefoxToken = "";
-        public const string ExpiredToken = "";
-        public const string InvalidChromeToken = "QEGAGQBAAAAAAVW6BkPg4R_VgAAR3VybjpsaTplbnRlcnByaXNlUHJvZmlsZToodXJuOmxpOmVudGVycHJpc2VBY2NvdW50OjEwNDk0MjIxMCwxMjY5MzU4NjgpvFufSjdKltNIvqBCEfUtk_v1dKyDW1v4v4T-ULf5HfsBuTtkjYwXKhAq4tzlv77b0TAKjaEB9KG88zz46-O34O-ymauMqZ_C8mWvdKTctBXPEPM0";
-        public const string InvalidFirefoxToken = "QEGAGQBAAAAAAVW6BkPg4R_VgAAR3VybjpsaTplbnRlcnByaXNlUHJvZmlsZToodXJuOmxpOmVudGVycHJpc2VBY2NvdW50OjEwNDk0MjIxMCwxMjY5MzU4NjgpvFufSjdKltNIvqBCEfUtk_v1dKyDW1v4v4T-ULf5HfsBuTtkjYwXKhAq4tzlv77b0TAKjaEB9KG88zz46-O34O-ymauMqZ_C8mWvdKTctBXPEPM0";
-        public const string ValidEnterpriseProfileHash = "";
+        //dotnet user-secrets set "ValidChromeToken" ""
+        //dotnet user-secrets set "ValidFirefoxToken" ""
+        //dotnet user-secrets set "ExpiredToken" ""
+        //dotnet user-secrets set "InvalidChromeToken" "QEGAGQBAAAAAAVW6BkPg4R_VgAAR3VybjpsaTplbnRlcnByaXNlUHJvZmlsZToodXJuOmxpOmVudGVycHJpc2VBY2NvdW50OjEwNDk0MjIxMCwxMjY5MzU4NjgpvFufSjdKltNIvqBCEfUtk_v1dKyDW1v4v4T-ULf5HfsBuTtkjYwXKhAq4tzlv77b0TAKjaEB9KG88zz46-O34O-ymauMqZ_C8mWvdKTctBXPEPM0"
+        //dotnet user-secrets set "InvalidFirefoxToken" "QEGAGQBAAAAAAVW6BkPg4R_VgAAR3VybjpsaTplbnRlcnByaXNlUHJvZmlsZToodXJuOmxpOmVudGVycHJpc2VBY2NvdW50OjEwNDk0MjIxMCwxMjY5MzU4NjgpvFufSjdKltNIvqBCEfUtk_v1dKyDW1v4v4T-ULf5HfsBuTtkjYwXKhAq4tzlv77b0TAKjaEB9KG88zz46-O34O-ymauMqZ_C8mWvdKTctBXPEPM0"
+        //dotnet user-secrets set "ValidEnterpriseProfileHash" ""
+
+        public static readonly string ValidChromeToken;
+        public static readonly string ValidFirefoxToken;
+        public static readonly string ExpiredToken;
+        public static readonly string InvalidChromeToken;
+        public static readonly string InvalidFirefoxToken;
+        public static readonly string ValidEnterpriseProfileHash;
 
         #endregion
 

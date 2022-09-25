@@ -17,25 +17,23 @@ namespace LLCD.CourseExtractor.Tests
         [TestCategory("Token Validity")]
         public async Task ExtractToken_ValidToken_ReturnsTrue()
         {
-            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, Constant.ValidFirefoxToken);
-            Assert.IsTrue(await extractor.HasValidToken());
+            Assert.IsTrue(await Validator.IsTokenValid(Constant.ValidFirefoxToken));
         }
 
         [TestMethod]
         [TestCategory("Token Validity")]
         public async Task ExtractToken_InvalidToken_ReturnsFalse()
         {
-            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, Constant.InvalidFirefoxToken);
-            Assert.IsFalse(await extractor.HasValidToken());
+           Assert.IsFalse(await Validator.IsTokenValid(Constant.InvalidFirefoxToken));
         }
 
         [TestMethod]
         [TestCategory("Course Extraction")]
         public async Task GetCourse_ValidCourse_ReturnsEqualCourseData()
         {
-            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, Constant.ValidFirefoxToken);
-            var progress = new Progress<float>(progressPercent => ConsoleOutput.Instance.WriteLine((progressPercent * 100).ToString(), OutputLevel.Information));
-            var course = await extractor.GetCourse(progress);
+            var extractor = new Extractor("learning-to-be-assertive", Quality.Low, Constant.ValidFirefoxToken);
+            //var progress = new Progress<float>(progressPercent => ConsoleOutput.Instance.WriteLine((progressPercent * 100).ToString(), OutputLevel.Information));
+            var course = await extractor.GetCourse();
             CompareLogic compareLogic = new CompareLogic();
             compareLogic.Config.IgnoreProperty<Video>(x => x.DownloadUrl);
             compareLogic.Config.IgnoreProperty<Video>(x => x.TranscriptLines);
@@ -50,26 +48,26 @@ namespace LLCD.CourseExtractor.Tests
         {
             string[] links = new string[]
             {
-                "https://www.linkedin.com/learning/web-development-foundations-web-technologies",
-                "https://www.linkedin.com/learning/react-native-essential-training",
-                "https://www.linkedin.com/learning/android-app-development-design-patterns-for-mobile-architecture",
-                "https://www.linkedin.com/learning/html-essential-training-4",
-                "https://www.linkedin.com/learning/html-and-css-linking",
-                "https://www.linkedin.com/learning/developing-for-web-performance",
-                "https://www.linkedin.com/learning/learning-google-flutter-for-mobile-developers",
-                "https://www.linkedin.com/learning/react-native-building-mobile-apps-3",
-                "https://www.linkedin.com/learning/ios-app-development-design-patterns-for-mobile-architecture",
-                "https://www.linkedin.com/learning/view-source",
-                "https://www.linkedin.com/learning/programming-foundations-databases-2",
-                "https://www.linkedin.com/learning/learning-sql-programming-8382385",
-                "https://www.linkedin.com/learning/learning-mysql-development-2",
-                "https://www.linkedin.com/learning/learning-mongodb",
-                "https://www.linkedin.com/learning/sql-data-reporting-and-analysis-2",
-                "https://www.linkedin.com/learning/essential-math-for-machine-learning-python-edition/explore-core-mathematical-concepts",
-                "https://www.linkedin.com/learning/applied-machine-learning-algorithms",
-                "https://www.linkedin.com/learning/web-scraping-with-python",
-                "https://www.linkedin.com/learning/python-for-data-visualization",
-                "https://www.linkedin.com/learning/python-data-analysis-2"
+                "web-development-foundations-web-technologies",
+                "react-native-essential-training",
+                "android-app-development-design-patterns-for-mobile-architecture",
+                "html-essential-training-4",
+                "html-and-css-linking",
+                "developing-for-web-performance",
+                "learning-google-flutter-for-mobile-developers",
+                "react-native-building-mobile-apps-3",
+                "ios-app-development-design-patterns-for-mobile-architecture",
+                "view-source",
+                "programming-foundations-databases-2",
+                "learning-sql-programming-8382385",
+                "learning-mysql-development-2",
+                "learning-mongodb",
+                "sql-data-reporting-and-analysis-2",
+                "essential-math-for-machine-learning-python-edition/explore-core-mathematical-concepts",
+                "applied-machine-learning-algorithms",
+                "web-scraping-with-python",
+                "python-for-data-visualization",
+                "python-data-analysis-2"
             };
             int i = 0;
             foreach (var link in links)
@@ -85,36 +83,12 @@ namespace LLCD.CourseExtractor.Tests
         [TestCategory("Course Extraction")]
         public async Task GetCourse_InValidCourse_ReturnsNonEqualCourseData()
         {
-            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, Constant.ValidFirefoxToken);
+            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive", Quality.Low, Constant.ValidFirefoxToken);
             var course = await extractor.GetCourse();
             Assert.AreNotEqual(Constant.InvalidCourse, course);
         }
 
-        [TestMethod]
-        [TestCategory("Link Validity")]
-        public void HasValidUrl_ValidUrl_ReturnsTrue()
-        {
-            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive/welcome?u=104942210", Quality.Low, Constant.ValidFirefoxToken);
-            Assert.IsTrue(extractor.HasValidUrl());
-        }
-
-        [TestMethod]
-        [TestCategory("EnterpriseProfileHash Validity")]
-        public async Task GetEnterpriseProfileHash_ValidEnterpriseProfileHash_ReturnsSameValue()
-        {
-            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, Constant.ValidFirefoxToken);
-            await extractor.GetCourse();
-            Assert.AreEqual(Constant.ValidEnterpriseProfileHash, extractor.EnterpriseProfileHash);
-        }
-
-        [TestMethod]
-        [TestCategory("EnterpriseProfileHash Validity")]
-        public async Task GetEnterpriseProfileHash_InvalidToken_ReturnsNull()
-        {
-            var extractor = new Extractor("https://www.linkedin.com/learning/learning-to-be-assertive?autoplay=true&u=104942210", Quality.Low, Constant.InvalidFirefoxToken);
-            await extractor.GetCourse();
-            Assert.IsNull(extractor.EnterpriseProfileHash);
-        }
+       
 
     }
 }
