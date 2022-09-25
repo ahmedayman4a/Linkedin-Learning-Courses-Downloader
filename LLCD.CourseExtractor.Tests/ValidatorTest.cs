@@ -12,21 +12,21 @@ namespace LLCD.CourseExtractor.Tests
     {
         [TestMethod]
         [TestCategory("Link Validity")]
-        public void HasValidUrl_ValidCourseUrl_ReturnsTrue()
+        public void IsValidUrl_ValidCourseUrl_ReturnsTrue()
         {
             Assert.IsTrue(Validator.IsUrlValid("https://www.linkedin.com/learning/learning-to-be-assertive"));
         }
 
         [TestMethod]
         [TestCategory("Link Validity")]
-        public void HasValidUrl_ValidLearningPathUrl_ReturnsTrue()
+        public void IsValidUrl_ValidLearningPathUrl_ReturnsTrue()
         {
             Assert.IsTrue(Validator.IsUrlValid("https://www.linkedin.com/learning/paths/become-a-c-sharp-developer"));
         }
 
         [TestMethod]
         [TestCategory("Link Validity")]
-        public void HasValidUrl_InvalidUrl_ReturnsFalse()
+        public void IsValidUrl_InvalidUrl_ReturnsFalse()
         {
             Assert.IsFalse(Validator.IsUrlValid("https://www.linkedin.com/"));
         }
