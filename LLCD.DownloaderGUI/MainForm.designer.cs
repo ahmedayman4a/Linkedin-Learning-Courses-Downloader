@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelBody = new System.Windows.Forms.Panel();
             this.panelStatus = new System.Windows.Forms.Panel();
+            this.UCCourseDownloaderStatus = new LLCD.DownloaderGUI.CourseStatusUserControl();
+            this.UC_CourseExtractorStatus = new LLCD.DownloaderGUI.CourseStatusUserControl();
             this.lblCurrentExtractionOperation = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -55,8 +57,6 @@
             this.checkBoxDelay = new System.Windows.Forms.CheckBox();
             this.checkBoxSubtitles = new System.Windows.Forms.CheckBox();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
-            this.UCCourseDownloaderStatus = new LLCD.DownloaderGUI.CourseStatusUserControl();
-            this.UC_CourseExtractorStatus = new LLCD.DownloaderGUI.CourseStatusUserControl();
             this.panelBody.SuspendLayout();
             this.panelStatus.SuspendLayout();
             this.panelInput.SuspendLayout();
@@ -87,6 +87,24 @@
             this.panelStatus.Name = "panelStatus";
             this.panelStatus.Size = new System.Drawing.Size(671, 207);
             this.panelStatus.TabIndex = 22;
+            // 
+            // UCCourseDownloaderStatus
+            // 
+            this.UCCourseDownloaderStatus.BackColor = System.Drawing.Color.Black;
+            this.UCCourseDownloaderStatus.Location = new System.Drawing.Point(520, 20);
+            this.UCCourseDownloaderStatus.Name = "UCCourseDownloaderStatus";
+            this.UCCourseDownloaderStatus.Size = new System.Drawing.Size(130, 29);
+            this.UCCourseDownloaderStatus.Status = LLCD.DownloaderGUI.CourseStatus.NotRunning;
+            this.UCCourseDownloaderStatus.TabIndex = 5;
+            // 
+            // UC_CourseExtractorStatus
+            // 
+            this.UC_CourseExtractorStatus.BackColor = System.Drawing.Color.Black;
+            this.UC_CourseExtractorStatus.Location = new System.Drawing.Point(177, 19);
+            this.UC_CourseExtractorStatus.Name = "UC_CourseExtractorStatus";
+            this.UC_CourseExtractorStatus.Size = new System.Drawing.Size(130, 29);
+            this.UC_CourseExtractorStatus.Status = LLCD.DownloaderGUI.CourseStatus.NotRunning;
+            this.UC_CourseExtractorStatus.TabIndex = 5;
             // 
             // lblCurrentExtractionOperation
             // 
@@ -175,9 +193,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(210)))), ((int)(((byte)(214)))));
             this.label1.Location = new System.Drawing.Point(11, 194);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 28);
+            this.label1.Size = new System.Drawing.Size(155, 84);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Courses urls : ";
+            this.label1.Text = "Courses and/or \r\nLearning paths\r\nurls :";
             // 
             // btnDownload
             // 
@@ -221,7 +239,7 @@
             this.txtCourseUrls.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtCourseUrls.Size = new System.Drawing.Size(463, 126);
             this.txtCourseUrls.TabIndex = 20;
-            this.txtCourseUrls.Text = "One course url per line";
+            this.txtCourseUrls.Text = "One url per line";
             this.txtCourseUrls.Enter += new System.EventHandler(this.txtCourseUrls_Enter);
             this.txtCourseUrls.Leave += new System.EventHandler(this.txtCourseUrls_Leave);
             // 
@@ -393,24 +411,6 @@
             this.checkBoxSubtitles.TabIndex = 14;
             this.checkBoxSubtitles.Text = "Download subtitles";
             this.checkBoxSubtitles.UseVisualStyleBackColor = true;
-            // 
-            // UCCourseDownloaderStatus
-            // 
-            this.UCCourseDownloaderStatus.BackColor = System.Drawing.Color.Black;
-            this.UCCourseDownloaderStatus.Location = new System.Drawing.Point(520, 20);
-            this.UCCourseDownloaderStatus.Name = "UCCourseDownloaderStatus";
-            this.UCCourseDownloaderStatus.Size = new System.Drawing.Size(130, 29);
-            this.UCCourseDownloaderStatus.Status = LLCD.DownloaderGUI.CourseStatus.NotRunning;
-            this.UCCourseDownloaderStatus.TabIndex = 5;
-            // 
-            // UC_CourseExtractorStatus
-            // 
-            this.UC_CourseExtractorStatus.BackColor = System.Drawing.Color.Black;
-            this.UC_CourseExtractorStatus.Location = new System.Drawing.Point(177, 19);
-            this.UC_CourseExtractorStatus.Name = "UC_CourseExtractorStatus";
-            this.UC_CourseExtractorStatus.Size = new System.Drawing.Size(130, 29);
-            this.UC_CourseExtractorStatus.Status = LLCD.DownloaderGUI.CourseStatus.NotRunning;
-            this.UC_CourseExtractorStatus.TabIndex = 5;
             // 
             // MainForm
             // 
